@@ -1,0 +1,1428 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="2.18.14">
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <customproperties/>
+    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Checked" id="Alle20171102175159289" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'&amp;uid=ID_GeogrLage" name="Alle">
+      <customproperties>
+        <property key="showFeatureCount" value="1"/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="ODBC_thesis_2017_A_QGIS20171102173720168" source="ODBC:thesis-2017|layername=A_QGIS" name="ODBC:thesis-2017-A_QGIS-ETRS89">
+      <customproperties>
+        <property key="showFeatureCount" value="1"/>
+      </customproperties>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <relations/>
+  <mapcanvas>
+    <units>degrees</units>
+    <extent>
+      <xmin>7.02642675000000061</xmin>
+      <ymin>47.02360074999999995</ymin>
+      <xmax>13.23164324999999586</xmax>
+      <ymax>49.62588925000004281</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <projections>1</projections>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <layer_coordinate_transform_info>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Alle20171102175159289"/>
+    </layer_coordinate_transform_info>
+  </mapcanvas>
+  <layer-tree-canvas>
+    <custom-order enabled="0">
+      <item>ODBC_thesis_2017_A_QGIS20171102173720168</item>
+      <item>Alle20171102175159289</item>
+    </custom-order>
+  </layer-tree-canvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Alle" showFeatureCount="1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Alle20171102175159289" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ODBC:thesis-2017-A_QGIS-ETRS89" showFeatureCount="1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="ODBC_thesis_2017_A_QGIS20171102173720168" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <projectlayers>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>7.17417000000000016</xmin>
+        <ymin>47.08556000000000097</ymin>
+        <xmax>13.08389999999999986</xmax>
+        <ymax>49.56392999999999915</ymax>
+      </extent>
+      <id>Alle20171102175159289</id>
+      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'&amp;uid=ID_GeogrLage</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Alle</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs</proj4>
+          <srsid>3390</srsid>
+          <srid>4258</srid>
+          <authid>EPSG:4258</authid>
+          <description>ETRS89</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">virtual</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="LONGITUDE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LATITUDE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_GeogrLage">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_GeogrLage_nach_Publ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Land_Kuerzel">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="BLand_Kuerzel">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Bezirk">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Landkreis_Name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Ort">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Ortsname">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Teilortsname">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogLage_Hist_Name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrLage_Kennzeichnung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrKoordinaten">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrKoordinaten_nach_Opitz_2014">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrLage_Beschreibung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrLage_Erfassungsstand">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrLage_Erfassungsnotiz">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrLage_Literaturangaben">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Geogr_Lage_Verketten_f_Katalog_Teilort">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Geogr_Lage_Verketten_f_Katalog_Rest">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Befund">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Parent_Befund">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Lage_Gelaende_Standartisiert">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Lage_Gelaende">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Quelle">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Kennzeichnung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Graeberfeld_Flaeche">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Graeberfeld_Anz_bek_Einheiten">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Bezeichnung_bek_Einheiten">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Huegel_Grab_Bestattung_bes_Stellung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Huegel_Form">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Huegel_Hoehe">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Huegel_Durchmesser">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Huegel_Breite">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Huegel_Laenge">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Huegel_Zus_Info">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Innere_Ausstattung_Art">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Innere_Ausstattung_Hoehe">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Innere_Ausstattung_Breite">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Innere_Ausstattung_Laenge">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Innere_Ausstattung_Durchmesser">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Innere_Ausstattung_Zus_Info">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Zustand">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Begraebnis_Abfolge">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Begraebnis_Ritus">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Orientierung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Alter_Bestimmungsart">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Altersbestimmung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Geschlecht_Bestimmungsart">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Geschlechtsbestimmung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Konstruktionsbesonderheiten">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Konstruktionsbesonderheiten_Zus_fassung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Funde">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Funde_Anzahl">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Funde_Zus_fassung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Funde_Zuordenbarkeit">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Funde_Vorhandensein">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="T_Befund_Literaturangaben">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Zus_Information">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Datierung_Beginn">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Datierung_Belegung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Datierung_Ende">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Datierung_Schwerpunkt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Fund">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Fund_Publ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Grabung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Ueberueberklasse">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Ueberklasse">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Klasse">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Zuordnung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Zuordnung_Kommentar">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Klasse_Beschreibung_Katalog">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Abbildung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Fund_Abbildungen">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Beschreibung_Katalog">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Masse_Katalog">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Lage_im_Befund_Kommentar">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Lage_im_Befund">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Zus_Info">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Beschreibung_Quellen_Kommentare">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Material_Abkuerzung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Zustand">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Verbleib">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Inv_Nr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Datierung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Datierung_Kommentar">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="T_Fund_Literaturangaben">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_verketten">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Verbleib_verketten">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Fund_Typ_auto">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Fund_Typ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Typ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Klasse_Beschreibung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Beschreibung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Befunde">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Funde">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_ID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_File_Name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_File_Type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_URL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="47,195,101,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>Landkreis_Name</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="LONGITUDE" index="0" name=""/>
+        <alias field="LATITUDE" index="1" name=""/>
+        <alias field="ID_GeogrLage" index="2" name=""/>
+        <alias field="ID_GeogrLage_nach_Publ" index="3" name=""/>
+        <alias field="Land_Kuerzel" index="4" name=""/>
+        <alias field="BLand_Kuerzel" index="5" name=""/>
+        <alias field="Bezirk" index="6" name=""/>
+        <alias field="Landkreis_Name" index="7" name=""/>
+        <alias field="ID_Ort" index="8" name=""/>
+        <alias field="Ortsname" index="9" name=""/>
+        <alias field="Teilortsname" index="10" name=""/>
+        <alias field="GeogLage_Hist_Name" index="11" name=""/>
+        <alias field="GeogrLage_Kennzeichnung" index="12" name=""/>
+        <alias field="GeogrKoordinaten" index="13" name=""/>
+        <alias field="GeogrKoordinaten_nach_Opitz_2014" index="14" name=""/>
+        <alias field="GeogrLage_Beschreibung" index="15" name=""/>
+        <alias field="GeogrLage_Erfassungsstand" index="16" name=""/>
+        <alias field="GeogrLage_Erfassungsnotiz" index="17" name=""/>
+        <alias field="GeogrLage_Literaturangaben" index="18" name=""/>
+        <alias field="Geogr_Lage_Verketten_f_Katalog_Teilort" index="19" name=""/>
+        <alias field="Geogr_Lage_Verketten_f_Katalog_Rest" index="20" name=""/>
+        <alias field="ID_Befund" index="21" name=""/>
+        <alias field="ID_Parent_Befund" index="22" name=""/>
+        <alias field="Befund_Lage_Gelaende_Standartisiert" index="23" name=""/>
+        <alias field="Befund_Lage_Gelaende" index="24" name=""/>
+        <alias field="Befund_Quelle" index="25" name=""/>
+        <alias field="Befund_Form" index="26" name=""/>
+        <alias field="Befund_Kennzeichnung" index="27" name=""/>
+        <alias field="Befund_Graeberfeld_Flaeche" index="28" name=""/>
+        <alias field="Befund_Graeberfeld_Anz_bek_Einheiten" index="29" name=""/>
+        <alias field="Bezeichnung_bek_Einheiten" index="30" name=""/>
+        <alias field="Befund_Huegel_Grab_Bestattung_bes_Stellung" index="31" name=""/>
+        <alias field="Befund_Form_Huegel_Form" index="32" name=""/>
+        <alias field="Befund_Form_Huegel_Hoehe" index="33" name=""/>
+        <alias field="Befund_Form_Huegel_Durchmesser" index="34" name=""/>
+        <alias field="Befund_Form_Huegel_Breite" index="35" name=""/>
+        <alias field="Befund_Form_Huegel_Laenge" index="36" name=""/>
+        <alias field="Befund_Form_Huegel_Zus_Info" index="37" name=""/>
+        <alias field="Befund_Form_Innere_Ausstattung_Art" index="38" name=""/>
+        <alias field="Befund_Form_Innere_Ausstattung_Hoehe" index="39" name=""/>
+        <alias field="Befund_Form_Innere_Ausstattung_Breite" index="40" name=""/>
+        <alias field="Befund_Form_Innere_Ausstattung_Laenge" index="41" name=""/>
+        <alias field="Befund_Form_Innere_Ausstattung_Durchmesser" index="42" name=""/>
+        <alias field="Befund_Form_Innere_Ausstattung_Zus_Info" index="43" name=""/>
+        <alias field="Befund_Zustand" index="44" name=""/>
+        <alias field="Befund_Begraebnis_Abfolge" index="45" name=""/>
+        <alias field="Befund_Begraebnis_Ritus" index="46" name=""/>
+        <alias field="Orientierung" index="47" name=""/>
+        <alias field="Alter_Bestimmungsart" index="48" name=""/>
+        <alias field="Altersbestimmung" index="49" name=""/>
+        <alias field="Geschlecht_Bestimmungsart" index="50" name=""/>
+        <alias field="Geschlechtsbestimmung" index="51" name=""/>
+        <alias field="Konstruktionsbesonderheiten" index="52" name=""/>
+        <alias field="Konstruktionsbesonderheiten_Zus_fassung" index="53" name=""/>
+        <alias field="Funde" index="54" name=""/>
+        <alias field="Funde_Anzahl" index="55" name=""/>
+        <alias field="Funde_Zus_fassung" index="56" name=""/>
+        <alias field="Befund_Funde_Zuordenbarkeit" index="57" name=""/>
+        <alias field="Befund_Funde_Vorhandensein" index="58" name=""/>
+        <alias field="T_Befund_Literaturangaben" index="59" name=""/>
+        <alias field="Zus_Information" index="60" name=""/>
+        <alias field="Datierung_Beginn" index="61" name=""/>
+        <alias field="Datierung_Belegung" index="62" name=""/>
+        <alias field="Datierung_Ende" index="63" name=""/>
+        <alias field="Datierung_Schwerpunkt" index="64" name=""/>
+        <alias field="ID_Fund" index="65" name=""/>
+        <alias field="ID_Fund_Publ" index="66" name=""/>
+        <alias field="ID_Grabung" index="67" name=""/>
+        <alias field="Fund_Ueberueberklasse" index="68" name=""/>
+        <alias field="Fund_Ueberklasse" index="69" name=""/>
+        <alias field="Fund_Klasse" index="70" name=""/>
+        <alias field="Fund_Zuordnung" index="71" name=""/>
+        <alias field="Fund_Zuordnung_Kommentar" index="72" name=""/>
+        <alias field="Fund_Klasse_Beschreibung_Katalog" index="73" name=""/>
+        <alias field="Anzahl" index="74" name=""/>
+        <alias field="Abbildung" index="75" name=""/>
+        <alias field="Anzahl_Fund_Abbildungen" index="76" name=""/>
+        <alias field="Beschreibung_Katalog" index="77" name=""/>
+        <alias field="Masse_Katalog" index="78" name=""/>
+        <alias field="Fund_Lage_im_Befund_Kommentar" index="79" name=""/>
+        <alias field="Fund_Lage_im_Befund" index="80" name=""/>
+        <alias field="Zus_Info" index="81" name=""/>
+        <alias field="Beschreibung_Quellen_Kommentare" index="82" name=""/>
+        <alias field="Fund_Material_Abkuerzung" index="83" name=""/>
+        <alias field="Fund_Zustand" index="84" name=""/>
+        <alias field="Fund_Verbleib" index="85" name=""/>
+        <alias field="Inv_Nr" index="86" name=""/>
+        <alias field="Datierung" index="87" name=""/>
+        <alias field="Datierung_Kommentar" index="88" name=""/>
+        <alias field="T_Fund_Literaturangaben" index="89" name=""/>
+        <alias field="Fund_verketten" index="90" name=""/>
+        <alias field="Fund_Verbleib_verketten" index="91" name=""/>
+        <alias field="ID_Fund_Typ_auto" index="92" name=""/>
+        <alias field="ID_Fund_Typ" index="93" name=""/>
+        <alias field="Fund_Typ" index="94" name=""/>
+        <alias field="Fund_Klasse_Beschreibung" index="95" name=""/>
+        <alias field="Beschreibung" index="96" name=""/>
+        <alias field="Anzahl_Befunde" index="97" name=""/>
+        <alias field="Anzahl_Funde" index="98" name=""/>
+        <alias field="Erste_Fund_Abbildung_ID" index="99" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Name" index="100" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Type" index="101" name=""/>
+        <alias field="Erste_Fund_Abbildung_URL" index="102" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="LONGITUDE" expression=""/>
+        <default field="LATITUDE" expression=""/>
+        <default field="ID_GeogrLage" expression=""/>
+        <default field="ID_GeogrLage_nach_Publ" expression=""/>
+        <default field="Land_Kuerzel" expression=""/>
+        <default field="BLand_Kuerzel" expression=""/>
+        <default field="Bezirk" expression=""/>
+        <default field="Landkreis_Name" expression=""/>
+        <default field="ID_Ort" expression=""/>
+        <default field="Ortsname" expression=""/>
+        <default field="Teilortsname" expression=""/>
+        <default field="GeogLage_Hist_Name" expression=""/>
+        <default field="GeogrLage_Kennzeichnung" expression=""/>
+        <default field="GeogrKoordinaten" expression=""/>
+        <default field="GeogrKoordinaten_nach_Opitz_2014" expression=""/>
+        <default field="GeogrLage_Beschreibung" expression=""/>
+        <default field="GeogrLage_Erfassungsstand" expression=""/>
+        <default field="GeogrLage_Erfassungsnotiz" expression=""/>
+        <default field="GeogrLage_Literaturangaben" expression=""/>
+        <default field="Geogr_Lage_Verketten_f_Katalog_Teilort" expression=""/>
+        <default field="Geogr_Lage_Verketten_f_Katalog_Rest" expression=""/>
+        <default field="ID_Befund" expression=""/>
+        <default field="ID_Parent_Befund" expression=""/>
+        <default field="Befund_Lage_Gelaende_Standartisiert" expression=""/>
+        <default field="Befund_Lage_Gelaende" expression=""/>
+        <default field="Befund_Quelle" expression=""/>
+        <default field="Befund_Form" expression=""/>
+        <default field="Befund_Kennzeichnung" expression=""/>
+        <default field="Befund_Graeberfeld_Flaeche" expression=""/>
+        <default field="Befund_Graeberfeld_Anz_bek_Einheiten" expression=""/>
+        <default field="Bezeichnung_bek_Einheiten" expression=""/>
+        <default field="Befund_Huegel_Grab_Bestattung_bes_Stellung" expression=""/>
+        <default field="Befund_Form_Huegel_Form" expression=""/>
+        <default field="Befund_Form_Huegel_Hoehe" expression=""/>
+        <default field="Befund_Form_Huegel_Durchmesser" expression=""/>
+        <default field="Befund_Form_Huegel_Breite" expression=""/>
+        <default field="Befund_Form_Huegel_Laenge" expression=""/>
+        <default field="Befund_Form_Huegel_Zus_Info" expression=""/>
+        <default field="Befund_Form_Innere_Ausstattung_Art" expression=""/>
+        <default field="Befund_Form_Innere_Ausstattung_Hoehe" expression=""/>
+        <default field="Befund_Form_Innere_Ausstattung_Breite" expression=""/>
+        <default field="Befund_Form_Innere_Ausstattung_Laenge" expression=""/>
+        <default field="Befund_Form_Innere_Ausstattung_Durchmesser" expression=""/>
+        <default field="Befund_Form_Innere_Ausstattung_Zus_Info" expression=""/>
+        <default field="Befund_Zustand" expression=""/>
+        <default field="Befund_Begraebnis_Abfolge" expression=""/>
+        <default field="Befund_Begraebnis_Ritus" expression=""/>
+        <default field="Orientierung" expression=""/>
+        <default field="Alter_Bestimmungsart" expression=""/>
+        <default field="Altersbestimmung" expression=""/>
+        <default field="Geschlecht_Bestimmungsart" expression=""/>
+        <default field="Geschlechtsbestimmung" expression=""/>
+        <default field="Konstruktionsbesonderheiten" expression=""/>
+        <default field="Konstruktionsbesonderheiten_Zus_fassung" expression=""/>
+        <default field="Funde" expression=""/>
+        <default field="Funde_Anzahl" expression=""/>
+        <default field="Funde_Zus_fassung" expression=""/>
+        <default field="Befund_Funde_Zuordenbarkeit" expression=""/>
+        <default field="Befund_Funde_Vorhandensein" expression=""/>
+        <default field="T_Befund_Literaturangaben" expression=""/>
+        <default field="Zus_Information" expression=""/>
+        <default field="Datierung_Beginn" expression=""/>
+        <default field="Datierung_Belegung" expression=""/>
+        <default field="Datierung_Ende" expression=""/>
+        <default field="Datierung_Schwerpunkt" expression=""/>
+        <default field="ID_Fund" expression=""/>
+        <default field="ID_Fund_Publ" expression=""/>
+        <default field="ID_Grabung" expression=""/>
+        <default field="Fund_Ueberueberklasse" expression=""/>
+        <default field="Fund_Ueberklasse" expression=""/>
+        <default field="Fund_Klasse" expression=""/>
+        <default field="Fund_Zuordnung" expression=""/>
+        <default field="Fund_Zuordnung_Kommentar" expression=""/>
+        <default field="Fund_Klasse_Beschreibung_Katalog" expression=""/>
+        <default field="Anzahl" expression=""/>
+        <default field="Abbildung" expression=""/>
+        <default field="Anzahl_Fund_Abbildungen" expression=""/>
+        <default field="Beschreibung_Katalog" expression=""/>
+        <default field="Masse_Katalog" expression=""/>
+        <default field="Fund_Lage_im_Befund_Kommentar" expression=""/>
+        <default field="Fund_Lage_im_Befund" expression=""/>
+        <default field="Zus_Info" expression=""/>
+        <default field="Beschreibung_Quellen_Kommentare" expression=""/>
+        <default field="Fund_Material_Abkuerzung" expression=""/>
+        <default field="Fund_Zustand" expression=""/>
+        <default field="Fund_Verbleib" expression=""/>
+        <default field="Inv_Nr" expression=""/>
+        <default field="Datierung" expression=""/>
+        <default field="Datierung_Kommentar" expression=""/>
+        <default field="T_Fund_Literaturangaben" expression=""/>
+        <default field="Fund_verketten" expression=""/>
+        <default field="Fund_Verbleib_verketten" expression=""/>
+        <default field="ID_Fund_Typ_auto" expression=""/>
+        <default field="ID_Fund_Typ" expression=""/>
+        <default field="Fund_Typ" expression=""/>
+        <default field="Fund_Klasse_Beschreibung" expression=""/>
+        <default field="Beschreibung" expression=""/>
+        <default field="Anzahl_Befunde" expression=""/>
+        <default field="Anzahl_Funde" expression=""/>
+        <default field="Erste_Fund_Abbildung_ID" expression=""/>
+        <default field="Erste_Fund_Abbildung_File_Name" expression=""/>
+        <default field="Erste_Fund_Abbildung_File_Type" expression=""/>
+        <default field="Erste_Fund_Abbildung_URL" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+      <id>ODBC_thesis_2017_A_QGIS20171102173720168</id>
+      <datasource>ODBC:thesis-2017|layername=A_QGIS</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ODBC:thesis-2017-A_QGIS-ETRS89</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="LONGITUDE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="LATITUDE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_GeogrLage">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_GeogrLage_nach_Publ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Land_Kuerzel">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="BLand_Kuerzel">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Bezirk">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Landkreis_Name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Ort">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Ortsname">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Teilortsname">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogLage_Hist_Name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrLage_Kennzeichnung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrKoordinaten">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrKoordinaten_nach_Opitz_2014">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrLage_Beschreibung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrLage_Erfassungsstand">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrLage_Erfassungsnotiz">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GeogrLage_Literaturangaben">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Geogr_Lage_Verketten_f_Katalog_Teilort">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Geogr_Lage_Verketten_f_Katalog_Rest">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Befund">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Parent_Befund">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Lage_Gelaende_Standartisiert">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Lage_Gelaende">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Quelle">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Kennzeichnung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Graeberfeld_Flaeche">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Graeberfeld_Anz_bek_Einheiten">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Bezeichnung_bek_Einheiten">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Huegel_Grab_Bestattung_bes_Stellung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Huegel_Form">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Huegel_Hoehe">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Huegel_Durchmesser">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Huegel_Breite">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Huegel_Laenge">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Huegel_Zus_Info">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Innere_Ausstattung_Art">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Innere_Ausstattung_Hoehe">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Innere_Ausstattung_Breite">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Innere_Ausstattung_Laenge">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Innere_Ausstattung_Durchmesser">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Form_Innere_Ausstattung_Zus_Info">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Zustand">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Begraebnis_Abfolge">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Begraebnis_Ritus">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Orientierung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Alter_Bestimmungsart">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Altersbestimmung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Geschlecht_Bestimmungsart">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Geschlechtsbestimmung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Konstruktionsbesonderheiten">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Konstruktionsbesonderheiten_Zus_fassung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Funde">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Funde_Anzahl">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Funde_Zus_fassung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Funde_Zuordenbarkeit">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Befund_Funde_Vorhandensein">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="T_Befund_Literaturangaben">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Zus_Information">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Datierung_Beginn">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Datierung_Belegung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Datierung_Ende">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Datierung_Schwerpunkt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Fund">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Fund_Publ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Grabung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Ueberueberklasse">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Ueberklasse">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Klasse">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Zuordnung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Zuordnung_Kommentar">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Klasse_Beschreibung_Katalog">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Abbildung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Fund_Abbildungen">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Beschreibung_Katalog">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Masse_Katalog">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Lage_im_Befund_Kommentar">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Lage_im_Befund">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Zus_Info">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Beschreibung_Quellen_Kommentare">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Material_Abkuerzung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Zustand">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Verbleib">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Inv_Nr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Datierung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Datierung_Kommentar">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="T_Fund_Literaturangaben">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_verketten">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Verbleib_verketten">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Fund_Typ_auto">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ID_Fund_Typ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Typ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Fund_Klasse_Beschreibung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Beschreibung">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Befunde">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Funde">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_ID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_File_Name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_File_Type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_URL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="LONGITUDE" index="0" name=""/>
+        <alias field="LATITUDE" index="1" name=""/>
+        <alias field="ID_GeogrLage" index="2" name=""/>
+        <alias field="ID_GeogrLage_nach_Publ" index="3" name=""/>
+        <alias field="Land_Kuerzel" index="4" name=""/>
+        <alias field="BLand_Kuerzel" index="5" name=""/>
+        <alias field="Bezirk" index="6" name=""/>
+        <alias field="Landkreis_Name" index="7" name=""/>
+        <alias field="ID_Ort" index="8" name=""/>
+        <alias field="Ortsname" index="9" name=""/>
+        <alias field="Teilortsname" index="10" name=""/>
+        <alias field="GeogLage_Hist_Name" index="11" name=""/>
+        <alias field="GeogrLage_Kennzeichnung" index="12" name=""/>
+        <alias field="GeogrKoordinaten" index="13" name=""/>
+        <alias field="GeogrKoordinaten_nach_Opitz_2014" index="14" name=""/>
+        <alias field="GeogrLage_Beschreibung" index="15" name=""/>
+        <alias field="GeogrLage_Erfassungsstand" index="16" name=""/>
+        <alias field="GeogrLage_Erfassungsnotiz" index="17" name=""/>
+        <alias field="GeogrLage_Literaturangaben" index="18" name=""/>
+        <alias field="Geogr_Lage_Verketten_f_Katalog_Teilort" index="19" name=""/>
+        <alias field="Geogr_Lage_Verketten_f_Katalog_Rest" index="20" name=""/>
+        <alias field="ID_Befund" index="21" name=""/>
+        <alias field="ID_Parent_Befund" index="22" name=""/>
+        <alias field="Befund_Lage_Gelaende_Standartisiert" index="23" name=""/>
+        <alias field="Befund_Lage_Gelaende" index="24" name=""/>
+        <alias field="Befund_Quelle" index="25" name=""/>
+        <alias field="Befund_Form" index="26" name=""/>
+        <alias field="Befund_Kennzeichnung" index="27" name=""/>
+        <alias field="Befund_Graeberfeld_Flaeche" index="28" name=""/>
+        <alias field="Befund_Graeberfeld_Anz_bek_Einheiten" index="29" name=""/>
+        <alias field="Bezeichnung_bek_Einheiten" index="30" name=""/>
+        <alias field="Befund_Huegel_Grab_Bestattung_bes_Stellung" index="31" name=""/>
+        <alias field="Befund_Form_Huegel_Form" index="32" name=""/>
+        <alias field="Befund_Form_Huegel_Hoehe" index="33" name=""/>
+        <alias field="Befund_Form_Huegel_Durchmesser" index="34" name=""/>
+        <alias field="Befund_Form_Huegel_Breite" index="35" name=""/>
+        <alias field="Befund_Form_Huegel_Laenge" index="36" name=""/>
+        <alias field="Befund_Form_Huegel_Zus_Info" index="37" name=""/>
+        <alias field="Befund_Form_Innere_Ausstattung_Art" index="38" name=""/>
+        <alias field="Befund_Form_Innere_Ausstattung_Hoehe" index="39" name=""/>
+        <alias field="Befund_Form_Innere_Ausstattung_Breite" index="40" name=""/>
+        <alias field="Befund_Form_Innere_Ausstattung_Laenge" index="41" name=""/>
+        <alias field="Befund_Form_Innere_Ausstattung_Durchmesser" index="42" name=""/>
+        <alias field="Befund_Form_Innere_Ausstattung_Zus_Info" index="43" name=""/>
+        <alias field="Befund_Zustand" index="44" name=""/>
+        <alias field="Befund_Begraebnis_Abfolge" index="45" name=""/>
+        <alias field="Befund_Begraebnis_Ritus" index="46" name=""/>
+        <alias field="Orientierung" index="47" name=""/>
+        <alias field="Alter_Bestimmungsart" index="48" name=""/>
+        <alias field="Altersbestimmung" index="49" name=""/>
+        <alias field="Geschlecht_Bestimmungsart" index="50" name=""/>
+        <alias field="Geschlechtsbestimmung" index="51" name=""/>
+        <alias field="Konstruktionsbesonderheiten" index="52" name=""/>
+        <alias field="Konstruktionsbesonderheiten_Zus_fassung" index="53" name=""/>
+        <alias field="Funde" index="54" name=""/>
+        <alias field="Funde_Anzahl" index="55" name=""/>
+        <alias field="Funde_Zus_fassung" index="56" name=""/>
+        <alias field="Befund_Funde_Zuordenbarkeit" index="57" name=""/>
+        <alias field="Befund_Funde_Vorhandensein" index="58" name=""/>
+        <alias field="T_Befund_Literaturangaben" index="59" name=""/>
+        <alias field="Zus_Information" index="60" name=""/>
+        <alias field="Datierung_Beginn" index="61" name=""/>
+        <alias field="Datierung_Belegung" index="62" name=""/>
+        <alias field="Datierung_Ende" index="63" name=""/>
+        <alias field="Datierung_Schwerpunkt" index="64" name=""/>
+        <alias field="ID_Fund" index="65" name=""/>
+        <alias field="ID_Fund_Publ" index="66" name=""/>
+        <alias field="ID_Grabung" index="67" name=""/>
+        <alias field="Fund_Ueberueberklasse" index="68" name=""/>
+        <alias field="Fund_Ueberklasse" index="69" name=""/>
+        <alias field="Fund_Klasse" index="70" name=""/>
+        <alias field="Fund_Zuordnung" index="71" name=""/>
+        <alias field="Fund_Zuordnung_Kommentar" index="72" name=""/>
+        <alias field="Fund_Klasse_Beschreibung_Katalog" index="73" name=""/>
+        <alias field="Anzahl" index="74" name=""/>
+        <alias field="Abbildung" index="75" name=""/>
+        <alias field="Anzahl_Fund_Abbildungen" index="76" name=""/>
+        <alias field="Beschreibung_Katalog" index="77" name=""/>
+        <alias field="Masse_Katalog" index="78" name=""/>
+        <alias field="Fund_Lage_im_Befund_Kommentar" index="79" name=""/>
+        <alias field="Fund_Lage_im_Befund" index="80" name=""/>
+        <alias field="Zus_Info" index="81" name=""/>
+        <alias field="Beschreibung_Quellen_Kommentare" index="82" name=""/>
+        <alias field="Fund_Material_Abkuerzung" index="83" name=""/>
+        <alias field="Fund_Zustand" index="84" name=""/>
+        <alias field="Fund_Verbleib" index="85" name=""/>
+        <alias field="Inv_Nr" index="86" name=""/>
+        <alias field="Datierung" index="87" name=""/>
+        <alias field="Datierung_Kommentar" index="88" name=""/>
+        <alias field="T_Fund_Literaturangaben" index="89" name=""/>
+        <alias field="Fund_verketten" index="90" name=""/>
+        <alias field="Fund_Verbleib_verketten" index="91" name=""/>
+        <alias field="ID_Fund_Typ_auto" index="92" name=""/>
+        <alias field="ID_Fund_Typ" index="93" name=""/>
+        <alias field="Fund_Typ" index="94" name=""/>
+        <alias field="Fund_Klasse_Beschreibung" index="95" name=""/>
+        <alias field="Beschreibung" index="96" name=""/>
+        <alias field="Anzahl_Befunde" index="97" name=""/>
+        <alias field="Anzahl_Funde" index="98" name=""/>
+        <alias field="Erste_Fund_Abbildung_ID" index="99" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Name" index="100" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Type" index="101" name=""/>
+        <alias field="Erste_Fund_Abbildung_URL" index="102" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="LONGITUDE"/>
+          <column width="-1" hidden="0" type="field" name="LATITUDE"/>
+          <column width="-1" hidden="0" type="field" name="ID_GeogrLage"/>
+          <column width="-1" hidden="0" type="field" name="ID_GeogrLage_nach_Publ"/>
+          <column width="-1" hidden="0" type="field" name="Land_Kuerzel"/>
+          <column width="-1" hidden="0" type="field" name="BLand_Kuerzel"/>
+          <column width="-1" hidden="0" type="field" name="Bezirk"/>
+          <column width="-1" hidden="0" type="field" name="Landkreis_Name"/>
+          <column width="-1" hidden="0" type="field" name="ID_Ort"/>
+          <column width="-1" hidden="0" type="field" name="Ortsname"/>
+          <column width="-1" hidden="0" type="field" name="Teilortsname"/>
+          <column width="-1" hidden="0" type="field" name="GeogLage_Hist_Name"/>
+          <column width="-1" hidden="0" type="field" name="GeogrLage_Kennzeichnung"/>
+          <column width="-1" hidden="0" type="field" name="GeogrKoordinaten"/>
+          <column width="-1" hidden="0" type="field" name="GeogrKoordinaten_nach_Opitz_2014"/>
+          <column width="-1" hidden="0" type="field" name="GeogrLage_Beschreibung"/>
+          <column width="-1" hidden="0" type="field" name="GeogrLage_Erfassungsstand"/>
+          <column width="-1" hidden="0" type="field" name="GeogrLage_Erfassungsnotiz"/>
+          <column width="-1" hidden="0" type="field" name="GeogrLage_Literaturangaben"/>
+          <column width="-1" hidden="0" type="field" name="Geogr_Lage_Verketten_f_Katalog_Teilort"/>
+          <column width="-1" hidden="0" type="field" name="Geogr_Lage_Verketten_f_Katalog_Rest"/>
+          <column width="-1" hidden="0" type="field" name="ID_Befund"/>
+          <column width="-1" hidden="0" type="field" name="ID_Parent_Befund"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Lage_Gelaende_Standartisiert"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Lage_Gelaende"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Quelle"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Form"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Kennzeichnung"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Graeberfeld_Flaeche"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Graeberfeld_Anz_bek_Einheiten"/>
+          <column width="-1" hidden="0" type="field" name="Bezeichnung_bek_Einheiten"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Huegel_Grab_Bestattung_bes_Stellung"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Form_Huegel_Form"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Form_Huegel_Hoehe"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Form_Huegel_Durchmesser"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Form_Huegel_Breite"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Form_Huegel_Laenge"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Form_Huegel_Zus_Info"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Form_Innere_Ausstattung_Art"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Form_Innere_Ausstattung_Hoehe"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Form_Innere_Ausstattung_Breite"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Form_Innere_Ausstattung_Laenge"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Form_Innere_Ausstattung_Durchmesser"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Form_Innere_Ausstattung_Zus_Info"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Zustand"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Begraebnis_Abfolge"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Begraebnis_Ritus"/>
+          <column width="-1" hidden="0" type="field" name="Orientierung"/>
+          <column width="-1" hidden="0" type="field" name="Alter_Bestimmungsart"/>
+          <column width="-1" hidden="0" type="field" name="Altersbestimmung"/>
+          <column width="-1" hidden="0" type="field" name="Geschlecht_Bestimmungsart"/>
+          <column width="-1" hidden="0" type="field" name="Geschlechtsbestimmung"/>
+          <column width="-1" hidden="0" type="field" name="Konstruktionsbesonderheiten"/>
+          <column width="-1" hidden="0" type="field" name="Konstruktionsbesonderheiten_Zus_fassung"/>
+          <column width="-1" hidden="0" type="field" name="Funde"/>
+          <column width="-1" hidden="0" type="field" name="Funde_Anzahl"/>
+          <column width="-1" hidden="0" type="field" name="Funde_Zus_fassung"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Funde_Zuordenbarkeit"/>
+          <column width="-1" hidden="0" type="field" name="Befund_Funde_Vorhandensein"/>
+          <column width="-1" hidden="0" type="field" name="T_Befund_Literaturangaben"/>
+          <column width="-1" hidden="0" type="field" name="Zus_Information"/>
+          <column width="-1" hidden="0" type="field" name="Datierung_Beginn"/>
+          <column width="-1" hidden="0" type="field" name="Datierung_Belegung"/>
+          <column width="-1" hidden="0" type="field" name="Datierung_Ende"/>
+          <column width="-1" hidden="0" type="field" name="Datierung_Schwerpunkt"/>
+          <column width="-1" hidden="0" type="field" name="ID_Fund"/>
+          <column width="-1" hidden="0" type="field" name="ID_Fund_Publ"/>
+          <column width="-1" hidden="0" type="field" name="ID_Grabung"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Ueberueberklasse"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Ueberklasse"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Klasse"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Zuordnung"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Zuordnung_Kommentar"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Klasse_Beschreibung_Katalog"/>
+          <column width="-1" hidden="0" type="field" name="Anzahl"/>
+          <column width="-1" hidden="0" type="field" name="Abbildung"/>
+          <column width="-1" hidden="0" type="field" name="Anzahl_Fund_Abbildungen"/>
+          <column width="-1" hidden="0" type="field" name="Beschreibung_Katalog"/>
+          <column width="-1" hidden="0" type="field" name="Masse_Katalog"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Lage_im_Befund_Kommentar"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Lage_im_Befund"/>
+          <column width="-1" hidden="0" type="field" name="Zus_Info"/>
+          <column width="-1" hidden="0" type="field" name="Beschreibung_Quellen_Kommentare"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Material_Abkuerzung"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Zustand"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Verbleib"/>
+          <column width="-1" hidden="0" type="field" name="Inv_Nr"/>
+          <column width="-1" hidden="0" type="field" name="Datierung"/>
+          <column width="-1" hidden="0" type="field" name="Datierung_Kommentar"/>
+          <column width="-1" hidden="0" type="field" name="T_Fund_Literaturangaben"/>
+          <column width="-1" hidden="0" type="field" name="Fund_verketten"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Verbleib_verketten"/>
+          <column width="-1" hidden="0" type="field" name="ID_Fund_Typ_auto"/>
+          <column width="-1" hidden="0" type="field" name="ID_Fund_Typ"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Typ"/>
+          <column width="-1" hidden="0" type="field" name="Fund_Klasse_Beschreibung"/>
+          <column width="-1" hidden="0" type="field" name="Beschreibung"/>
+          <column width="-1" hidden="0" type="field" name="Anzahl_Befunde"/>
+          <column width="-1" hidden="0" type="field" name="Anzahl_Funde"/>
+          <column width="-1" hidden="0" type="field" name="Erste_Fund_Abbildung_ID"/>
+          <column width="-1" hidden="0" type="field" name="Erste_Fund_Abbildung_File_Name"/>
+          <column width="-1" hidden="0" type="field" name="Erste_Fund_Abbildung_File_Type"/>
+          <column width="-1" hidden="0" type="field" name="Erste_Fund_Abbildung_URL"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="LONGITUDE" expression=""/>
+        <default field="LATITUDE" expression=""/>
+        <default field="ID_GeogrLage" expression=""/>
+        <default field="ID_GeogrLage_nach_Publ" expression=""/>
+        <default field="Land_Kuerzel" expression=""/>
+        <default field="BLand_Kuerzel" expression=""/>
+        <default field="Bezirk" expression=""/>
+        <default field="Landkreis_Name" expression=""/>
+        <default field="ID_Ort" expression=""/>
+        <default field="Ortsname" expression=""/>
+        <default field="Teilortsname" expression=""/>
+        <default field="GeogLage_Hist_Name" expression=""/>
+        <default field="GeogrLage_Kennzeichnung" expression=""/>
+        <default field="GeogrKoordinaten" expression=""/>
+        <default field="GeogrKoordinaten_nach_Opitz_2014" expression=""/>
+        <default field="GeogrLage_Beschreibung" expression=""/>
+        <default field="GeogrLage_Erfassungsstand" expression=""/>
+        <default field="GeogrLage_Erfassungsnotiz" expression=""/>
+        <default field="GeogrLage_Literaturangaben" expression=""/>
+        <default field="Geogr_Lage_Verketten_f_Katalog_Teilort" expression=""/>
+        <default field="Geogr_Lage_Verketten_f_Katalog_Rest" expression=""/>
+        <default field="ID_Befund" expression=""/>
+        <default field="ID_Parent_Befund" expression=""/>
+        <default field="Befund_Lage_Gelaende_Standartisiert" expression=""/>
+        <default field="Befund_Lage_Gelaende" expression=""/>
+        <default field="Befund_Quelle" expression=""/>
+        <default field="Befund_Form" expression=""/>
+        <default field="Befund_Kennzeichnung" expression=""/>
+        <default field="Befund_Graeberfeld_Flaeche" expression=""/>
+        <default field="Befund_Graeberfeld_Anz_bek_Einheiten" expression=""/>
+        <default field="Bezeichnung_bek_Einheiten" expression=""/>
+        <default field="Befund_Huegel_Grab_Bestattung_bes_Stellung" expression=""/>
+        <default field="Befund_Form_Huegel_Form" expression=""/>
+        <default field="Befund_Form_Huegel_Hoehe" expression=""/>
+        <default field="Befund_Form_Huegel_Durchmesser" expression=""/>
+        <default field="Befund_Form_Huegel_Breite" expression=""/>
+        <default field="Befund_Form_Huegel_Laenge" expression=""/>
+        <default field="Befund_Form_Huegel_Zus_Info" expression=""/>
+        <default field="Befund_Form_Innere_Ausstattung_Art" expression=""/>
+        <default field="Befund_Form_Innere_Ausstattung_Hoehe" expression=""/>
+        <default field="Befund_Form_Innere_Ausstattung_Breite" expression=""/>
+        <default field="Befund_Form_Innere_Ausstattung_Laenge" expression=""/>
+        <default field="Befund_Form_Innere_Ausstattung_Durchmesser" expression=""/>
+        <default field="Befund_Form_Innere_Ausstattung_Zus_Info" expression=""/>
+        <default field="Befund_Zustand" expression=""/>
+        <default field="Befund_Begraebnis_Abfolge" expression=""/>
+        <default field="Befund_Begraebnis_Ritus" expression=""/>
+        <default field="Orientierung" expression=""/>
+        <default field="Alter_Bestimmungsart" expression=""/>
+        <default field="Altersbestimmung" expression=""/>
+        <default field="Geschlecht_Bestimmungsart" expression=""/>
+        <default field="Geschlechtsbestimmung" expression=""/>
+        <default field="Konstruktionsbesonderheiten" expression=""/>
+        <default field="Konstruktionsbesonderheiten_Zus_fassung" expression=""/>
+        <default field="Funde" expression=""/>
+        <default field="Funde_Anzahl" expression=""/>
+        <default field="Funde_Zus_fassung" expression=""/>
+        <default field="Befund_Funde_Zuordenbarkeit" expression=""/>
+        <default field="Befund_Funde_Vorhandensein" expression=""/>
+        <default field="T_Befund_Literaturangaben" expression=""/>
+        <default field="Zus_Information" expression=""/>
+        <default field="Datierung_Beginn" expression=""/>
+        <default field="Datierung_Belegung" expression=""/>
+        <default field="Datierung_Ende" expression=""/>
+        <default field="Datierung_Schwerpunkt" expression=""/>
+        <default field="ID_Fund" expression=""/>
+        <default field="ID_Fund_Publ" expression=""/>
+        <default field="ID_Grabung" expression=""/>
+        <default field="Fund_Ueberueberklasse" expression=""/>
+        <default field="Fund_Ueberklasse" expression=""/>
+        <default field="Fund_Klasse" expression=""/>
+        <default field="Fund_Zuordnung" expression=""/>
+        <default field="Fund_Zuordnung_Kommentar" expression=""/>
+        <default field="Fund_Klasse_Beschreibung_Katalog" expression=""/>
+        <default field="Anzahl" expression=""/>
+        <default field="Abbildung" expression=""/>
+        <default field="Anzahl_Fund_Abbildungen" expression=""/>
+        <default field="Beschreibung_Katalog" expression=""/>
+        <default field="Masse_Katalog" expression=""/>
+        <default field="Fund_Lage_im_Befund_Kommentar" expression=""/>
+        <default field="Fund_Lage_im_Befund" expression=""/>
+        <default field="Zus_Info" expression=""/>
+        <default field="Beschreibung_Quellen_Kommentare" expression=""/>
+        <default field="Fund_Material_Abkuerzung" expression=""/>
+        <default field="Fund_Zustand" expression=""/>
+        <default field="Fund_Verbleib" expression=""/>
+        <default field="Inv_Nr" expression=""/>
+        <default field="Datierung" expression=""/>
+        <default field="Datierung_Kommentar" expression=""/>
+        <default field="T_Fund_Literaturangaben" expression=""/>
+        <default field="Fund_verketten" expression=""/>
+        <default field="Fund_Verbleib_verketten" expression=""/>
+        <default field="ID_Fund_Typ_auto" expression=""/>
+        <default field="ID_Fund_Typ" expression=""/>
+        <default field="Fund_Typ" expression=""/>
+        <default field="Fund_Klasse_Beschreibung" expression=""/>
+        <default field="Beschreibung" expression=""/>
+        <default field="Anzahl_Befunde" expression=""/>
+        <default field="Anzahl_Funde" expression=""/>
+        <default field="Erste_Fund_Abbildung_ID" expression=""/>
+        <default field="Erste_Fund_Abbildung_File_Name" expression=""/>
+        <default field="Erste_Fund_Abbildung_File_Type" expression=""/>
+        <default field="Erste_Fund_Abbildung_URL" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE("LONGITUDE", '&lt;NULL>')||', '||COALESCE("LATITUDE", '&lt;NULL>')||', '||COALESCE("ID_GeogrLage", '&lt;NULL>')||', '||COALESCE("ID_GeogrLage_nach_Publ", '&lt;NULL>')||', '||COALESCE("Land_Kuerzel", '&lt;NULL>')||', '||COALESCE("BLand_Kuerzel", '&lt;NULL>')||', '||COALESCE("Bezirk", '&lt;NULL>')||', '||COALESCE("Landkreis_Name", '&lt;NULL>')||', '||COALESCE("ID_Ort", '&lt;NULL>')||', '||COALESCE("Ortsname", '&lt;NULL>')||', '||COALESCE("Teilortsname", '&lt;NULL>')||', '||COALESCE("GeogLage_Hist_Name", '&lt;NULL>')||', '||COALESCE("GeogrLage_Kennzeichnung", '&lt;NULL>')||', '||COALESCE("GeogrKoordinaten", '&lt;NULL>')||', '||COALESCE("GeogrKoordinaten_nach_Opitz_2014", '&lt;NULL>')||', '||COALESCE("GeogrLage_Beschreibung", '&lt;NULL>')||', '||COALESCE("GeogrLage_Erfassungsstand", '&lt;NULL>')||', '||COALESCE("GeogrLage_Erfassungsnotiz", '&lt;NULL>')||', '||COALESCE("GeogrLage_Literaturangaben", '&lt;NULL>')||', '||COALESCE("Geogr_Lage_Verketten_f_Katalog_Teilort", '&lt;NULL>')||', '||COALESCE("Geogr_Lage_Verketten_f_Katalog_Rest", '&lt;NULL>')||', '||COALESCE("ID_Befund", '&lt;NULL>')||', '||COALESCE("ID_Parent_Befund", '&lt;NULL>')||', '||COALESCE("Befund_Lage_Gelaende_Standartisiert", '&lt;NULL>')||', '||COALESCE("Befund_Lage_Gelaende", '&lt;NULL>')||', '||COALESCE("Befund_Quelle", '&lt;NULL>')||', '||COALESCE("Befund_Form", '&lt;NULL>')||', '||COALESCE("Befund_Kennzeichnung", '&lt;NULL>')||', '||COALESCE("Befund_Graeberfeld_Flaeche", '&lt;NULL>')||', '||COALESCE("Befund_Graeberfeld_Anz_bek_Einheiten", '&lt;NULL>')||', '||COALESCE("Bezeichnung_bek_Einheiten", '&lt;NULL>')||', '||COALESCE("Befund_Huegel_Grab_Bestattung_bes_Stellung", '&lt;NULL>')||', '||COALESCE("Befund_Form_Huegel_Form", '&lt;NULL>')||', '||COALESCE("Befund_Form_Huegel_Hoehe", '&lt;NULL>')||', '||COALESCE("Befund_Form_Huegel_Durchmesser", '&lt;NULL>')||', '||COALESCE("Befund_Form_Huegel_Breite", '&lt;NULL>')||', '||COALESCE("Befund_Form_Huegel_Laenge", '&lt;NULL>')||', '||COALESCE("Befund_Form_Huegel_Zus_Info", '&lt;NULL>')||', '||COALESCE("Befund_Form_Innere_Ausstattung_Art", '&lt;NULL>')||', '||COALESCE("Befund_Form_Innere_Ausstattung_Hoehe", '&lt;NULL>')||', '||COALESCE("Befund_Form_Innere_Ausstattung_Breite", '&lt;NULL>')||', '||COALESCE("Befund_Form_Innere_Ausstattung_Laenge", '&lt;NULL>')||', '||COALESCE("Befund_Form_Innere_Ausstattung_Durchmesser", '&lt;NULL>')||', '||COALESCE("Befund_Form_Innere_Ausstattung_Zus_Info", '&lt;NULL>')||', '||COALESCE("Befund_Zustand", '&lt;NULL>')||', '||COALESCE("Befund_Begraebnis_Abfolge", '&lt;NULL>')||', '||COALESCE("Befund_Begraebnis_Ritus", '&lt;NULL>')||', '||COALESCE("Orientierung", '&lt;NULL>')||', '||COALESCE("Alter_Bestimmungsart", '&lt;NULL>')||', '||COALESCE("Altersbestimmung", '&lt;NULL>')||', '||COALESCE("Geschlecht_Bestimmungsart", '&lt;NULL>')||', '||COALESCE("Geschlechtsbestimmung", '&lt;NULL>')||', '||COALESCE("Konstruktionsbesonderheiten", '&lt;NULL>')||', '||COALESCE("Konstruktionsbesonderheiten_Zus_fassung", '&lt;NULL>')||', '||COALESCE("Funde", '&lt;NULL>')||', '||COALESCE("Funde_Anzahl", '&lt;NULL>')||', '||COALESCE("Funde_Zus_fassung", '&lt;NULL>')||', '||COALESCE("Befund_Funde_Zuordenbarkeit", '&lt;NULL>')||', '||COALESCE("Befund_Funde_Vorhandensein", '&lt;NULL>')||', '||COALESCE("T_Befund_Literaturangaben", '&lt;NULL>')||', '||COALESCE("Zus_Information", '&lt;NULL>')||', '||COALESCE("Datierung_Beginn", '&lt;NULL>')||', '||COALESCE("Datierung_Belegung", '&lt;NULL>')||', '||COALESCE("Datierung_Ende", '&lt;NULL>')||', '||COALESCE("Datierung_Schwerpunkt", '&lt;NULL>')||', '||COALESCE("ID_Fund", '&lt;NULL>')||', '||COALESCE("ID_Fund_Publ", '&lt;NULL>')||', '||COALESCE("ID_Grabung", '&lt;NULL>')||', '||COALESCE("Fund_Ueberueberklasse", '&lt;NULL>')||', '||COALESCE("Fund_Ueberklasse", '&lt;NULL>')||', '||COALESCE("Fund_Klasse", '&lt;NULL>')||', '||COALESCE("Fund_Zuordnung", '&lt;NULL>')||', '||COALESCE("Fund_Zuordnung_Kommentar", '&lt;NULL>')||', '||COALESCE("Fund_Klasse_Beschreibung_Katalog", '&lt;NULL>')||', '||COALESCE("Anzahl", '&lt;NULL>')||', '||COALESCE("Abbildung", '&lt;NULL>')||', '||COALESCE("Anzahl_Fund_Abbildungen", '&lt;NULL>')||', '||COALESCE("Beschreibung_Katalog", '&lt;NULL>')||', '||COALESCE("Masse_Katalog", '&lt;NULL>')||', '||COALESCE("Fund_Lage_im_Befund_Kommentar", '&lt;NULL>')||', '||COALESCE("Fund_Lage_im_Befund", '&lt;NULL>')||', '||COALESCE("Zus_Info", '&lt;NULL>')||', '||COALESCE("Beschreibung_Quellen_Kommentare", '&lt;NULL>')||', '||COALESCE("Fund_Material_Abkuerzung", '&lt;NULL>')||', '||COALESCE("Fund_Zustand", '&lt;NULL>')||', '||COALESCE("Fund_Verbleib", '&lt;NULL>')||', '||COALESCE("Inv_Nr", '&lt;NULL>')||', '||COALESCE("Datierung", '&lt;NULL>')||', '||COALESCE("Datierung_Kommentar", '&lt;NULL>')||', '||COALESCE("T_Fund_Literaturangaben", '&lt;NULL>')||', '||COALESCE("Fund_verketten", '&lt;NULL>')||', '||COALESCE("Fund_Verbleib_verketten", '&lt;NULL>')||', '||COALESCE("ID_Fund_Typ_auto", '&lt;NULL>')||', '||COALESCE("ID_Fund_Typ", '&lt;NULL>')||', '||COALESCE("Fund_Typ", '&lt;NULL>')||', '||COALESCE("Fund_Klasse_Beschreibung", '&lt;NULL>')||', '||COALESCE("Beschreibung", '&lt;NULL>')||', '||COALESCE("Anzahl_Befunde", '&lt;NULL>')||', '||COALESCE("Anzahl_Funde", '&lt;NULL>')||', '||COALESCE("Erste_Fund_Abbildung_ID", '&lt;NULL>')||', '||COALESCE("Erste_Fund_Abbildung_File_Name", '&lt;NULL>')||', '||COALESCE("Erste_Fund_Abbildung_File_Type", '&lt;NULL>')||', '||COALESCE("Erste_Fund_Abbildung_URL", '&lt;NULL>')</previewExpression>
+    </maplayer>
+  </projectlayers>
+  <properties>
+    <Measurement>
+      <DistanceUnits type="QString"></DistanceUnits>
+      <AreaUnits type="QString"></AreaUnits>
+    </Measurement>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+      <ProjectCRSID type="int">3452</ProjectCRSID>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <Digitizing>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <SnappingMode type="QString">current_layer</SnappingMode>
+      <DefaultSnapType type="QString">off</DefaultSnapType>
+      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+    </Digitizing>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+  </properties>
+  <visibility-presets/>
+</qgis>
