@@ -25,7 +25,7 @@
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Gold20171102193728207" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Material_Abkuerzung%20%3D'Au'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)%0D%0A&amp;uid=ID_Fund" name="Lanzen+Gold">
+    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Gold20171102193728207" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Material_Abkuerzung%20%3D'Au'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)%0D%0A&amp;uid=ID_Fund" name="Lanzen+Gold">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
@@ -38,20 +38,26 @@
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="ODBC_thesis_2017_A_QGIS20171102173720168" source="ODBC:thesis-2017|layername=A_QGIS" name="ODBC:thesis-2017-A_QGIS-ETRS89">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="ODBC_thesis_2017_A_QGIS20171102173720168" source="ODBC:thesis-2017|layername=A_QGIS" name="ODBC:thesis-2017-A_QGIS-ETRS89">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="Sueddeutschland_hs20171102234603804" source="C:/gis/gis-thesis/layers/raster/Sueddeutschland-hs" name="Sueddeutschland-hs">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="Sueddeutschland20171102233107820" source="C:/gis/gis-thesis/layers/raster/Sueddeutschland.tif" name="Sueddeutschland">
+      <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
   <relations/>
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>9.0567757499999999</xmin>
-      <ymin>47.92357549999999833</ymin>
-      <xmax>11.31361424999995791</xmax>
-      <ymax>48.84020450000004132</ymax>
+      <xmin>5.77470833333333289</xmin>
+      <ymin>46.89985416666666396</ymin>
+      <xmax>15.22529166666666711</xmax>
+      <ymax>51.10014583333333604</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -76,6 +82,8 @@
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Fibeln_P2_20171102193458947"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102182948833"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102205328918"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sueddeutschland_hs20171102234603804"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sueddeutschland20171102233107820"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102210451305"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Alle20171102175159289"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Gold20171102193728207"/>
@@ -91,6 +99,8 @@
       <item>Lanzen_Dolche20171102194332791</item>
       <item>Lanzen_Schwerter20171102194910255</item>
       <item>Lanzen_Keramik20171102210451305</item>
+      <item>Sueddeutschland20171102233107820</item>
+      <item>Sueddeutschland_hs20171102234603804</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -114,9 +124,9 @@
         <legendlayerfile isInOverview="0" layerid="Lanzen_Fibeln_P2_20171102193458947" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Gold" showFeatureCount="1">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Lanzen+Gold" showFeatureCount="1">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Gold20171102193728207" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Gold20171102193728207" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Keramik" showFeatureCount="0">
@@ -129,9 +139,19 @@
         <legendlayerfile isInOverview="0" layerid="Lanzen_Schwerter20171102194910255" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ODBC:thesis-2017-A_QGIS-ETRS89" showFeatureCount="1">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ODBC:thesis-2017-A_QGIS-ETRS89" showFeatureCount="1">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="ODBC_thesis_2017_A_QGIS20171102173720168" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="ODBC_thesis_2017_A_QGIS20171102173720168" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Sueddeutschland-hs" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Sueddeutschland_hs20171102234603804" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Sueddeutschland" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Sueddeutschland20171102233107820" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
@@ -7093,6 +7113,155 @@ def my_form_open(dialog, layer, feature):
         <default field="Erste_Fund_Abbildung_URL" expression=""/>
       </defaults>
       <previewExpression>COALESCE("LONGITUDE", '&lt;NULL>')||', '||COALESCE("LATITUDE", '&lt;NULL>')||', '||COALESCE("ID_GeogrLage", '&lt;NULL>')||', '||COALESCE("ID_GeogrLage_nach_Publ", '&lt;NULL>')||', '||COALESCE("Land_Kuerzel", '&lt;NULL>')||', '||COALESCE("BLand_Kuerzel", '&lt;NULL>')||', '||COALESCE("Bezirk", '&lt;NULL>')||', '||COALESCE("Landkreis_Name", '&lt;NULL>')||', '||COALESCE("ID_Ort", '&lt;NULL>')||', '||COALESCE("Ortsname", '&lt;NULL>')||', '||COALESCE("Teilortsname", '&lt;NULL>')||', '||COALESCE("GeogLage_Hist_Name", '&lt;NULL>')||', '||COALESCE("GeogrLage_Kennzeichnung", '&lt;NULL>')||', '||COALESCE("GeogrKoordinaten", '&lt;NULL>')||', '||COALESCE("GeogrKoordinaten_nach_Opitz_2014", '&lt;NULL>')||', '||COALESCE("GeogrLage_Beschreibung", '&lt;NULL>')||', '||COALESCE("GeogrLage_Erfassungsstand", '&lt;NULL>')||', '||COALESCE("GeogrLage_Erfassungsnotiz", '&lt;NULL>')||', '||COALESCE("GeogrLage_Literaturangaben", '&lt;NULL>')||', '||COALESCE("Geogr_Lage_Verketten_f_Katalog_Teilort", '&lt;NULL>')||', '||COALESCE("Geogr_Lage_Verketten_f_Katalog_Rest", '&lt;NULL>')||', '||COALESCE("ID_Befund", '&lt;NULL>')||', '||COALESCE("ID_Parent_Befund", '&lt;NULL>')||', '||COALESCE("Befund_Lage_Gelaende_Standartisiert", '&lt;NULL>')||', '||COALESCE("Befund_Lage_Gelaende", '&lt;NULL>')||', '||COALESCE("Befund_Quelle", '&lt;NULL>')||', '||COALESCE("Befund_Form", '&lt;NULL>')||', '||COALESCE("Befund_Kennzeichnung", '&lt;NULL>')||', '||COALESCE("Befund_Graeberfeld_Flaeche", '&lt;NULL>')||', '||COALESCE("Befund_Graeberfeld_Anz_bek_Einheiten", '&lt;NULL>')||', '||COALESCE("Bezeichnung_bek_Einheiten", '&lt;NULL>')||', '||COALESCE("Befund_Huegel_Grab_Bestattung_bes_Stellung", '&lt;NULL>')||', '||COALESCE("Befund_Form_Huegel_Form", '&lt;NULL>')||', '||COALESCE("Befund_Form_Huegel_Hoehe", '&lt;NULL>')||', '||COALESCE("Befund_Form_Huegel_Durchmesser", '&lt;NULL>')||', '||COALESCE("Befund_Form_Huegel_Breite", '&lt;NULL>')||', '||COALESCE("Befund_Form_Huegel_Laenge", '&lt;NULL>')||', '||COALESCE("Befund_Form_Huegel_Zus_Info", '&lt;NULL>')||', '||COALESCE("Befund_Form_Innere_Ausstattung_Art", '&lt;NULL>')||', '||COALESCE("Befund_Form_Innere_Ausstattung_Hoehe", '&lt;NULL>')||', '||COALESCE("Befund_Form_Innere_Ausstattung_Breite", '&lt;NULL>')||', '||COALESCE("Befund_Form_Innere_Ausstattung_Laenge", '&lt;NULL>')||', '||COALESCE("Befund_Form_Innere_Ausstattung_Durchmesser", '&lt;NULL>')||', '||COALESCE("Befund_Form_Innere_Ausstattung_Zus_Info", '&lt;NULL>')||', '||COALESCE("Befund_Zustand", '&lt;NULL>')||', '||COALESCE("Befund_Begraebnis_Abfolge", '&lt;NULL>')||', '||COALESCE("Befund_Begraebnis_Ritus", '&lt;NULL>')||', '||COALESCE("Orientierung", '&lt;NULL>')||', '||COALESCE("Alter_Bestimmungsart", '&lt;NULL>')||', '||COALESCE("Altersbestimmung", '&lt;NULL>')||', '||COALESCE("Geschlecht_Bestimmungsart", '&lt;NULL>')||', '||COALESCE("Geschlechtsbestimmung", '&lt;NULL>')||', '||COALESCE("Konstruktionsbesonderheiten", '&lt;NULL>')||', '||COALESCE("Konstruktionsbesonderheiten_Zus_fassung", '&lt;NULL>')||', '||COALESCE("Funde", '&lt;NULL>')||', '||COALESCE("Funde_Anzahl", '&lt;NULL>')||', '||COALESCE("Funde_Zus_fassung", '&lt;NULL>')||', '||COALESCE("Befund_Funde_Zuordenbarkeit", '&lt;NULL>')||', '||COALESCE("Befund_Funde_Vorhandensein", '&lt;NULL>')||', '||COALESCE("T_Befund_Literaturangaben", '&lt;NULL>')||', '||COALESCE("Zus_Information", '&lt;NULL>')||', '||COALESCE("Datierung_Beginn", '&lt;NULL>')||', '||COALESCE("Datierung_Belegung", '&lt;NULL>')||', '||COALESCE("Datierung_Ende", '&lt;NULL>')||', '||COALESCE("Datierung_Schwerpunkt", '&lt;NULL>')||', '||COALESCE("ID_Fund", '&lt;NULL>')||', '||COALESCE("ID_Fund_Publ", '&lt;NULL>')||', '||COALESCE("ID_Grabung", '&lt;NULL>')||', '||COALESCE("Fund_Ueberueberklasse", '&lt;NULL>')||', '||COALESCE("Fund_Ueberklasse", '&lt;NULL>')||', '||COALESCE("Fund_Klasse", '&lt;NULL>')||', '||COALESCE("Fund_Zuordnung", '&lt;NULL>')||', '||COALESCE("Fund_Zuordnung_Kommentar", '&lt;NULL>')||', '||COALESCE("Fund_Klasse_Beschreibung_Katalog", '&lt;NULL>')||', '||COALESCE("Anzahl", '&lt;NULL>')||', '||COALESCE("Abbildung", '&lt;NULL>')||', '||COALESCE("Anzahl_Fund_Abbildungen", '&lt;NULL>')||', '||COALESCE("Beschreibung_Katalog", '&lt;NULL>')||', '||COALESCE("Masse_Katalog", '&lt;NULL>')||', '||COALESCE("Fund_Lage_im_Befund_Kommentar", '&lt;NULL>')||', '||COALESCE("Fund_Lage_im_Befund", '&lt;NULL>')||', '||COALESCE("Zus_Info", '&lt;NULL>')||', '||COALESCE("Beschreibung_Quellen_Kommentare", '&lt;NULL>')||', '||COALESCE("Fund_Material_Abkuerzung", '&lt;NULL>')||', '||COALESCE("Fund_Zustand", '&lt;NULL>')||', '||COALESCE("Fund_Verbleib", '&lt;NULL>')||', '||COALESCE("Inv_Nr", '&lt;NULL>')||', '||COALESCE("Datierung", '&lt;NULL>')||', '||COALESCE("Datierung_Kommentar", '&lt;NULL>')||', '||COALESCE("T_Fund_Literaturangaben", '&lt;NULL>')||', '||COALESCE("Fund_verketten", '&lt;NULL>')||', '||COALESCE("Fund_Verbleib_verketten", '&lt;NULL>')||', '||COALESCE("ID_Fund_Typ_auto", '&lt;NULL>')||', '||COALESCE("ID_Fund_Typ", '&lt;NULL>')||', '||COALESCE("Fund_Typ", '&lt;NULL>')||', '||COALESCE("Fund_Klasse_Beschreibung", '&lt;NULL>')||', '||COALESCE("Beschreibung", '&lt;NULL>')||', '||COALESCE("Anzahl_Befunde", '&lt;NULL>')||', '||COALESCE("Anzahl_Funde", '&lt;NULL>')||', '||COALESCE("Erste_Fund_Abbildung_ID", '&lt;NULL>')||', '||COALESCE("Erste_Fund_Abbildung_File_Name", '&lt;NULL>')||', '||COALESCE("Erste_Fund_Abbildung_File_Type", '&lt;NULL>')||', '||COALESCE("Erste_Fund_Abbildung_URL", '&lt;NULL>')</previewExpression>
+    </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>5.99972222222222218</xmin>
+        <ymin>46.99986111111110887</ymin>
+        <xmax>15.00027777777777516</xmax>
+        <ymax>51.00013888888889113</ymax>
+      </extent>
+      <id>Sueddeutschland20171102233107820</id>
+      <datasource>./layers/raster/Sueddeutschland.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Sueddeutschland</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" classificationMax="1852.89" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="105.154" type="singlebandpseudocolor">
+          <rasterTransparency/>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0">
+              <item alpha="255" value="105.2" label="105.2" color="#54e597"/>
+              <item alpha="255" value="141.7" label="141.7" color="#61f082"/>
+              <item alpha="255" value="178.2" label="178.2" color="#73f775"/>
+              <item alpha="255" value="214.6" label="214.6" color="#94fe85"/>
+              <item alpha="255" value="251.1" label="251.1" color="#9efe87"/>
+              <item alpha="255" value="287.6" label="287.6" color="#adfd88"/>
+              <item alpha="255" value="324.1" label="324.1" color="#b4fe8b"/>
+              <item alpha="255" value="360.7" label="360.7" color="#bdfe8c"/>
+              <item alpha="255" value="397.2" label="397.2" color="#c5fd8d"/>
+              <item alpha="255" value="433.6" label="433.6" color="#cffe90"/>
+              <item alpha="255" value="470.1" label="470.1" color="#d7fe92"/>
+              <item alpha="255" value="506.6" label="506.6" color="#dffe93"/>
+              <item alpha="255" value="543.1" label="543.1" color="#e7fe95"/>
+              <item alpha="255" value="579.7" label="579.7" color="#eefd97"/>
+              <item alpha="255" value="616" label="616" color="#f7fe9a"/>
+              <item alpha="255" value="652.5" label="652.5" color="#fefe9b"/>
+              <item alpha="255" value="689.1" label="689.1" color="#fdfc97"/>
+              <item alpha="255" value="725.6" label="725.6" color="#fef895"/>
+              <item alpha="255" value="762.1" label="762.1" color="#fdf292"/>
+              <item alpha="255" value="798.7" label="798.7" color="#feee92"/>
+              <item alpha="255" value="835" label="835" color="#fde98c"/>
+              <item alpha="255" value="871.5" label="871.5" color="#fee187"/>
+              <item alpha="255" value="908.1" label="908.1" color="#fddb7f"/>
+              <item alpha="255" value="944.6" label="944.6" color="#fed779"/>
+              <item alpha="255" value="981.1" label="981.1" color="#fdce7d"/>
+              <item alpha="255" value="1017" label="1017" color="#facb80"/>
+              <item alpha="255" value="1054" label="1054" color="#f8c583"/>
+              <item alpha="255" value="1091" label="1091" color="#f6c586"/>
+              <item alpha="255" value="1127" label="1127" color="#f4c588"/>
+              <item alpha="255" value="1164" label="1164" color="#f2be8b"/>
+              <item alpha="255" value="1200" label="1200" color="#f0bc8f"/>
+              <item alpha="255" value="1236" label="1236" color="#eebb91"/>
+              <item alpha="255" value="1273" label="1273" color="#ebbc99"/>
+              <item alpha="255" value="1310" label="1310" color="#ebc2a4"/>
+              <item alpha="255" value="1346" label="1346" color="#e8c5ac"/>
+              <item alpha="255" value="1383" label="1383" color="#e6c8b1"/>
+              <item alpha="255" value="1419" label="1419" color="#dfc6b3"/>
+              <item alpha="255" value="1455" label="1455" color="#ddc7b7"/>
+              <item alpha="255" value="1492" label="1492" color="#e0cfc2"/>
+              <item alpha="255" value="1529" label="1529" color="#e4d6cb"/>
+              <item alpha="255" value="1565" label="1565" color="#e8ddd4"/>
+              <item alpha="255" value="1601" label="1601" color="#ebe2db"/>
+              <item alpha="255" value="1638" label="1638" color="#efe7e1"/>
+              <item alpha="255" value="1674" label="1674" color="#f3eeea"/>
+              <item alpha="255" value="1711" label="1711" color="#f6f0ec"/>
+              <item alpha="255" value="1748" label="1748" color="#faf9f8"/>
+              <item alpha="255" value="1784" label="1784" color="#ffffff"/>
+              <item alpha="255" value="1853" label="1853" color="#ffffff"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="30" contrast="-20"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="-20" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>5.99972222222222218</xmin>
+        <ymin>46.99986111111110887</ymin>
+        <xmax>15.00027777777777516</xmax>
+        <ymax>51.00013888888889113</ymax>
+      </extent>
+      <id>Sueddeutschland_hs20171102234603804</id>
+      <datasource>./layers/raster/Sueddeutschland-hs</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Sueddeutschland-hs</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer gradient="BlackToWhite" opacity="1" alphaBand="0" type="singlebandgray" grayBand="1">
+          <rasterTransparency/>
+          <contrastEnhancement>
+            <minValue>125</minValue>
+            <maxValue>225</maxValue>
+            <algorithm>StretchToMinimumMaximum</algorithm>
+          </contrastEnhancement>
+        </rasterrenderer>
+        <brightnesscontrast brightness="80" contrast="5"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>6</blendMode>
     </maplayer>
   </projectlayers>
   <properties>
