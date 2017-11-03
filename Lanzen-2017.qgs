@@ -15,7 +15,7 @@
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Gold20171102193728207" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Material_Abkuerzung%20%3D'Au'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)%0D%0A&amp;uid=ID_Fund" name="Lanzen+Gold">
+    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Gold20171102193728207" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Material_Abkuerzung%20%3D'Au'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)%0D%0A&amp;uid=ID_Fund" name="Lanzen+Gold">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
@@ -72,10 +72,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>8.71018350000000119</xmin>
-      <ymin>47.68874999999999886</ymin>
-      <xmax>13.04275650000001541</xmax>
-      <ymax>49.5405300000000608</ymax>
+      <xmin>8.98279475000000005</xmin>
+      <ymin>48.44526274999999771</ymin>
+      <xmax>12.06749525000000034</xmax>
+      <ymax>48.70386724999998762</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -148,9 +148,9 @@
         <legendlayerfile isInOverview="0" layerid="Lanzen_Fibeln_P2_20171102193458947" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Gold" showFeatureCount="1">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Lanzen+Gold" showFeatureCount="1">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Gold20171102193728207" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Gold20171102193728207" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Schwerter" showFeatureCount="1">
@@ -2564,22 +2564,20 @@ def my_form_open(dialog, layer, feature):
           <sizescale scalemethod="diameter"/>
         </renderer-v2>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="centerSymbol">
-          <layer pass="0" class="SimpleMarker" locked="0">
+          <layer pass="0" class="SvgMarker" locked="0">
             <prop k="angle" v="0"/>
-            <prop k="color" v="255,255,0,255"/>
+            <prop k="color" v="183,65,14,255"/>
             <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="name" v="equilateral_triangle"/>
+            <prop k="name" v="tourist/tourist_battlefield.svg"/>
             <prop k="offset" v="0,0"/>
             <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="offset_unit" v="MM"/>
             <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_style" v="solid"/>
-            <prop k="outline_width" v="0"/>
+            <prop k="outline_width" v="0.1"/>
             <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="outline_width_unit" v="MM"/>
             <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="2.5"/>
+            <prop k="size" v="5"/>
             <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="size_unit" v="MM"/>
             <prop k="vertical_anchor_point" v="1"/>
@@ -3512,22 +3510,20 @@ def my_form_open(dialog, layer, feature):
           <sizescale scalemethod="diameter"/>
         </renderer-v2>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="centerSymbol">
-          <layer pass="0" class="SimpleMarker" locked="0">
+          <layer pass="0" class="SvgMarker" locked="0">
             <prop k="angle" v="0"/>
-            <prop k="color" v="255,255,0,255"/>
+            <prop k="color" v="255,191,0,255"/>
             <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="name" v="equilateral_triangle"/>
+            <prop k="name" v="shopping/shopping_jewelry.svg"/>
             <prop k="offset" v="0,0"/>
             <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="offset_unit" v="MM"/>
             <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_style" v="solid"/>
-            <prop k="outline_width" v="0"/>
+            <prop k="outline_width" v="0.1"/>
             <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="outline_width_unit" v="MM"/>
             <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="2.5"/>
+            <prop k="size" v="5"/>
             <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="size_unit" v="MM"/>
             <prop k="vertical_anchor_point" v="1"/>
@@ -3536,6 +3532,7 @@ def my_form_open(dialog, layer, feature):
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
@@ -4459,22 +4456,20 @@ def my_form_open(dialog, layer, feature):
           <sizescale scalemethod="diameter"/>
         </renderer-v2>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="centerSymbol">
-          <layer pass="0" class="SimpleMarker" locked="0">
+          <layer pass="0" class="SvgMarker" locked="0">
             <prop k="angle" v="0"/>
-            <prop k="color" v="255,255,0,255"/>
+            <prop k="color" v="255,191,0,255"/>
             <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="name" v="equilateral_triangle"/>
+            <prop k="name" v="shopping/shopping_jewelry.svg"/>
             <prop k="offset" v="0,0"/>
             <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="offset_unit" v="MM"/>
             <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_style" v="solid"/>
-            <prop k="outline_width" v="0"/>
+            <prop k="outline_width" v="0.1"/>
             <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="outline_width_unit" v="MM"/>
             <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="2.5"/>
+            <prop k="size" v="5"/>
             <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="size_unit" v="MM"/>
             <prop k="vertical_anchor_point" v="1"/>
@@ -5376,22 +5371,20 @@ def my_form_open(dialog, layer, feature):
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
-            <layer pass="0" class="SimpleMarker" locked="0">
+            <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="0,0,0,255"/>
+              <prop k="color" v="232,158,93,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="square"/>
+              <prop k="name" v="tourist/tourist_archaeological2.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="255,255,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.1"/>
               <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="area"/>
-              <prop k="size" v="2.5"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -6297,7 +6290,7 @@ def my_form_open(dialog, layer, feature):
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" placement="1" tolerance="5" circleColor="125,125,125,255" labelAttributeName="" labelColor="0,0,0,255" toleranceUnit="MM" circleRadiusAddition="0" type="pointDisplacement" circleWidth="0.4" maxLabelScaleDenominator="-1" toleranceUnitScale="0,0,0,0,0,0" enableorderby="0">
-        <labelFontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        <labelFontProperties description="Times New Roman,10,-1,5,75,1,0,0,0,0" style=""/>
         <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
           <symbols>
             <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
@@ -6327,22 +6320,20 @@ def my_form_open(dialog, layer, feature):
           <sizescale scalemethod="diameter"/>
         </renderer-v2>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="centerSymbol">
-          <layer pass="0" class="SimpleMarker" locked="0">
+          <layer pass="0" class="SvgMarker" locked="0">
             <prop k="angle" v="0"/>
-            <prop k="color" v="255,255,0,255"/>
+            <prop k="color" v="183,65,14,255"/>
             <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="name" v="equilateral_triangle"/>
+            <prop k="name" v="tourist/tourist_battlefield.svg"/>
             <prop k="offset" v="0,0"/>
             <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="offset_unit" v="MM"/>
             <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_style" v="solid"/>
-            <prop k="outline_width" v="0"/>
+            <prop k="outline_width" v="0.1"/>
             <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="outline_width_unit" v="MM"/>
             <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="2.5"/>
+            <prop k="size" v="5"/>
             <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="size_unit" v="MM"/>
             <prop k="vertical_anchor_point" v="1"/>
@@ -6411,9 +6402,9 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
-        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/offsetType" value="1"/>
         <property key="labeling/placeDirectionSymbol" value="0"/>
-        <property key="labeling/placement" value="0"/>
+        <property key="labeling/placement" value="6"/>
         <property key="labeling/placementFlags" value="10"/>
         <property key="labeling/plussign" value="false"/>
         <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
@@ -10911,10 +10902,7 @@ def my_form_open(dialog, layer, feature):
       <Enabled type="bool">true</Enabled>
       <Placement type="int">3</Placement>
       <MarginUnit type="QString">MM</MarginUnit>
-      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&#xd;&#xd;
-&amp;copy; OpenStreetMap contributors&lt;br/>&#xd;&#xd;
-&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>&#xd;&#xd;
-Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>&#xd;&#xd;
+      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&amp;copy; OpenStreetMap contributors&lt;br/>&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>
 </Label>
       <Color type="QString">#000000</Color>
     </CopyrightLabel>
