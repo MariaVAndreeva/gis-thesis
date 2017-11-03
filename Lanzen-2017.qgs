@@ -25,7 +25,7 @@
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Gold20171102193728207" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Material_Abkuerzung%20%3D'Au'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)%0D%0A&amp;uid=ID_Fund" name="Lanzen+Gold">
+    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Gold20171102193728207" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Material_Abkuerzung%20%3D'Au'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)%0D%0A&amp;uid=ID_Fund" name="Lanzen+Gold">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
@@ -43,6 +43,12 @@
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="osm_s46w7n50e13_lines20171103003827076" source="C:/gis/gis-thesis/layers/vector/water/osm-s46w7n50e13_lines.shp" name="Fluesse-DACH">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="osm_s46w7n50e13_multipolygons20171103003807548" source="C:/gis/gis-thesis/layers/vector/water/osm-s46w7n50e13_multipolygons.shp" name="Wasserkoerper-DACH">
+      <customproperties/>
+    </layer-tree-layer>
     <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="Sueddeutschland_hs20171102234603804" source="C:/gis/gis-thesis/layers/raster/Sueddeutschland-hs" name="Sueddeutschland-hs">
       <customproperties/>
     </layer-tree-layer>
@@ -54,10 +60,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>5.77470833333333289</xmin>
-      <ymin>46.89985416666666396</ymin>
-      <xmax>15.22529166666666711</xmax>
-      <ymax>51.10014583333333604</ymax>
+      <xmin>7.02642675000000061</xmin>
+      <ymin>47.02360074999999995</ymin>
+      <xmax>13.23164324999999586</xmax>
+      <ymax>49.62588925000004281</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -75,6 +81,8 @@
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="osm_s46w7n50e13_lines20171103003827076"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="osm_s46w7n50e13_multipolygons20171103003807548"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Dolche20171102194332791"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Schwerter20171102194910255"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102182734832"/>
@@ -101,6 +109,8 @@
       <item>Lanzen_Keramik20171102210451305</item>
       <item>Sueddeutschland20171102233107820</item>
       <item>Sueddeutschland_hs20171102234603804</item>
+      <item>osm_s46w7n50e13_multipolygons20171103003807548</item>
+      <item>osm_s46w7n50e13_lines20171103003827076</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -124,9 +134,9 @@
         <legendlayerfile isInOverview="0" layerid="Lanzen_Fibeln_P2_20171102193458947" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Lanzen+Gold" showFeatureCount="1">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Gold" showFeatureCount="1">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Gold20171102193728207" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Gold20171102193728207" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Keramik" showFeatureCount="0">
@@ -142,6 +152,16 @@
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ODBC:thesis-2017-A_QGIS-ETRS89" showFeatureCount="1">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="ODBC_thesis_2017_A_QGIS20171102173720168" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Fluesse-DACH" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="osm_s46w7n50e13_lines20171103003827076" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Wasserkoerper-DACH" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="osm_s46w7n50e13_multipolygons20171103003807548" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Sueddeutschland-hs" showFeatureCount="0">
@@ -7263,6 +7283,2982 @@ def my_form_open(dialog, layer, feature):
       </pipe>
       <blendMode>6</blendMode>
     </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>osm_s46w7n50e13_lines20171103003827076</id>
+      <datasource>./layers/vector/water/osm-s46w7n50e13_lines.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Fluesse-DACH</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="full_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="osm_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="osm_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="width">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="waterway">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ship">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="CEMT">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="motorboat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="boat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_pl">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ref">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_en">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_de">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="tunnel">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="layer">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="todo">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="whitewater">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_fa">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wikipedia">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wikidata">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_ru">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_bar">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="history">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="survey">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="alt_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="is_in">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="est_width">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="canoe">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_ref">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="motorboat_">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_fr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="whitewat_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ele">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="designatio">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_uk">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_hy">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_sr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_hu">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="tree_lined">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_wae">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_es">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_it">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_sk">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ref_bauwer">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="whitewat_2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GEW_ID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="destinatio">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GEW_NAME_A">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="HZBGEW">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_rm">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="covered">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="note_acces">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="canoe_cond">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="website">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="maxspeed">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="draft">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_at">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="alt_name_d">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="level">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="arpav_codi">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_gsw">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_hr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_cs">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_bg">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="loc_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_lt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_he">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="alt_name_s">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_sr-La">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="alt_name_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="island">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="descriptio">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="natural_pr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="admin_leve">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="border_typ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="boundary">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sport">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="canoe_rest">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ref_fgkz">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_geo">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="note_de">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="old_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="natural">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="bridge">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="seasonal">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="arpav_co_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="intermitte">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_el">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="passage_ti">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="river_wate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="seamark_ty">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="maxwidth">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="lock">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="image">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="lock_name_">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="opening_ho">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="lock_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="phone">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="obstacle">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="maxdraft">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="vhf">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="seamark_na">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="maxlength">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="seamark_pi">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="seamark__1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="seamark__2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ref_sandre">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_sv">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_out">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_pnb">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_right">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_left">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_pt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_tr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_vi">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_mk">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_zh">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_sl">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_ja">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_bs">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="waterbody">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_nl">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="destinat_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wikipedia_">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="comment">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="bicycle">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="segregated">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="surface">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="gauge">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="foot">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="railway">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ref_gewiss">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cycleway">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="tracktype">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="highway">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="left_provi">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="right_prov">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="operator">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="have_river">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cutting">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="man_made">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="start_date">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_lin">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_nam">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_not">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_yea">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ref_bafu">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_ar">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="whitewat_3">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_fvg_reg">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_fvg_r_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_fvg_r_2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_fvg_r_3">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_fvg_r_4">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_fvg_r_5">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_ch">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_lld">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="tributary_">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="is_in_coun">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="postal_cod">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_als">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_old">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_fvg_r_6">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_fur">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_fvg_r_7">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_fvg_r_8">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_fvg_r_9">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_fvg_r10">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="odbl">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="note2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ft_link">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="note_sourc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_hsb">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_lb">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_met">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_alt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_vec">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="old_name_d">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_la">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="alt_name_f">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_tun">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_pos">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="horse">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sac_scale">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wheelchair">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="mtb_scale">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="snowmobile">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="trail_visi">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ski">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="lock_ref">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="automated">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dibavod_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="waterway_l">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="waterway_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="vhf_channe">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="waterway_2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="self_servi">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_lombard">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="mooring">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_lomba_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="passenger">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="note_layer">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="culvert">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="left_count">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="right_coun">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_dat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="embankment">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="contact_ph">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="velocity">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="canoe_all_">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_cou">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="alt_name_2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="accuracy">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="political_">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="whitewat_4">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="pipeline">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="location">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="boatyard_t">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_alt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="oneway">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="height">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ref_pat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_url">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="canoe_K1_u">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="closed">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="lit">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fish_pass">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="maxheight">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="access">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="canoe_desc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="region_rig">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="province_r">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="service">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="canyoning_">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_cz">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="warning">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cutline">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="nature">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="CEMT_disus">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="addr_postc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="addr_city">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="water">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="whitewat_5">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="whitewat_6">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="barrier">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="motorcycle">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="motorcar">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="substance">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="0">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="165,191,221,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.26"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_dd_active" v="1"/>
+              <prop k="width_dd_expression" v="coalesce(scale_exp(to_real(width), 0.3, 400, 0.26, 1.06, 0.57), 0.26)"/>
+              <prop k="width_dd_field" v=""/>
+              <prop k="width_dd_useexpr" v="1"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="8.25"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="4294967295"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="2"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>name</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="full_id" index="0" name=""/>
+        <alias field="osm_id" index="1" name=""/>
+        <alias field="osm_type" index="2" name=""/>
+        <alias field="width" index="3" name=""/>
+        <alias field="waterway" index="4" name=""/>
+        <alias field="name" index="5" name=""/>
+        <alias field="ship" index="6" name=""/>
+        <alias field="CEMT" index="7" name=""/>
+        <alias field="motorboat" index="8" name=""/>
+        <alias field="boat" index="9" name=""/>
+        <alias field="name_pl" index="10" name=""/>
+        <alias field="ref" index="11" name=""/>
+        <alias field="name_en" index="12" name=""/>
+        <alias field="name_de" index="13" name=""/>
+        <alias field="tunnel" index="14" name=""/>
+        <alias field="layer" index="15" name=""/>
+        <alias field="todo" index="16" name=""/>
+        <alias field="whitewater" index="17" name=""/>
+        <alias field="name_fa" index="18" name=""/>
+        <alias field="wikipedia" index="19" name=""/>
+        <alias field="wikidata" index="20" name=""/>
+        <alias field="name_ru" index="21" name=""/>
+        <alias field="name_bar" index="22" name=""/>
+        <alias field="history" index="23" name=""/>
+        <alias field="survey" index="24" name=""/>
+        <alias field="alt_name" index="25" name=""/>
+        <alias field="is_in" index="26" name=""/>
+        <alias field="est_width" index="27" name=""/>
+        <alias field="canoe" index="28" name=""/>
+        <alias field="source_ref" index="29" name=""/>
+        <alias field="motorboat_" index="30" name=""/>
+        <alias field="name_fr" index="31" name=""/>
+        <alias field="whitewat_1" index="32" name=""/>
+        <alias field="ele" index="33" name=""/>
+        <alias field="designatio" index="34" name=""/>
+        <alias field="name_ro" index="35" name=""/>
+        <alias field="name_uk" index="36" name=""/>
+        <alias field="name_hy" index="37" name=""/>
+        <alias field="name_sr" index="38" name=""/>
+        <alias field="name_hu" index="39" name=""/>
+        <alias field="tree_lined" index="40" name=""/>
+        <alias field="name_wae" index="41" name=""/>
+        <alias field="name_es" index="42" name=""/>
+        <alias field="name_it" index="43" name=""/>
+        <alias field="name_sk" index="44" name=""/>
+        <alias field="ref_bauwer" index="45" name=""/>
+        <alias field="whitewat_2" index="46" name=""/>
+        <alias field="GEW_ID" index="47" name=""/>
+        <alias field="destinatio" index="48" name=""/>
+        <alias field="GEW_NAME_A" index="49" name=""/>
+        <alias field="HZBGEW" index="50" name=""/>
+        <alias field="name_rm" index="51" name=""/>
+        <alias field="covered" index="52" name=""/>
+        <alias field="note_acces" index="53" name=""/>
+        <alias field="canoe_cond" index="54" name=""/>
+        <alias field="website" index="55" name=""/>
+        <alias field="maxspeed" index="56" name=""/>
+        <alias field="draft" index="57" name=""/>
+        <alias field="name_at" index="58" name=""/>
+        <alias field="alt_name_d" index="59" name=""/>
+        <alias field="level" index="60" name=""/>
+        <alias field="arpav_codi" index="61" name=""/>
+        <alias field="name_gsw" index="62" name=""/>
+        <alias field="name_hr" index="63" name=""/>
+        <alias field="name_cs" index="64" name=""/>
+        <alias field="name_bg" index="65" name=""/>
+        <alias field="loc_name" index="66" name=""/>
+        <alias field="name_lt" index="67" name=""/>
+        <alias field="name_he" index="68" name=""/>
+        <alias field="alt_name_s" index="69" name=""/>
+        <alias field="name_sr-La" index="70" name=""/>
+        <alias field="alt_name_1" index="71" name=""/>
+        <alias field="island" index="72" name=""/>
+        <alias field="descriptio" index="73" name=""/>
+        <alias field="natural_pr" index="74" name=""/>
+        <alias field="admin_leve" index="75" name=""/>
+        <alias field="border_typ" index="76" name=""/>
+        <alias field="boundary" index="77" name=""/>
+        <alias field="sport" index="78" name=""/>
+        <alias field="canoe_rest" index="79" name=""/>
+        <alias field="ref_fgkz" index="80" name=""/>
+        <alias field="source_geo" index="81" name=""/>
+        <alias field="note_de" index="82" name=""/>
+        <alias field="old_name" index="83" name=""/>
+        <alias field="natural" index="84" name=""/>
+        <alias field="bridge" index="85" name=""/>
+        <alias field="seasonal" index="86" name=""/>
+        <alias field="arpav_co_1" index="87" name=""/>
+        <alias field="intermitte" index="88" name=""/>
+        <alias field="name_el" index="89" name=""/>
+        <alias field="passage_ti" index="90" name=""/>
+        <alias field="river_wate" index="91" name=""/>
+        <alias field="seamark_ty" index="92" name=""/>
+        <alias field="maxwidth" index="93" name=""/>
+        <alias field="lock" index="94" name=""/>
+        <alias field="image" index="95" name=""/>
+        <alias field="lock_name_" index="96" name=""/>
+        <alias field="opening_ho" index="97" name=""/>
+        <alias field="lock_name" index="98" name=""/>
+        <alias field="phone" index="99" name=""/>
+        <alias field="obstacle" index="100" name=""/>
+        <alias field="maxdraft" index="101" name=""/>
+        <alias field="vhf" index="102" name=""/>
+        <alias field="seamark_na" index="103" name=""/>
+        <alias field="maxlength" index="104" name=""/>
+        <alias field="seamark_pi" index="105" name=""/>
+        <alias field="seamark__1" index="106" name=""/>
+        <alias field="seamark__2" index="107" name=""/>
+        <alias field="ref_sandre" index="108" name=""/>
+        <alias field="name_sv" index="109" name=""/>
+        <alias field="source_out" index="110" name=""/>
+        <alias field="name_pnb" index="111" name=""/>
+        <alias field="name_right" index="112" name=""/>
+        <alias field="name_left" index="113" name=""/>
+        <alias field="name_pt" index="114" name=""/>
+        <alias field="name_tr" index="115" name=""/>
+        <alias field="name_vi" index="116" name=""/>
+        <alias field="name_mk" index="117" name=""/>
+        <alias field="name_zh" index="118" name=""/>
+        <alias field="name_sl" index="119" name=""/>
+        <alias field="name_ja" index="120" name=""/>
+        <alias field="name_bs" index="121" name=""/>
+        <alias field="waterbody" index="122" name=""/>
+        <alias field="name_nl" index="123" name=""/>
+        <alias field="destinat_1" index="124" name=""/>
+        <alias field="wikipedia_" index="125" name=""/>
+        <alias field="comment" index="126" name=""/>
+        <alias field="bicycle" index="127" name=""/>
+        <alias field="segregated" index="128" name=""/>
+        <alias field="surface" index="129" name=""/>
+        <alias field="gauge" index="130" name=""/>
+        <alias field="foot" index="131" name=""/>
+        <alias field="railway" index="132" name=""/>
+        <alias field="ref_gewiss" index="133" name=""/>
+        <alias field="cycleway" index="134" name=""/>
+        <alias field="tracktype" index="135" name=""/>
+        <alias field="highway" index="136" name=""/>
+        <alias field="left_provi" index="137" name=""/>
+        <alias field="right_prov" index="138" name=""/>
+        <alias field="operator" index="139" name=""/>
+        <alias field="have_river" index="140" name=""/>
+        <alias field="cutting" index="141" name=""/>
+        <alias field="man_made" index="142" name=""/>
+        <alias field="start_date" index="143" name=""/>
+        <alias field="source_lin" index="144" name=""/>
+        <alias field="source_nam" index="145" name=""/>
+        <alias field="source_not" index="146" name=""/>
+        <alias field="source_yea" index="147" name=""/>
+        <alias field="ref_bafu" index="148" name=""/>
+        <alias field="name_ar" index="149" name=""/>
+        <alias field="whitewat_3" index="150" name=""/>
+        <alias field="it_fvg_reg" index="151" name=""/>
+        <alias field="it_fvg_r_1" index="152" name=""/>
+        <alias field="it_fvg_r_2" index="153" name=""/>
+        <alias field="it_fvg_r_3" index="154" name=""/>
+        <alias field="it_fvg_r_4" index="155" name=""/>
+        <alias field="it_fvg_r_5" index="156" name=""/>
+        <alias field="name_ch" index="157" name=""/>
+        <alias field="name_lld" index="158" name=""/>
+        <alias field="tributary_" index="159" name=""/>
+        <alias field="is_in_coun" index="160" name=""/>
+        <alias field="postal_cod" index="161" name=""/>
+        <alias field="name_als" index="162" name=""/>
+        <alias field="source_old" index="163" name=""/>
+        <alias field="it_fvg_r_6" index="164" name=""/>
+        <alias field="name_fur" index="165" name=""/>
+        <alias field="it_fvg_r_7" index="166" name=""/>
+        <alias field="it_fvg_r_8" index="167" name=""/>
+        <alias field="it_fvg_r_9" index="168" name=""/>
+        <alias field="it_fvg_r10" index="169" name=""/>
+        <alias field="odbl" index="170" name=""/>
+        <alias field="note2" index="171" name=""/>
+        <alias field="ft_link" index="172" name=""/>
+        <alias field="note_sourc" index="173" name=""/>
+        <alias field="name_hsb" index="174" name=""/>
+        <alias field="name_lb" index="175" name=""/>
+        <alias field="source_met" index="176" name=""/>
+        <alias field="source_alt" index="177" name=""/>
+        <alias field="name_vec" index="178" name=""/>
+        <alias field="old_name_d" index="179" name=""/>
+        <alias field="name_la" index="180" name=""/>
+        <alias field="alt_name_f" index="181" name=""/>
+        <alias field="source_tun" index="182" name=""/>
+        <alias field="source_pos" index="183" name=""/>
+        <alias field="horse" index="184" name=""/>
+        <alias field="sac_scale" index="185" name=""/>
+        <alias field="wheelchair" index="186" name=""/>
+        <alias field="mtb_scale" index="187" name=""/>
+        <alias field="snowmobile" index="188" name=""/>
+        <alias field="trail_visi" index="189" name=""/>
+        <alias field="ski" index="190" name=""/>
+        <alias field="lock_ref" index="191" name=""/>
+        <alias field="automated" index="192" name=""/>
+        <alias field="dibavod_id" index="193" name=""/>
+        <alias field="waterway_l" index="194" name=""/>
+        <alias field="waterway_1" index="195" name=""/>
+        <alias field="vhf_channe" index="196" name=""/>
+        <alias field="waterway_2" index="197" name=""/>
+        <alias field="self_servi" index="198" name=""/>
+        <alias field="it_lombard" index="199" name=""/>
+        <alias field="mooring" index="200" name=""/>
+        <alias field="it_lomba_1" index="201" name=""/>
+        <alias field="passenger" index="202" name=""/>
+        <alias field="note_layer" index="203" name=""/>
+        <alias field="culvert" index="204" name=""/>
+        <alias field="left_count" index="205" name=""/>
+        <alias field="right_coun" index="206" name=""/>
+        <alias field="source_dat" index="207" name=""/>
+        <alias field="embankment" index="208" name=""/>
+        <alias field="contact_ph" index="209" name=""/>
+        <alias field="velocity" index="210" name=""/>
+        <alias field="canoe_all_" index="211" name=""/>
+        <alias field="source_cou" index="212" name=""/>
+        <alias field="alt_name_2" index="213" name=""/>
+        <alias field="accuracy" index="214" name=""/>
+        <alias field="political_" index="215" name=""/>
+        <alias field="whitewat_4" index="216" name=""/>
+        <alias field="pipeline" index="217" name=""/>
+        <alias field="location" index="218" name=""/>
+        <alias field="boatyard_t" index="219" name=""/>
+        <alias field="name_alt" index="220" name=""/>
+        <alias field="oneway" index="221" name=""/>
+        <alias field="height" index="222" name=""/>
+        <alias field="ref_pat" index="223" name=""/>
+        <alias field="source_url" index="224" name=""/>
+        <alias field="canoe_K1_u" index="225" name=""/>
+        <alias field="closed" index="226" name=""/>
+        <alias field="lit" index="227" name=""/>
+        <alias field="fish_pass" index="228" name=""/>
+        <alias field="maxheight" index="229" name=""/>
+        <alias field="access" index="230" name=""/>
+        <alias field="canoe_desc" index="231" name=""/>
+        <alias field="region_rig" index="232" name=""/>
+        <alias field="province_r" index="233" name=""/>
+        <alias field="service" index="234" name=""/>
+        <alias field="canyoning_" index="235" name=""/>
+        <alias field="name_cz" index="236" name=""/>
+        <alias field="warning" index="237" name=""/>
+        <alias field="cutline" index="238" name=""/>
+        <alias field="nature" index="239" name=""/>
+        <alias field="CEMT_disus" index="240" name=""/>
+        <alias field="addr_postc" index="241" name=""/>
+        <alias field="addr_city" index="242" name=""/>
+        <alias field="water" index="243" name=""/>
+        <alias field="whitewat_5" index="244" name=""/>
+        <alias field="whitewat_6" index="245" name=""/>
+        <alias field="barrier" index="246" name=""/>
+        <alias field="motorcycle" index="247" name=""/>
+        <alias field="motorcar" index="248" name=""/>
+        <alias field="substance" index="249" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="full_id"/>
+          <column width="-1" hidden="0" type="field" name="osm_id"/>
+          <column width="-1" hidden="0" type="field" name="osm_type"/>
+          <column width="-1" hidden="0" type="field" name="width"/>
+          <column width="-1" hidden="0" type="field" name="waterway"/>
+          <column width="-1" hidden="0" type="field" name="name"/>
+          <column width="-1" hidden="0" type="field" name="ship"/>
+          <column width="-1" hidden="0" type="field" name="CEMT"/>
+          <column width="-1" hidden="0" type="field" name="motorboat"/>
+          <column width="-1" hidden="0" type="field" name="boat"/>
+          <column width="-1" hidden="0" type="field" name="name_pl"/>
+          <column width="-1" hidden="0" type="field" name="ref"/>
+          <column width="-1" hidden="0" type="field" name="name_en"/>
+          <column width="-1" hidden="0" type="field" name="name_de"/>
+          <column width="-1" hidden="0" type="field" name="tunnel"/>
+          <column width="-1" hidden="0" type="field" name="layer"/>
+          <column width="-1" hidden="0" type="field" name="todo"/>
+          <column width="-1" hidden="0" type="field" name="whitewater"/>
+          <column width="-1" hidden="0" type="field" name="name_fa"/>
+          <column width="-1" hidden="0" type="field" name="wikipedia"/>
+          <column width="-1" hidden="0" type="field" name="wikidata"/>
+          <column width="-1" hidden="0" type="field" name="name_ru"/>
+          <column width="-1" hidden="0" type="field" name="name_bar"/>
+          <column width="-1" hidden="0" type="field" name="history"/>
+          <column width="-1" hidden="0" type="field" name="survey"/>
+          <column width="-1" hidden="0" type="field" name="alt_name"/>
+          <column width="-1" hidden="0" type="field" name="is_in"/>
+          <column width="-1" hidden="0" type="field" name="est_width"/>
+          <column width="-1" hidden="0" type="field" name="canoe"/>
+          <column width="-1" hidden="0" type="field" name="source_ref"/>
+          <column width="-1" hidden="0" type="field" name="motorboat_"/>
+          <column width="-1" hidden="0" type="field" name="name_fr"/>
+          <column width="-1" hidden="0" type="field" name="whitewat_1"/>
+          <column width="-1" hidden="0" type="field" name="ele"/>
+          <column width="-1" hidden="0" type="field" name="designatio"/>
+          <column width="-1" hidden="0" type="field" name="name_ro"/>
+          <column width="-1" hidden="0" type="field" name="name_uk"/>
+          <column width="-1" hidden="0" type="field" name="name_hy"/>
+          <column width="-1" hidden="0" type="field" name="name_sr"/>
+          <column width="-1" hidden="0" type="field" name="name_hu"/>
+          <column width="-1" hidden="0" type="field" name="tree_lined"/>
+          <column width="-1" hidden="0" type="field" name="name_wae"/>
+          <column width="-1" hidden="0" type="field" name="name_es"/>
+          <column width="-1" hidden="0" type="field" name="name_it"/>
+          <column width="-1" hidden="0" type="field" name="name_sk"/>
+          <column width="-1" hidden="0" type="field" name="ref_bauwer"/>
+          <column width="-1" hidden="0" type="field" name="whitewat_2"/>
+          <column width="-1" hidden="0" type="field" name="GEW_ID"/>
+          <column width="-1" hidden="0" type="field" name="destinatio"/>
+          <column width="-1" hidden="0" type="field" name="GEW_NAME_A"/>
+          <column width="-1" hidden="0" type="field" name="HZBGEW"/>
+          <column width="-1" hidden="0" type="field" name="name_rm"/>
+          <column width="-1" hidden="0" type="field" name="covered"/>
+          <column width="-1" hidden="0" type="field" name="note_acces"/>
+          <column width="-1" hidden="0" type="field" name="canoe_cond"/>
+          <column width="-1" hidden="0" type="field" name="website"/>
+          <column width="-1" hidden="0" type="field" name="maxspeed"/>
+          <column width="-1" hidden="0" type="field" name="draft"/>
+          <column width="-1" hidden="0" type="field" name="name_at"/>
+          <column width="-1" hidden="0" type="field" name="alt_name_d"/>
+          <column width="-1" hidden="0" type="field" name="level"/>
+          <column width="-1" hidden="0" type="field" name="arpav_codi"/>
+          <column width="-1" hidden="0" type="field" name="name_gsw"/>
+          <column width="-1" hidden="0" type="field" name="name_hr"/>
+          <column width="-1" hidden="0" type="field" name="name_cs"/>
+          <column width="-1" hidden="0" type="field" name="name_bg"/>
+          <column width="-1" hidden="0" type="field" name="loc_name"/>
+          <column width="-1" hidden="0" type="field" name="name_lt"/>
+          <column width="-1" hidden="0" type="field" name="name_he"/>
+          <column width="-1" hidden="0" type="field" name="alt_name_s"/>
+          <column width="-1" hidden="0" type="field" name="name_sr-La"/>
+          <column width="-1" hidden="0" type="field" name="alt_name_1"/>
+          <column width="-1" hidden="0" type="field" name="island"/>
+          <column width="-1" hidden="0" type="field" name="descriptio"/>
+          <column width="-1" hidden="0" type="field" name="natural_pr"/>
+          <column width="-1" hidden="0" type="field" name="admin_leve"/>
+          <column width="-1" hidden="0" type="field" name="border_typ"/>
+          <column width="-1" hidden="0" type="field" name="boundary"/>
+          <column width="-1" hidden="0" type="field" name="sport"/>
+          <column width="-1" hidden="0" type="field" name="canoe_rest"/>
+          <column width="-1" hidden="0" type="field" name="ref_fgkz"/>
+          <column width="-1" hidden="0" type="field" name="source_geo"/>
+          <column width="-1" hidden="0" type="field" name="note_de"/>
+          <column width="-1" hidden="0" type="field" name="old_name"/>
+          <column width="-1" hidden="0" type="field" name="natural"/>
+          <column width="-1" hidden="0" type="field" name="bridge"/>
+          <column width="-1" hidden="0" type="field" name="seasonal"/>
+          <column width="-1" hidden="0" type="field" name="arpav_co_1"/>
+          <column width="-1" hidden="0" type="field" name="intermitte"/>
+          <column width="-1" hidden="0" type="field" name="name_el"/>
+          <column width="-1" hidden="0" type="field" name="passage_ti"/>
+          <column width="-1" hidden="0" type="field" name="river_wate"/>
+          <column width="-1" hidden="0" type="field" name="seamark_ty"/>
+          <column width="-1" hidden="0" type="field" name="maxwidth"/>
+          <column width="-1" hidden="0" type="field" name="lock"/>
+          <column width="-1" hidden="0" type="field" name="image"/>
+          <column width="-1" hidden="0" type="field" name="lock_name_"/>
+          <column width="-1" hidden="0" type="field" name="opening_ho"/>
+          <column width="-1" hidden="0" type="field" name="lock_name"/>
+          <column width="-1" hidden="0" type="field" name="phone"/>
+          <column width="-1" hidden="0" type="field" name="obstacle"/>
+          <column width="-1" hidden="0" type="field" name="maxdraft"/>
+          <column width="-1" hidden="0" type="field" name="vhf"/>
+          <column width="-1" hidden="0" type="field" name="seamark_na"/>
+          <column width="-1" hidden="0" type="field" name="maxlength"/>
+          <column width="-1" hidden="0" type="field" name="seamark_pi"/>
+          <column width="-1" hidden="0" type="field" name="seamark__1"/>
+          <column width="-1" hidden="0" type="field" name="seamark__2"/>
+          <column width="-1" hidden="0" type="field" name="ref_sandre"/>
+          <column width="-1" hidden="0" type="field" name="name_sv"/>
+          <column width="-1" hidden="0" type="field" name="source_out"/>
+          <column width="-1" hidden="0" type="field" name="name_pnb"/>
+          <column width="-1" hidden="0" type="field" name="name_right"/>
+          <column width="-1" hidden="0" type="field" name="name_left"/>
+          <column width="-1" hidden="0" type="field" name="name_pt"/>
+          <column width="-1" hidden="0" type="field" name="name_tr"/>
+          <column width="-1" hidden="0" type="field" name="name_vi"/>
+          <column width="-1" hidden="0" type="field" name="name_mk"/>
+          <column width="-1" hidden="0" type="field" name="name_zh"/>
+          <column width="-1" hidden="0" type="field" name="name_sl"/>
+          <column width="-1" hidden="0" type="field" name="name_ja"/>
+          <column width="-1" hidden="0" type="field" name="name_bs"/>
+          <column width="-1" hidden="0" type="field" name="waterbody"/>
+          <column width="-1" hidden="0" type="field" name="name_nl"/>
+          <column width="-1" hidden="0" type="field" name="destinat_1"/>
+          <column width="-1" hidden="0" type="field" name="wikipedia_"/>
+          <column width="-1" hidden="0" type="field" name="comment"/>
+          <column width="-1" hidden="0" type="field" name="bicycle"/>
+          <column width="-1" hidden="0" type="field" name="segregated"/>
+          <column width="-1" hidden="0" type="field" name="surface"/>
+          <column width="-1" hidden="0" type="field" name="gauge"/>
+          <column width="-1" hidden="0" type="field" name="foot"/>
+          <column width="-1" hidden="0" type="field" name="railway"/>
+          <column width="-1" hidden="0" type="field" name="ref_gewiss"/>
+          <column width="-1" hidden="0" type="field" name="cycleway"/>
+          <column width="-1" hidden="0" type="field" name="tracktype"/>
+          <column width="-1" hidden="0" type="field" name="highway"/>
+          <column width="-1" hidden="0" type="field" name="left_provi"/>
+          <column width="-1" hidden="0" type="field" name="right_prov"/>
+          <column width="-1" hidden="0" type="field" name="operator"/>
+          <column width="-1" hidden="0" type="field" name="have_river"/>
+          <column width="-1" hidden="0" type="field" name="cutting"/>
+          <column width="-1" hidden="0" type="field" name="man_made"/>
+          <column width="-1" hidden="0" type="field" name="start_date"/>
+          <column width="-1" hidden="0" type="field" name="source_lin"/>
+          <column width="-1" hidden="0" type="field" name="source_nam"/>
+          <column width="-1" hidden="0" type="field" name="source_not"/>
+          <column width="-1" hidden="0" type="field" name="source_yea"/>
+          <column width="-1" hidden="0" type="field" name="ref_bafu"/>
+          <column width="-1" hidden="0" type="field" name="name_ar"/>
+          <column width="-1" hidden="0" type="field" name="whitewat_3"/>
+          <column width="-1" hidden="0" type="field" name="it_fvg_reg"/>
+          <column width="-1" hidden="0" type="field" name="it_fvg_r_1"/>
+          <column width="-1" hidden="0" type="field" name="it_fvg_r_2"/>
+          <column width="-1" hidden="0" type="field" name="it_fvg_r_3"/>
+          <column width="-1" hidden="0" type="field" name="it_fvg_r_4"/>
+          <column width="-1" hidden="0" type="field" name="it_fvg_r_5"/>
+          <column width="-1" hidden="0" type="field" name="name_ch"/>
+          <column width="-1" hidden="0" type="field" name="name_lld"/>
+          <column width="-1" hidden="0" type="field" name="tributary_"/>
+          <column width="-1" hidden="0" type="field" name="is_in_coun"/>
+          <column width="-1" hidden="0" type="field" name="postal_cod"/>
+          <column width="-1" hidden="0" type="field" name="name_als"/>
+          <column width="-1" hidden="0" type="field" name="source_old"/>
+          <column width="-1" hidden="0" type="field" name="it_fvg_r_6"/>
+          <column width="-1" hidden="0" type="field" name="name_fur"/>
+          <column width="-1" hidden="0" type="field" name="it_fvg_r_7"/>
+          <column width="-1" hidden="0" type="field" name="it_fvg_r_8"/>
+          <column width="-1" hidden="0" type="field" name="it_fvg_r_9"/>
+          <column width="-1" hidden="0" type="field" name="it_fvg_r10"/>
+          <column width="-1" hidden="0" type="field" name="odbl"/>
+          <column width="-1" hidden="0" type="field" name="note2"/>
+          <column width="-1" hidden="0" type="field" name="ft_link"/>
+          <column width="-1" hidden="0" type="field" name="note_sourc"/>
+          <column width="-1" hidden="0" type="field" name="name_hsb"/>
+          <column width="-1" hidden="0" type="field" name="name_lb"/>
+          <column width="-1" hidden="0" type="field" name="source_met"/>
+          <column width="-1" hidden="0" type="field" name="source_alt"/>
+          <column width="-1" hidden="0" type="field" name="name_vec"/>
+          <column width="-1" hidden="0" type="field" name="old_name_d"/>
+          <column width="-1" hidden="0" type="field" name="name_la"/>
+          <column width="-1" hidden="0" type="field" name="alt_name_f"/>
+          <column width="-1" hidden="0" type="field" name="source_tun"/>
+          <column width="-1" hidden="0" type="field" name="source_pos"/>
+          <column width="-1" hidden="0" type="field" name="horse"/>
+          <column width="-1" hidden="0" type="field" name="sac_scale"/>
+          <column width="-1" hidden="0" type="field" name="wheelchair"/>
+          <column width="-1" hidden="0" type="field" name="mtb_scale"/>
+          <column width="-1" hidden="0" type="field" name="snowmobile"/>
+          <column width="-1" hidden="0" type="field" name="trail_visi"/>
+          <column width="-1" hidden="0" type="field" name="ski"/>
+          <column width="-1" hidden="0" type="field" name="lock_ref"/>
+          <column width="-1" hidden="0" type="field" name="automated"/>
+          <column width="-1" hidden="0" type="field" name="dibavod_id"/>
+          <column width="-1" hidden="0" type="field" name="waterway_l"/>
+          <column width="-1" hidden="0" type="field" name="waterway_1"/>
+          <column width="-1" hidden="0" type="field" name="vhf_channe"/>
+          <column width="-1" hidden="0" type="field" name="waterway_2"/>
+          <column width="-1" hidden="0" type="field" name="self_servi"/>
+          <column width="-1" hidden="0" type="field" name="it_lombard"/>
+          <column width="-1" hidden="0" type="field" name="mooring"/>
+          <column width="-1" hidden="0" type="field" name="it_lomba_1"/>
+          <column width="-1" hidden="0" type="field" name="passenger"/>
+          <column width="-1" hidden="0" type="field" name="note_layer"/>
+          <column width="-1" hidden="0" type="field" name="culvert"/>
+          <column width="-1" hidden="0" type="field" name="left_count"/>
+          <column width="-1" hidden="0" type="field" name="right_coun"/>
+          <column width="-1" hidden="0" type="field" name="source_dat"/>
+          <column width="-1" hidden="0" type="field" name="embankment"/>
+          <column width="-1" hidden="0" type="field" name="contact_ph"/>
+          <column width="-1" hidden="0" type="field" name="velocity"/>
+          <column width="-1" hidden="0" type="field" name="canoe_all_"/>
+          <column width="-1" hidden="0" type="field" name="source_cou"/>
+          <column width="-1" hidden="0" type="field" name="alt_name_2"/>
+          <column width="-1" hidden="0" type="field" name="accuracy"/>
+          <column width="-1" hidden="0" type="field" name="political_"/>
+          <column width="-1" hidden="0" type="field" name="whitewat_4"/>
+          <column width="-1" hidden="0" type="field" name="pipeline"/>
+          <column width="-1" hidden="0" type="field" name="location"/>
+          <column width="-1" hidden="0" type="field" name="boatyard_t"/>
+          <column width="-1" hidden="0" type="field" name="name_alt"/>
+          <column width="-1" hidden="0" type="field" name="oneway"/>
+          <column width="-1" hidden="0" type="field" name="height"/>
+          <column width="-1" hidden="0" type="field" name="ref_pat"/>
+          <column width="-1" hidden="0" type="field" name="source_url"/>
+          <column width="-1" hidden="0" type="field" name="canoe_K1_u"/>
+          <column width="-1" hidden="0" type="field" name="closed"/>
+          <column width="-1" hidden="0" type="field" name="lit"/>
+          <column width="-1" hidden="0" type="field" name="fish_pass"/>
+          <column width="-1" hidden="0" type="field" name="maxheight"/>
+          <column width="-1" hidden="0" type="field" name="access"/>
+          <column width="-1" hidden="0" type="field" name="canoe_desc"/>
+          <column width="-1" hidden="0" type="field" name="region_rig"/>
+          <column width="-1" hidden="0" type="field" name="province_r"/>
+          <column width="-1" hidden="0" type="field" name="service"/>
+          <column width="-1" hidden="0" type="field" name="canyoning_"/>
+          <column width="-1" hidden="0" type="field" name="name_cz"/>
+          <column width="-1" hidden="0" type="field" name="warning"/>
+          <column width="-1" hidden="0" type="field" name="cutline"/>
+          <column width="-1" hidden="0" type="field" name="nature"/>
+          <column width="-1" hidden="0" type="field" name="CEMT_disus"/>
+          <column width="-1" hidden="0" type="field" name="addr_postc"/>
+          <column width="-1" hidden="0" type="field" name="addr_city"/>
+          <column width="-1" hidden="0" type="field" name="water"/>
+          <column width="-1" hidden="0" type="field" name="whitewat_5"/>
+          <column width="-1" hidden="0" type="field" name="whitewat_6"/>
+          <column width="-1" hidden="0" type="field" name="barrier"/>
+          <column width="-1" hidden="0" type="field" name="motorcycle"/>
+          <column width="-1" hidden="0" type="field" name="motorcar"/>
+          <column width="-1" hidden="0" type="field" name="substance"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="full_id" expression=""/>
+        <default field="osm_id" expression=""/>
+        <default field="osm_type" expression=""/>
+        <default field="width" expression=""/>
+        <default field="waterway" expression=""/>
+        <default field="name" expression=""/>
+        <default field="ship" expression=""/>
+        <default field="CEMT" expression=""/>
+        <default field="motorboat" expression=""/>
+        <default field="boat" expression=""/>
+        <default field="name_pl" expression=""/>
+        <default field="ref" expression=""/>
+        <default field="name_en" expression=""/>
+        <default field="name_de" expression=""/>
+        <default field="tunnel" expression=""/>
+        <default field="layer" expression=""/>
+        <default field="todo" expression=""/>
+        <default field="whitewater" expression=""/>
+        <default field="name_fa" expression=""/>
+        <default field="wikipedia" expression=""/>
+        <default field="wikidata" expression=""/>
+        <default field="name_ru" expression=""/>
+        <default field="name_bar" expression=""/>
+        <default field="history" expression=""/>
+        <default field="survey" expression=""/>
+        <default field="alt_name" expression=""/>
+        <default field="is_in" expression=""/>
+        <default field="est_width" expression=""/>
+        <default field="canoe" expression=""/>
+        <default field="source_ref" expression=""/>
+        <default field="motorboat_" expression=""/>
+        <default field="name_fr" expression=""/>
+        <default field="whitewat_1" expression=""/>
+        <default field="ele" expression=""/>
+        <default field="designatio" expression=""/>
+        <default field="name_ro" expression=""/>
+        <default field="name_uk" expression=""/>
+        <default field="name_hy" expression=""/>
+        <default field="name_sr" expression=""/>
+        <default field="name_hu" expression=""/>
+        <default field="tree_lined" expression=""/>
+        <default field="name_wae" expression=""/>
+        <default field="name_es" expression=""/>
+        <default field="name_it" expression=""/>
+        <default field="name_sk" expression=""/>
+        <default field="ref_bauwer" expression=""/>
+        <default field="whitewat_2" expression=""/>
+        <default field="GEW_ID" expression=""/>
+        <default field="destinatio" expression=""/>
+        <default field="GEW_NAME_A" expression=""/>
+        <default field="HZBGEW" expression=""/>
+        <default field="name_rm" expression=""/>
+        <default field="covered" expression=""/>
+        <default field="note_acces" expression=""/>
+        <default field="canoe_cond" expression=""/>
+        <default field="website" expression=""/>
+        <default field="maxspeed" expression=""/>
+        <default field="draft" expression=""/>
+        <default field="name_at" expression=""/>
+        <default field="alt_name_d" expression=""/>
+        <default field="level" expression=""/>
+        <default field="arpav_codi" expression=""/>
+        <default field="name_gsw" expression=""/>
+        <default field="name_hr" expression=""/>
+        <default field="name_cs" expression=""/>
+        <default field="name_bg" expression=""/>
+        <default field="loc_name" expression=""/>
+        <default field="name_lt" expression=""/>
+        <default field="name_he" expression=""/>
+        <default field="alt_name_s" expression=""/>
+        <default field="name_sr-La" expression=""/>
+        <default field="alt_name_1" expression=""/>
+        <default field="island" expression=""/>
+        <default field="descriptio" expression=""/>
+        <default field="natural_pr" expression=""/>
+        <default field="admin_leve" expression=""/>
+        <default field="border_typ" expression=""/>
+        <default field="boundary" expression=""/>
+        <default field="sport" expression=""/>
+        <default field="canoe_rest" expression=""/>
+        <default field="ref_fgkz" expression=""/>
+        <default field="source_geo" expression=""/>
+        <default field="note_de" expression=""/>
+        <default field="old_name" expression=""/>
+        <default field="natural" expression=""/>
+        <default field="bridge" expression=""/>
+        <default field="seasonal" expression=""/>
+        <default field="arpav_co_1" expression=""/>
+        <default field="intermitte" expression=""/>
+        <default field="name_el" expression=""/>
+        <default field="passage_ti" expression=""/>
+        <default field="river_wate" expression=""/>
+        <default field="seamark_ty" expression=""/>
+        <default field="maxwidth" expression=""/>
+        <default field="lock" expression=""/>
+        <default field="image" expression=""/>
+        <default field="lock_name_" expression=""/>
+        <default field="opening_ho" expression=""/>
+        <default field="lock_name" expression=""/>
+        <default field="phone" expression=""/>
+        <default field="obstacle" expression=""/>
+        <default field="maxdraft" expression=""/>
+        <default field="vhf" expression=""/>
+        <default field="seamark_na" expression=""/>
+        <default field="maxlength" expression=""/>
+        <default field="seamark_pi" expression=""/>
+        <default field="seamark__1" expression=""/>
+        <default field="seamark__2" expression=""/>
+        <default field="ref_sandre" expression=""/>
+        <default field="name_sv" expression=""/>
+        <default field="source_out" expression=""/>
+        <default field="name_pnb" expression=""/>
+        <default field="name_right" expression=""/>
+        <default field="name_left" expression=""/>
+        <default field="name_pt" expression=""/>
+        <default field="name_tr" expression=""/>
+        <default field="name_vi" expression=""/>
+        <default field="name_mk" expression=""/>
+        <default field="name_zh" expression=""/>
+        <default field="name_sl" expression=""/>
+        <default field="name_ja" expression=""/>
+        <default field="name_bs" expression=""/>
+        <default field="waterbody" expression=""/>
+        <default field="name_nl" expression=""/>
+        <default field="destinat_1" expression=""/>
+        <default field="wikipedia_" expression=""/>
+        <default field="comment" expression=""/>
+        <default field="bicycle" expression=""/>
+        <default field="segregated" expression=""/>
+        <default field="surface" expression=""/>
+        <default field="gauge" expression=""/>
+        <default field="foot" expression=""/>
+        <default field="railway" expression=""/>
+        <default field="ref_gewiss" expression=""/>
+        <default field="cycleway" expression=""/>
+        <default field="tracktype" expression=""/>
+        <default field="highway" expression=""/>
+        <default field="left_provi" expression=""/>
+        <default field="right_prov" expression=""/>
+        <default field="operator" expression=""/>
+        <default field="have_river" expression=""/>
+        <default field="cutting" expression=""/>
+        <default field="man_made" expression=""/>
+        <default field="start_date" expression=""/>
+        <default field="source_lin" expression=""/>
+        <default field="source_nam" expression=""/>
+        <default field="source_not" expression=""/>
+        <default field="source_yea" expression=""/>
+        <default field="ref_bafu" expression=""/>
+        <default field="name_ar" expression=""/>
+        <default field="whitewat_3" expression=""/>
+        <default field="it_fvg_reg" expression=""/>
+        <default field="it_fvg_r_1" expression=""/>
+        <default field="it_fvg_r_2" expression=""/>
+        <default field="it_fvg_r_3" expression=""/>
+        <default field="it_fvg_r_4" expression=""/>
+        <default field="it_fvg_r_5" expression=""/>
+        <default field="name_ch" expression=""/>
+        <default field="name_lld" expression=""/>
+        <default field="tributary_" expression=""/>
+        <default field="is_in_coun" expression=""/>
+        <default field="postal_cod" expression=""/>
+        <default field="name_als" expression=""/>
+        <default field="source_old" expression=""/>
+        <default field="it_fvg_r_6" expression=""/>
+        <default field="name_fur" expression=""/>
+        <default field="it_fvg_r_7" expression=""/>
+        <default field="it_fvg_r_8" expression=""/>
+        <default field="it_fvg_r_9" expression=""/>
+        <default field="it_fvg_r10" expression=""/>
+        <default field="odbl" expression=""/>
+        <default field="note2" expression=""/>
+        <default field="ft_link" expression=""/>
+        <default field="note_sourc" expression=""/>
+        <default field="name_hsb" expression=""/>
+        <default field="name_lb" expression=""/>
+        <default field="source_met" expression=""/>
+        <default field="source_alt" expression=""/>
+        <default field="name_vec" expression=""/>
+        <default field="old_name_d" expression=""/>
+        <default field="name_la" expression=""/>
+        <default field="alt_name_f" expression=""/>
+        <default field="source_tun" expression=""/>
+        <default field="source_pos" expression=""/>
+        <default field="horse" expression=""/>
+        <default field="sac_scale" expression=""/>
+        <default field="wheelchair" expression=""/>
+        <default field="mtb_scale" expression=""/>
+        <default field="snowmobile" expression=""/>
+        <default field="trail_visi" expression=""/>
+        <default field="ski" expression=""/>
+        <default field="lock_ref" expression=""/>
+        <default field="automated" expression=""/>
+        <default field="dibavod_id" expression=""/>
+        <default field="waterway_l" expression=""/>
+        <default field="waterway_1" expression=""/>
+        <default field="vhf_channe" expression=""/>
+        <default field="waterway_2" expression=""/>
+        <default field="self_servi" expression=""/>
+        <default field="it_lombard" expression=""/>
+        <default field="mooring" expression=""/>
+        <default field="it_lomba_1" expression=""/>
+        <default field="passenger" expression=""/>
+        <default field="note_layer" expression=""/>
+        <default field="culvert" expression=""/>
+        <default field="left_count" expression=""/>
+        <default field="right_coun" expression=""/>
+        <default field="source_dat" expression=""/>
+        <default field="embankment" expression=""/>
+        <default field="contact_ph" expression=""/>
+        <default field="velocity" expression=""/>
+        <default field="canoe_all_" expression=""/>
+        <default field="source_cou" expression=""/>
+        <default field="alt_name_2" expression=""/>
+        <default field="accuracy" expression=""/>
+        <default field="political_" expression=""/>
+        <default field="whitewat_4" expression=""/>
+        <default field="pipeline" expression=""/>
+        <default field="location" expression=""/>
+        <default field="boatyard_t" expression=""/>
+        <default field="name_alt" expression=""/>
+        <default field="oneway" expression=""/>
+        <default field="height" expression=""/>
+        <default field="ref_pat" expression=""/>
+        <default field="source_url" expression=""/>
+        <default field="canoe_K1_u" expression=""/>
+        <default field="closed" expression=""/>
+        <default field="lit" expression=""/>
+        <default field="fish_pass" expression=""/>
+        <default field="maxheight" expression=""/>
+        <default field="access" expression=""/>
+        <default field="canoe_desc" expression=""/>
+        <default field="region_rig" expression=""/>
+        <default field="province_r" expression=""/>
+        <default field="service" expression=""/>
+        <default field="canyoning_" expression=""/>
+        <default field="name_cz" expression=""/>
+        <default field="warning" expression=""/>
+        <default field="cutline" expression=""/>
+        <default field="nature" expression=""/>
+        <default field="CEMT_disus" expression=""/>
+        <default field="addr_postc" expression=""/>
+        <default field="addr_city" expression=""/>
+        <default field="water" expression=""/>
+        <default field="whitewat_5" expression=""/>
+        <default field="whitewat_6" expression=""/>
+        <default field="barrier" expression=""/>
+        <default field="motorcycle" expression=""/>
+        <default field="motorcar" expression=""/>
+        <default field="substance" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>osm_s46w7n50e13_multipolygons20171103003807548</id>
+      <datasource>./layers/vector/water/osm-s46w7n50e13_multipolygons.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Wasserkoerper-DACH</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="full_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="osm_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="osm_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="water">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="natural">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wheelchair">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wikipedia">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wikidata">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_en">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="motorboat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_he">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_cs">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ele">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_fr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="alt_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_ru">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_de">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="tourism">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="boat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_it">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="designatio">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sqkm">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="descriptio">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_ka">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wikipedia_">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_uk">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_et">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_gsw">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_zh">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_pl">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_ca">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="note_boat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="seamark_ty">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="seamark_re">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="website">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sport">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="TMC_cid_58">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="TMC_cid__1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="TMC_cid__2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="old_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="verified">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_lt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_da">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_rm">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_pt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_nl">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_lv">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_ja">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_sv">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_hu">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_es">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_ro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_sk">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="old_name_d">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_fi">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="alt_name_d">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="old_name_i">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_la">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_no">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_tt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_el">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="man_made">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="alt_name_c">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="swimming">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="addr_city">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sport_scub">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="scuba_divi">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="scuba_di_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="waterway">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ref_gewiss">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="short_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="short_na_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="is_in">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="landuse">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="golf">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="operator">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="start_date">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="access">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="leisure">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="layer">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="image">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="place">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="nudism">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="waterbody">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="loc_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_nam">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="depth">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_out">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_acc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="skating">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dog">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_nn">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_lad">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="contact_fa">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="diving">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="reg_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ship">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="intermitte">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="note_de">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fishing">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="official_n">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="island">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="canoe">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="tidal">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fee">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="leaf_cycle">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="restrictio">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dogs">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wikipedi_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wikipedi_2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="camping">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="note_acces">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wetland">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sport_swim">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="admin_leve">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="boundary">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="surface">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ref">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="building">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_ele">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_lombard">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="it_lomba_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_aer">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_tra">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="addr_house">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="addr_postc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ship_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="historic">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="floating">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="addr_count">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="addr_stree">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="leaf_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="alt_name_i">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="covered">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="short_na_2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sport_wind">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sport_fish">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_geo">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="descript_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="stone_mate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ref_pat_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ref_pat_ca">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="protection">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="access_con">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="seasonal">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="165,191,221,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="114,133,132,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.1"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="8.25"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="4294967295"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>name</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="full_id" index="0" name=""/>
+        <alias field="osm_id" index="1" name=""/>
+        <alias field="osm_type" index="2" name=""/>
+        <alias field="water" index="3" name=""/>
+        <alias field="type" index="4" name=""/>
+        <alias field="natural" index="5" name=""/>
+        <alias field="name" index="6" name=""/>
+        <alias field="wheelchair" index="7" name=""/>
+        <alias field="wikipedia" index="8" name=""/>
+        <alias field="wikidata" index="9" name=""/>
+        <alias field="name_en" index="10" name=""/>
+        <alias field="motorboat" index="11" name=""/>
+        <alias field="name_he" index="12" name=""/>
+        <alias field="name_cs" index="13" name=""/>
+        <alias field="ele" index="14" name=""/>
+        <alias field="name_fr" index="15" name=""/>
+        <alias field="alt_name" index="16" name=""/>
+        <alias field="name_ru" index="17" name=""/>
+        <alias field="name_de" index="18" name=""/>
+        <alias field="tourism" index="19" name=""/>
+        <alias field="boat" index="20" name=""/>
+        <alias field="name_it" index="21" name=""/>
+        <alias field="designatio" index="22" name=""/>
+        <alias field="sqkm" index="23" name=""/>
+        <alias field="descriptio" index="24" name=""/>
+        <alias field="name_ka" index="25" name=""/>
+        <alias field="wikipedia_" index="26" name=""/>
+        <alias field="name_uk" index="27" name=""/>
+        <alias field="name_et" index="28" name=""/>
+        <alias field="name_gsw" index="29" name=""/>
+        <alias field="name_zh" index="30" name=""/>
+        <alias field="name_pl" index="31" name=""/>
+        <alias field="name_ca" index="32" name=""/>
+        <alias field="note_boat" index="33" name=""/>
+        <alias field="seamark_ty" index="34" name=""/>
+        <alias field="seamark_re" index="35" name=""/>
+        <alias field="website" index="36" name=""/>
+        <alias field="sport" index="37" name=""/>
+        <alias field="TMC_cid_58" index="38" name=""/>
+        <alias field="TMC_cid__1" index="39" name=""/>
+        <alias field="TMC_cid__2" index="40" name=""/>
+        <alias field="old_name" index="41" name=""/>
+        <alias field="verified" index="42" name=""/>
+        <alias field="name_lt" index="43" name=""/>
+        <alias field="name_da" index="44" name=""/>
+        <alias field="name_rm" index="45" name=""/>
+        <alias field="name_pt" index="46" name=""/>
+        <alias field="name_nl" index="47" name=""/>
+        <alias field="name_lv" index="48" name=""/>
+        <alias field="name_ja" index="49" name=""/>
+        <alias field="name_sv" index="50" name=""/>
+        <alias field="name_hu" index="51" name=""/>
+        <alias field="name_es" index="52" name=""/>
+        <alias field="name_ro" index="53" name=""/>
+        <alias field="name_sk" index="54" name=""/>
+        <alias field="old_name_d" index="55" name=""/>
+        <alias field="name_fi" index="56" name=""/>
+        <alias field="alt_name_d" index="57" name=""/>
+        <alias field="old_name_i" index="58" name=""/>
+        <alias field="name_la" index="59" name=""/>
+        <alias field="name_no" index="60" name=""/>
+        <alias field="name_tt" index="61" name=""/>
+        <alias field="name_el" index="62" name=""/>
+        <alias field="man_made" index="63" name=""/>
+        <alias field="alt_name_c" index="64" name=""/>
+        <alias field="swimming" index="65" name=""/>
+        <alias field="addr_city" index="66" name=""/>
+        <alias field="sport_scub" index="67" name=""/>
+        <alias field="scuba_divi" index="68" name=""/>
+        <alias field="scuba_di_1" index="69" name=""/>
+        <alias field="waterway" index="70" name=""/>
+        <alias field="ref_gewiss" index="71" name=""/>
+        <alias field="short_name" index="72" name=""/>
+        <alias field="short_na_1" index="73" name=""/>
+        <alias field="is_in" index="74" name=""/>
+        <alias field="landuse" index="75" name=""/>
+        <alias field="golf" index="76" name=""/>
+        <alias field="operator" index="77" name=""/>
+        <alias field="name_1" index="78" name=""/>
+        <alias field="start_date" index="79" name=""/>
+        <alias field="access" index="80" name=""/>
+        <alias field="leisure" index="81" name=""/>
+        <alias field="layer" index="82" name=""/>
+        <alias field="image" index="83" name=""/>
+        <alias field="place" index="84" name=""/>
+        <alias field="nudism" index="85" name=""/>
+        <alias field="waterbody" index="86" name=""/>
+        <alias field="loc_name" index="87" name=""/>
+        <alias field="source_nam" index="88" name=""/>
+        <alias field="depth" index="89" name=""/>
+        <alias field="source_out" index="90" name=""/>
+        <alias field="source_acc" index="91" name=""/>
+        <alias field="skating" index="92" name=""/>
+        <alias field="dog" index="93" name=""/>
+        <alias field="name_nn" index="94" name=""/>
+        <alias field="name_lad" index="95" name=""/>
+        <alias field="contact_fa" index="96" name=""/>
+        <alias field="diving" index="97" name=""/>
+        <alias field="reg_name" index="98" name=""/>
+        <alias field="ship" index="99" name=""/>
+        <alias field="intermitte" index="100" name=""/>
+        <alias field="note_de" index="101" name=""/>
+        <alias field="fishing" index="102" name=""/>
+        <alias field="official_n" index="103" name=""/>
+        <alias field="island" index="104" name=""/>
+        <alias field="canoe" index="105" name=""/>
+        <alias field="tidal" index="106" name=""/>
+        <alias field="fee" index="107" name=""/>
+        <alias field="leaf_cycle" index="108" name=""/>
+        <alias field="restrictio" index="109" name=""/>
+        <alias field="dogs" index="110" name=""/>
+        <alias field="wikipedi_1" index="111" name=""/>
+        <alias field="wikipedi_2" index="112" name=""/>
+        <alias field="camping" index="113" name=""/>
+        <alias field="note_acces" index="114" name=""/>
+        <alias field="wetland" index="115" name=""/>
+        <alias field="sport_swim" index="116" name=""/>
+        <alias field="admin_leve" index="117" name=""/>
+        <alias field="boundary" index="118" name=""/>
+        <alias field="surface" index="119" name=""/>
+        <alias field="ref" index="120" name=""/>
+        <alias field="building" index="121" name=""/>
+        <alias field="source_ele" index="122" name=""/>
+        <alias field="it_lombard" index="123" name=""/>
+        <alias field="it_lomba_1" index="124" name=""/>
+        <alias field="source_aer" index="125" name=""/>
+        <alias field="source_tra" index="126" name=""/>
+        <alias field="addr_house" index="127" name=""/>
+        <alias field="addr_postc" index="128" name=""/>
+        <alias field="ship_type" index="129" name=""/>
+        <alias field="historic" index="130" name=""/>
+        <alias field="floating" index="131" name=""/>
+        <alias field="addr_count" index="132" name=""/>
+        <alias field="addr_stree" index="133" name=""/>
+        <alias field="leaf_type" index="134" name=""/>
+        <alias field="alt_name_i" index="135" name=""/>
+        <alias field="covered" index="136" name=""/>
+        <alias field="short_na_2" index="137" name=""/>
+        <alias field="sport_wind" index="138" name=""/>
+        <alias field="sport_fish" index="139" name=""/>
+        <alias field="source_geo" index="140" name=""/>
+        <alias field="descript_1" index="141" name=""/>
+        <alias field="stone_mate" index="142" name=""/>
+        <alias field="ref_pat_id" index="143" name=""/>
+        <alias field="ref_pat_ca" index="144" name=""/>
+        <alias field="protection" index="145" name=""/>
+        <alias field="access_con" index="146" name=""/>
+        <alias field="seasonal" index="147" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="full_id"/>
+          <column width="-1" hidden="0" type="field" name="osm_id"/>
+          <column width="-1" hidden="0" type="field" name="osm_type"/>
+          <column width="-1" hidden="0" type="field" name="water"/>
+          <column width="-1" hidden="0" type="field" name="type"/>
+          <column width="-1" hidden="0" type="field" name="natural"/>
+          <column width="-1" hidden="0" type="field" name="name"/>
+          <column width="-1" hidden="0" type="field" name="wheelchair"/>
+          <column width="-1" hidden="0" type="field" name="wikipedia"/>
+          <column width="-1" hidden="0" type="field" name="wikidata"/>
+          <column width="-1" hidden="0" type="field" name="name_en"/>
+          <column width="-1" hidden="0" type="field" name="motorboat"/>
+          <column width="-1" hidden="0" type="field" name="name_he"/>
+          <column width="-1" hidden="0" type="field" name="name_cs"/>
+          <column width="-1" hidden="0" type="field" name="ele"/>
+          <column width="-1" hidden="0" type="field" name="name_fr"/>
+          <column width="-1" hidden="0" type="field" name="alt_name"/>
+          <column width="-1" hidden="0" type="field" name="name_ru"/>
+          <column width="-1" hidden="0" type="field" name="name_de"/>
+          <column width="-1" hidden="0" type="field" name="tourism"/>
+          <column width="-1" hidden="0" type="field" name="boat"/>
+          <column width="-1" hidden="0" type="field" name="name_it"/>
+          <column width="-1" hidden="0" type="field" name="designatio"/>
+          <column width="-1" hidden="0" type="field" name="sqkm"/>
+          <column width="-1" hidden="0" type="field" name="descriptio"/>
+          <column width="-1" hidden="0" type="field" name="name_ka"/>
+          <column width="-1" hidden="0" type="field" name="wikipedia_"/>
+          <column width="-1" hidden="0" type="field" name="name_uk"/>
+          <column width="-1" hidden="0" type="field" name="name_et"/>
+          <column width="-1" hidden="0" type="field" name="name_gsw"/>
+          <column width="-1" hidden="0" type="field" name="name_zh"/>
+          <column width="-1" hidden="0" type="field" name="name_pl"/>
+          <column width="-1" hidden="0" type="field" name="name_ca"/>
+          <column width="-1" hidden="0" type="field" name="note_boat"/>
+          <column width="-1" hidden="0" type="field" name="seamark_ty"/>
+          <column width="-1" hidden="0" type="field" name="seamark_re"/>
+          <column width="-1" hidden="0" type="field" name="website"/>
+          <column width="-1" hidden="0" type="field" name="sport"/>
+          <column width="-1" hidden="0" type="field" name="TMC_cid_58"/>
+          <column width="-1" hidden="0" type="field" name="TMC_cid__1"/>
+          <column width="-1" hidden="0" type="field" name="TMC_cid__2"/>
+          <column width="-1" hidden="0" type="field" name="old_name"/>
+          <column width="-1" hidden="0" type="field" name="verified"/>
+          <column width="-1" hidden="0" type="field" name="name_lt"/>
+          <column width="-1" hidden="0" type="field" name="name_da"/>
+          <column width="-1" hidden="0" type="field" name="name_rm"/>
+          <column width="-1" hidden="0" type="field" name="name_pt"/>
+          <column width="-1" hidden="0" type="field" name="name_nl"/>
+          <column width="-1" hidden="0" type="field" name="name_lv"/>
+          <column width="-1" hidden="0" type="field" name="name_ja"/>
+          <column width="-1" hidden="0" type="field" name="name_sv"/>
+          <column width="-1" hidden="0" type="field" name="name_hu"/>
+          <column width="-1" hidden="0" type="field" name="name_es"/>
+          <column width="-1" hidden="0" type="field" name="name_ro"/>
+          <column width="-1" hidden="0" type="field" name="name_sk"/>
+          <column width="-1" hidden="0" type="field" name="old_name_d"/>
+          <column width="-1" hidden="0" type="field" name="name_fi"/>
+          <column width="-1" hidden="0" type="field" name="alt_name_d"/>
+          <column width="-1" hidden="0" type="field" name="old_name_i"/>
+          <column width="-1" hidden="0" type="field" name="name_la"/>
+          <column width="-1" hidden="0" type="field" name="name_no"/>
+          <column width="-1" hidden="0" type="field" name="name_tt"/>
+          <column width="-1" hidden="0" type="field" name="name_el"/>
+          <column width="-1" hidden="0" type="field" name="man_made"/>
+          <column width="-1" hidden="0" type="field" name="alt_name_c"/>
+          <column width="-1" hidden="0" type="field" name="swimming"/>
+          <column width="-1" hidden="0" type="field" name="addr_city"/>
+          <column width="-1" hidden="0" type="field" name="sport_scub"/>
+          <column width="-1" hidden="0" type="field" name="scuba_divi"/>
+          <column width="-1" hidden="0" type="field" name="scuba_di_1"/>
+          <column width="-1" hidden="0" type="field" name="waterway"/>
+          <column width="-1" hidden="0" type="field" name="ref_gewiss"/>
+          <column width="-1" hidden="0" type="field" name="short_name"/>
+          <column width="-1" hidden="0" type="field" name="short_na_1"/>
+          <column width="-1" hidden="0" type="field" name="is_in"/>
+          <column width="-1" hidden="0" type="field" name="landuse"/>
+          <column width="-1" hidden="0" type="field" name="golf"/>
+          <column width="-1" hidden="0" type="field" name="operator"/>
+          <column width="-1" hidden="0" type="field" name="name_1"/>
+          <column width="-1" hidden="0" type="field" name="start_date"/>
+          <column width="-1" hidden="0" type="field" name="access"/>
+          <column width="-1" hidden="0" type="field" name="leisure"/>
+          <column width="-1" hidden="0" type="field" name="layer"/>
+          <column width="-1" hidden="0" type="field" name="image"/>
+          <column width="-1" hidden="0" type="field" name="place"/>
+          <column width="-1" hidden="0" type="field" name="nudism"/>
+          <column width="-1" hidden="0" type="field" name="waterbody"/>
+          <column width="-1" hidden="0" type="field" name="loc_name"/>
+          <column width="-1" hidden="0" type="field" name="source_nam"/>
+          <column width="-1" hidden="0" type="field" name="depth"/>
+          <column width="-1" hidden="0" type="field" name="source_out"/>
+          <column width="-1" hidden="0" type="field" name="source_acc"/>
+          <column width="-1" hidden="0" type="field" name="skating"/>
+          <column width="-1" hidden="0" type="field" name="dog"/>
+          <column width="-1" hidden="0" type="field" name="name_nn"/>
+          <column width="-1" hidden="0" type="field" name="name_lad"/>
+          <column width="-1" hidden="0" type="field" name="contact_fa"/>
+          <column width="-1" hidden="0" type="field" name="diving"/>
+          <column width="-1" hidden="0" type="field" name="reg_name"/>
+          <column width="-1" hidden="0" type="field" name="ship"/>
+          <column width="-1" hidden="0" type="field" name="intermitte"/>
+          <column width="-1" hidden="0" type="field" name="note_de"/>
+          <column width="-1" hidden="0" type="field" name="fishing"/>
+          <column width="-1" hidden="0" type="field" name="official_n"/>
+          <column width="-1" hidden="0" type="field" name="island"/>
+          <column width="-1" hidden="0" type="field" name="canoe"/>
+          <column width="-1" hidden="0" type="field" name="tidal"/>
+          <column width="-1" hidden="0" type="field" name="fee"/>
+          <column width="-1" hidden="0" type="field" name="leaf_cycle"/>
+          <column width="-1" hidden="0" type="field" name="restrictio"/>
+          <column width="-1" hidden="0" type="field" name="dogs"/>
+          <column width="-1" hidden="0" type="field" name="wikipedi_1"/>
+          <column width="-1" hidden="0" type="field" name="wikipedi_2"/>
+          <column width="-1" hidden="0" type="field" name="camping"/>
+          <column width="-1" hidden="0" type="field" name="note_acces"/>
+          <column width="-1" hidden="0" type="field" name="wetland"/>
+          <column width="-1" hidden="0" type="field" name="sport_swim"/>
+          <column width="-1" hidden="0" type="field" name="admin_leve"/>
+          <column width="-1" hidden="0" type="field" name="boundary"/>
+          <column width="-1" hidden="0" type="field" name="surface"/>
+          <column width="-1" hidden="0" type="field" name="ref"/>
+          <column width="-1" hidden="0" type="field" name="building"/>
+          <column width="-1" hidden="0" type="field" name="source_ele"/>
+          <column width="-1" hidden="0" type="field" name="it_lombard"/>
+          <column width="-1" hidden="0" type="field" name="it_lomba_1"/>
+          <column width="-1" hidden="0" type="field" name="source_aer"/>
+          <column width="-1" hidden="0" type="field" name="source_tra"/>
+          <column width="-1" hidden="0" type="field" name="addr_house"/>
+          <column width="-1" hidden="0" type="field" name="addr_postc"/>
+          <column width="-1" hidden="0" type="field" name="ship_type"/>
+          <column width="-1" hidden="0" type="field" name="historic"/>
+          <column width="-1" hidden="0" type="field" name="floating"/>
+          <column width="-1" hidden="0" type="field" name="addr_count"/>
+          <column width="-1" hidden="0" type="field" name="addr_stree"/>
+          <column width="-1" hidden="0" type="field" name="leaf_type"/>
+          <column width="-1" hidden="0" type="field" name="alt_name_i"/>
+          <column width="-1" hidden="0" type="field" name="covered"/>
+          <column width="-1" hidden="0" type="field" name="short_na_2"/>
+          <column width="-1" hidden="0" type="field" name="sport_wind"/>
+          <column width="-1" hidden="0" type="field" name="sport_fish"/>
+          <column width="-1" hidden="0" type="field" name="source_geo"/>
+          <column width="-1" hidden="0" type="field" name="descript_1"/>
+          <column width="-1" hidden="0" type="field" name="stone_mate"/>
+          <column width="-1" hidden="0" type="field" name="ref_pat_id"/>
+          <column width="-1" hidden="0" type="field" name="ref_pat_ca"/>
+          <column width="-1" hidden="0" type="field" name="protection"/>
+          <column width="-1" hidden="0" type="field" name="access_con"/>
+          <column width="-1" hidden="0" type="field" name="seasonal"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="full_id" expression=""/>
+        <default field="osm_id" expression=""/>
+        <default field="osm_type" expression=""/>
+        <default field="water" expression=""/>
+        <default field="type" expression=""/>
+        <default field="natural" expression=""/>
+        <default field="name" expression=""/>
+        <default field="wheelchair" expression=""/>
+        <default field="wikipedia" expression=""/>
+        <default field="wikidata" expression=""/>
+        <default field="name_en" expression=""/>
+        <default field="motorboat" expression=""/>
+        <default field="name_he" expression=""/>
+        <default field="name_cs" expression=""/>
+        <default field="ele" expression=""/>
+        <default field="name_fr" expression=""/>
+        <default field="alt_name" expression=""/>
+        <default field="name_ru" expression=""/>
+        <default field="name_de" expression=""/>
+        <default field="tourism" expression=""/>
+        <default field="boat" expression=""/>
+        <default field="name_it" expression=""/>
+        <default field="designatio" expression=""/>
+        <default field="sqkm" expression=""/>
+        <default field="descriptio" expression=""/>
+        <default field="name_ka" expression=""/>
+        <default field="wikipedia_" expression=""/>
+        <default field="name_uk" expression=""/>
+        <default field="name_et" expression=""/>
+        <default field="name_gsw" expression=""/>
+        <default field="name_zh" expression=""/>
+        <default field="name_pl" expression=""/>
+        <default field="name_ca" expression=""/>
+        <default field="note_boat" expression=""/>
+        <default field="seamark_ty" expression=""/>
+        <default field="seamark_re" expression=""/>
+        <default field="website" expression=""/>
+        <default field="sport" expression=""/>
+        <default field="TMC_cid_58" expression=""/>
+        <default field="TMC_cid__1" expression=""/>
+        <default field="TMC_cid__2" expression=""/>
+        <default field="old_name" expression=""/>
+        <default field="verified" expression=""/>
+        <default field="name_lt" expression=""/>
+        <default field="name_da" expression=""/>
+        <default field="name_rm" expression=""/>
+        <default field="name_pt" expression=""/>
+        <default field="name_nl" expression=""/>
+        <default field="name_lv" expression=""/>
+        <default field="name_ja" expression=""/>
+        <default field="name_sv" expression=""/>
+        <default field="name_hu" expression=""/>
+        <default field="name_es" expression=""/>
+        <default field="name_ro" expression=""/>
+        <default field="name_sk" expression=""/>
+        <default field="old_name_d" expression=""/>
+        <default field="name_fi" expression=""/>
+        <default field="alt_name_d" expression=""/>
+        <default field="old_name_i" expression=""/>
+        <default field="name_la" expression=""/>
+        <default field="name_no" expression=""/>
+        <default field="name_tt" expression=""/>
+        <default field="name_el" expression=""/>
+        <default field="man_made" expression=""/>
+        <default field="alt_name_c" expression=""/>
+        <default field="swimming" expression=""/>
+        <default field="addr_city" expression=""/>
+        <default field="sport_scub" expression=""/>
+        <default field="scuba_divi" expression=""/>
+        <default field="scuba_di_1" expression=""/>
+        <default field="waterway" expression=""/>
+        <default field="ref_gewiss" expression=""/>
+        <default field="short_name" expression=""/>
+        <default field="short_na_1" expression=""/>
+        <default field="is_in" expression=""/>
+        <default field="landuse" expression=""/>
+        <default field="golf" expression=""/>
+        <default field="operator" expression=""/>
+        <default field="name_1" expression=""/>
+        <default field="start_date" expression=""/>
+        <default field="access" expression=""/>
+        <default field="leisure" expression=""/>
+        <default field="layer" expression=""/>
+        <default field="image" expression=""/>
+        <default field="place" expression=""/>
+        <default field="nudism" expression=""/>
+        <default field="waterbody" expression=""/>
+        <default field="loc_name" expression=""/>
+        <default field="source_nam" expression=""/>
+        <default field="depth" expression=""/>
+        <default field="source_out" expression=""/>
+        <default field="source_acc" expression=""/>
+        <default field="skating" expression=""/>
+        <default field="dog" expression=""/>
+        <default field="name_nn" expression=""/>
+        <default field="name_lad" expression=""/>
+        <default field="contact_fa" expression=""/>
+        <default field="diving" expression=""/>
+        <default field="reg_name" expression=""/>
+        <default field="ship" expression=""/>
+        <default field="intermitte" expression=""/>
+        <default field="note_de" expression=""/>
+        <default field="fishing" expression=""/>
+        <default field="official_n" expression=""/>
+        <default field="island" expression=""/>
+        <default field="canoe" expression=""/>
+        <default field="tidal" expression=""/>
+        <default field="fee" expression=""/>
+        <default field="leaf_cycle" expression=""/>
+        <default field="restrictio" expression=""/>
+        <default field="dogs" expression=""/>
+        <default field="wikipedi_1" expression=""/>
+        <default field="wikipedi_2" expression=""/>
+        <default field="camping" expression=""/>
+        <default field="note_acces" expression=""/>
+        <default field="wetland" expression=""/>
+        <default field="sport_swim" expression=""/>
+        <default field="admin_leve" expression=""/>
+        <default field="boundary" expression=""/>
+        <default field="surface" expression=""/>
+        <default field="ref" expression=""/>
+        <default field="building" expression=""/>
+        <default field="source_ele" expression=""/>
+        <default field="it_lombard" expression=""/>
+        <default field="it_lomba_1" expression=""/>
+        <default field="source_aer" expression=""/>
+        <default field="source_tra" expression=""/>
+        <default field="addr_house" expression=""/>
+        <default field="addr_postc" expression=""/>
+        <default field="ship_type" expression=""/>
+        <default field="historic" expression=""/>
+        <default field="floating" expression=""/>
+        <default field="addr_count" expression=""/>
+        <default field="addr_stree" expression=""/>
+        <default field="leaf_type" expression=""/>
+        <default field="alt_name_i" expression=""/>
+        <default field="covered" expression=""/>
+        <default field="short_na_2" expression=""/>
+        <default field="sport_wind" expression=""/>
+        <default field="sport_fish" expression=""/>
+        <default field="source_geo" expression=""/>
+        <default field="descript_1" expression=""/>
+        <default field="stone_mate" expression=""/>
+        <default field="ref_pat_id" expression=""/>
+        <default field="ref_pat_ca" expression=""/>
+        <default field="protection" expression=""/>
+        <default field="access_con" expression=""/>
+        <default field="seasonal" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "name", '&lt;NULL>' )</previewExpression>
+    </maplayer>
   </projectlayers>
   <properties>
     <Measurement>
@@ -7346,6 +10342,20 @@ def my_form_open(dialog, layer, feature):
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
+    <CopyrightLabel>
+      <FontName type="QString">MS Shell Dlg 2</FontName>
+      <FontSize type="int">8</FontSize>
+      <MarginV type="int">0</MarginV>
+      <MarginH type="int">0</MarginH>
+      <Enabled type="bool">true</Enabled>
+      <Placement type="int">3</Placement>
+      <MarginUnit type="QString">MM</MarginUnit>
+      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>
+&amp;copy; OpenStreetMap contributors&lt;br/>
+Raster images courtesy of the U.S. Geological Survey,&lt;br/>
+visit the USGS at https://usgs.gov</Label>
+      <Color type="QString">#000000</Color>
+    </CopyrightLabel>
   </properties>
   <visibility-presets/>
 </qgis>
