@@ -596,8 +596,8 @@
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
       <labeling type="rule-based">
-        <rules key="{f3a22f76-a51f-4606-a12d-48db1325a72d}">
-          <rule description="Viele Befunde" filter="Anzahl_Befunde > 5" key="{b8a8681d-f736-4ae3-9f59-a276658c553d}">
+        <rules key="{1059390d-03cc-435c-a074-386408953fbf}">
+          <rule description="Viele Befunde" filter="Anzahl_Befunde > 5" key="{b3b5d889-0941-478e-b344-36655647d6fc}">
             <settings>
               <text-style fontItalic="0" fontFamily="Times New Roman" fontLetterSpacing="0" fontUnderline="1" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName="&quot;ID_GeogrLage&quot; || '-' ||&quot;Ortsname&quot;" namedStyle="Normal" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -611,7 +611,7 @@
               <data-defined/>
             </settings>
           </rule>
-          <rule description="Wenig Befunde" filter="Anzahl_Befunde &lt;= 5" key="{3aa1ab3d-968f-43fa-9857-3018482bfef7}">
+          <rule description="Wenig Befunde" filter="Anzahl_Befunde &lt;= 5" key="{94113395-b6e2-4f5f-9462-58c6c2f83e1a}">
             <settings>
               <text-style fontItalic="0" fontFamily="Times New Roman" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8.25" fieldName="ID_GeogrLage" namedStyle="Normal" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -772,7 +772,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>Ortsname</displayfield>
+      <displayfield>[% "Ortsname" %] [% CASE WHEN "Teilortsname"  IS NOT NULL THEN '&amp;ndash;' || "Teilortsname" END %]</displayfield>
       <label>0</label>
       <labelattributes>
         <label fieldname="" text="Label"/>
@@ -10809,10 +10809,10 @@ def my_form_open(dialog, layer, feature):
       <Enabled type="bool">true</Enabled>
       <Placement type="int">3</Placement>
       <MarginUnit type="QString">MM</MarginUnit>
-      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&#xd;
-&amp;copy; OpenStreetMap contributors&lt;br/>&#xd;
-&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>&#xd;
-Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>&#xd;
+      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&#xd;&#xd;
+&amp;copy; OpenStreetMap contributors&lt;br/>&#xd;&#xd;
+&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>&#xd;&#xd;
+Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>&#xd;&#xd;
 </Label>
       <Color type="QString">#000000</Color>
     </CopyrightLabel>
