@@ -1,0 +1,1 @@
+copy the content of the 'expressions' folder to <user-home>\.qgis2\python\expressions
