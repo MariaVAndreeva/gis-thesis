@@ -5,12 +5,12 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Dolche20171102194332791" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20like%20'Dolch%25'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Dolche">
+    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Dolche20171102194332791" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20like%20'Dolch%25'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Dolche">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Fibeln_P2_20171102193458947" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20f.Fund_Typ%20%3D%20'P2'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Fibeln(P2)">
+    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Fibeln_P2_20171102193458947" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20f.Fund_Typ%20%3D%20'P2'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Fibeln(P2)">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
@@ -72,10 +72,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>8.84363673523781202</xmin>
-      <ymin>48.43359649947468171</ymin>
-      <xmax>12.20665326476218837</xmax>
-      <ymax>48.71553350052530362</ymax>
+      <xmin>8.81085925000000181</xmin>
+      <ymin>47.96778675000000192</ymin>
+      <xmax>9.79327074999997826</xmax>
+      <ymax>49.3161232499999187</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -139,14 +139,14 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Dolche" showFeatureCount="1">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Lanzen+Dolche" showFeatureCount="1">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Dolche20171102194332791" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Dolche20171102194332791" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Lanzen+Fibeln(P2)" showFeatureCount="1">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Fibeln(P2)" showFeatureCount="1">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Fibeln_P2_20171102193458947" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Fibeln_P2_20171102193458947" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Gold" showFeatureCount="1">
@@ -2534,27 +2534,25 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" placement="1" tolerance="5" circleColor="125,125,125,255" labelAttributeName="" labelColor="0,0,0,255" toleranceUnit="MM" circleRadiusAddition="0" type="pointDisplacement" circleWidth="0.4" maxLabelScaleDenominator="-1" toleranceUnitScale="0,0,0,0,0,0" enableorderby="0">
-        <labelFontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+      <renderer-v2 forceraster="0" placement="1" tolerance="5" circleColor="125,125,125,255" labelAttributeName="ID_Fund" labelColor="0,0,0,255" toleranceUnit="MM" circleRadiusAddition="0" type="pointDisplacement" circleWidth="0.4" maxLabelScaleDenominator="-1" toleranceUnitScale="0,0,0,0,0,0" enableorderby="0">
+        <labelFontProperties description="Times New Roman,11,-1,5,75,0,0,0,0,0" style=""/>
         <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
           <symbols>
             <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
-              <layer pass="0" class="SimpleMarker" locked="0">
+              <layer pass="0" class="SvgMarker" locked="0">
                 <prop k="angle" v="0"/>
-                <prop k="color" v="0,0,0,255"/>
+                <prop k="color" v="183,65,14,255"/>
                 <prop k="horizontal_anchor_point" v="1"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="name" v="square"/>
+                <prop k="name" v="tourist/tourist_battlefield.svg"/>
                 <prop k="offset" v="0,0"/>
                 <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
                 <prop k="offset_unit" v="MM"/>
-                <prop k="outline_color" v="255,255,0,255"/>
-                <prop k="outline_style" v="solid"/>
-                <prop k="outline_width" v="0"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_width" v="0.1"/>
                 <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
                 <prop k="outline_width_unit" v="MM"/>
-                <prop k="scale_method" v="area"/>
-                <prop k="size" v="3"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="6"/>
                 <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
                 <prop k="size_unit" v="MM"/>
                 <prop k="vertical_anchor_point" v="1"/>
@@ -2567,14 +2565,14 @@ def my_form_open(dialog, layer, feature):
         <symbol alpha="1" clip_to_extent="1" type="marker" name="centerSymbol">
           <layer pass="0" class="SvgMarker" locked="0">
             <prop k="angle" v="0"/>
-            <prop k="color" v="183,65,14,255"/>
+            <prop k="color" v="0,0,0,255"/>
             <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="name" v="tourist/tourist_battlefield.svg"/>
+            <prop k="name" v="gpsicons/city_medium.svg"/>
             <prop k="offset" v="0,0"/>
             <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_width" v="0.1"/>
+            <prop k="outline_color" v="255,255,0,255"/>
+            <prop k="outline_width" v="0.2"/>
             <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="outline_width_unit" v="MM"/>
             <prop k="scale_method" v="diameter"/>
@@ -2585,10 +2583,11 @@ def my_form_open(dialog, layer, feature):
           </layer>
         </symbol>
       </renderer-v2>
-      <labeling type="simple"/>
+      <labeling type="rule-based">
+        <rules key="{33a9886c-ca04-4400-a73c-e7969126770b}"/>
+      </labeling>
       <customproperties>
         <property key="embeddedWidgets/count" value="0"/>
-        <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
         <property key="labeling/blendMode" value="0"/>
@@ -2647,9 +2646,9 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
-        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/offsetType" value="1"/>
         <property key="labeling/placeDirectionSymbol" value="0"/>
-        <property key="labeling/placement" value="0"/>
+        <property key="labeling/placement" value="6"/>
         <property key="labeling/placementFlags" value="10"/>
         <property key="labeling/plussign" value="false"/>
         <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
@@ -3480,8 +3479,8 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" placement="0" tolerance="5" circleColor="125,125,125,255" labelAttributeName="" labelColor="0,0,0,255" toleranceUnit="MM" circleRadiusAddition="0" type="pointDisplacement" circleWidth="0.4" maxLabelScaleDenominator="-1" toleranceUnitScale="0,0,0,0,0,0" enableorderby="0">
-        <labelFontProperties description="Times New Roman,9,-1,5,75,0,0,0,0,0" style=""/>
+      <renderer-v2 forceraster="0" placement="0" tolerance="5" circleColor="125,125,125,255" labelAttributeName="ID_Fund" labelColor="0,0,0,255" toleranceUnit="MM" circleRadiusAddition="0" type="pointDisplacement" circleWidth="0.4" maxLabelScaleDenominator="-1" toleranceUnitScale="0,0,0,0,0,0" enableorderby="0">
+        <labelFontProperties description="Times New Roman,11,-1,5,75,0,0,0,0,0" style=""/>
         <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
           <symbols>
             <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
@@ -3489,10 +3488,10 @@ def my_form_open(dialog, layer, feature):
                 <prop k="angle" v="0"/>
                 <prop k="color" v="255,191,0,255"/>
                 <prop k="horizontal_anchor_point" v="1"/>
-                <prop k="horizontal_anchor_point_dd_active" v="1"/>
-                <prop k="horizontal_anchor_point_dd_expression" v="if(  &quot;Erste_Fund_Abbildung_ID&quot; , 'right', 'center')"/>
+                <prop k="horizontal_anchor_point_dd_active" v="0"/>
+                <prop k="horizontal_anchor_point_dd_expression" v=""/>
                 <prop k="horizontal_anchor_point_dd_field" v=""/>
-                <prop k="horizontal_anchor_point_dd_useexpr" v="1"/>
+                <prop k="horizontal_anchor_point_dd_useexpr" v="0"/>
                 <prop k="name" v="shopping/shopping_jewelry.svg"/>
                 <prop k="name_dd_active" v="1"/>
                 <prop k="name_dd_expression" v="show_scan(  &quot;Erste_Fund_Abbildung_URL&quot;, &quot;Erste_Fund_Abbildung_File_Type&quot; )"/>
@@ -3508,7 +3507,7 @@ def my_form_open(dialog, layer, feature):
                 <prop k="scale_method" v="diameter"/>
                 <prop k="size" v="20"/>
                 <prop k="size_dd_active" v="1"/>
-                <prop k="size_dd_expression" v="coalesce(scale_exp(&quot;Erste_Fund_Abbildung_ID&quot;, 238, 306, 20, 20, 0.57), 6)"/>
+                <prop k="size_dd_expression" v="coalesce(scale_exp(&quot;Erste_Fund_Abbildung_ID&quot;, 286, 545, 20, 20, 0.57), 6)"/>
                 <prop k="size_dd_field" v=""/>
                 <prop k="size_dd_useexpr" v="1"/>
                 <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -3591,8 +3590,8 @@ def my_form_open(dialog, layer, feature):
             <prop k="offset" v="0,0"/>
             <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="255,255,255,255"/>
-            <prop k="outline_width" v="0"/>
+            <prop k="outline_color" v="255,255,0,255"/>
+            <prop k="outline_width" v="0.2"/>
             <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="outline_width_unit" v="MM"/>
             <prop k="scale_method" v="diameter"/>
@@ -3615,7 +3614,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/bufferColorB" value="255"/>
         <property key="labeling/bufferColorG" value="255"/>
         <property key="labeling/bufferColorR" value="255"/>
-        <property key="labeling/bufferDraw" value="true"/>
+        <property key="labeling/bufferDraw" value="false"/>
         <property key="labeling/bufferJoinStyle" value="128"/>
         <property key="labeling/bufferNoFill" value="false"/>
         <property key="labeling/bufferSize" value="1"/>
@@ -3626,15 +3625,15 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/centroidWhole" value="false"/>
         <property key="labeling/decimals" value="3"/>
         <property key="labeling/displayAll" value="false"/>
-        <property key="labeling/dist" value="2"/>
+        <property key="labeling/dist" value="0"/>
         <property key="labeling/distInMapUnits" value="false"/>
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="ID_Fund"/>
+        <property key="labeling/fieldName" value=""/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Times New Roman"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
         <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -3645,10 +3644,10 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/fontStrikeout" value="false"/>
         <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="75"/>
+        <property key="labeling/fontWeight" value="50"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
         <property key="labeling/labelOffsetInMapUnits" value="true"/>
         <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/labelPerPart" value="false"/>
@@ -3661,7 +3660,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/minFeatureSize" value="0"/>
         <property key="labeling/multilineAlign" value="3"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Bold"/>
+        <property key="labeling/namedStyle" value="Normal"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
@@ -4498,8 +4497,8 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" placement="0" tolerance="5" circleColor="125,125,125,255" labelAttributeName="" labelColor="0,0,0,255" toleranceUnit="MM" circleRadiusAddition="0" type="pointDisplacement" circleWidth="0.4" maxLabelScaleDenominator="-1" toleranceUnitScale="0,0,0,0,0,0" enableorderby="0">
-        <labelFontProperties description="Times New Roman,9,-1,5,75,0,0,0,0,0" style=""/>
+      <renderer-v2 forceraster="0" placement="0" tolerance="5" circleColor="125,125,125,255" labelAttributeName="ID_Fund" labelColor="0,0,0,255" toleranceUnit="MM" circleRadiusAddition="0" type="pointDisplacement" circleWidth="0.4" maxLabelScaleDenominator="-1" toleranceUnitScale="0,0,0,0,0,0" enableorderby="0">
+        <labelFontProperties description="Times New Roman,11,-1,5,75,0,0,0,0,0" style=""/>
         <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
           <symbols>
             <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
@@ -4507,10 +4506,10 @@ def my_form_open(dialog, layer, feature):
                 <prop k="angle" v="0"/>
                 <prop k="color" v="255,191,0,255"/>
                 <prop k="horizontal_anchor_point" v="1"/>
-                <prop k="horizontal_anchor_point_dd_active" v="1"/>
-                <prop k="horizontal_anchor_point_dd_expression" v="if(  &quot;Erste_Fund_Abbildung_ID&quot; , 'right', 'center')"/>
+                <prop k="horizontal_anchor_point_dd_active" v="0"/>
+                <prop k="horizontal_anchor_point_dd_expression" v=""/>
                 <prop k="horizontal_anchor_point_dd_field" v=""/>
-                <prop k="horizontal_anchor_point_dd_useexpr" v="1"/>
+                <prop k="horizontal_anchor_point_dd_useexpr" v="0"/>
                 <prop k="name" v="shopping/shopping_jewelry.svg"/>
                 <prop k="name_dd_active" v="1"/>
                 <prop k="name_dd_expression" v="show_scan(  &quot;Erste_Fund_Abbildung_URL&quot;, &quot;Erste_Fund_Abbildung_File_Type&quot; )"/>
@@ -4526,7 +4525,7 @@ def my_form_open(dialog, layer, feature):
                 <prop k="scale_method" v="diameter"/>
                 <prop k="size" v="20"/>
                 <prop k="size_dd_active" v="1"/>
-                <prop k="size_dd_expression" v="coalesce(scale_exp(&quot;Erste_Fund_Abbildung_ID&quot;, 238, 306, 20, 20, 0.57), 6)"/>
+                <prop k="size_dd_expression" v="coalesce(scale_exp(&quot;Erste_Fund_Abbildung_ID&quot;, 286, 545, 20, 20, 0.57), 6)"/>
                 <prop k="size_dd_field" v=""/>
                 <prop k="size_dd_useexpr" v="1"/>
                 <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -4609,8 +4608,8 @@ def my_form_open(dialog, layer, feature):
             <prop k="offset" v="0,0"/>
             <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="255,255,255,255"/>
-            <prop k="outline_width" v="0"/>
+            <prop k="outline_color" v="255,255,0,255"/>
+            <prop k="outline_width" v="0.2"/>
             <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="outline_width_unit" v="MM"/>
             <prop k="scale_method" v="diameter"/>
@@ -4633,7 +4632,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/bufferColorB" value="255"/>
         <property key="labeling/bufferColorG" value="255"/>
         <property key="labeling/bufferColorR" value="255"/>
-        <property key="labeling/bufferDraw" value="true"/>
+        <property key="labeling/bufferDraw" value="false"/>
         <property key="labeling/bufferJoinStyle" value="128"/>
         <property key="labeling/bufferNoFill" value="false"/>
         <property key="labeling/bufferSize" value="1"/>
@@ -4644,15 +4643,15 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/centroidWhole" value="false"/>
         <property key="labeling/decimals" value="3"/>
         <property key="labeling/displayAll" value="false"/>
-        <property key="labeling/dist" value="2"/>
+        <property key="labeling/dist" value="0"/>
         <property key="labeling/distInMapUnits" value="false"/>
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="ID_Fund"/>
+        <property key="labeling/fieldName" value=""/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Times New Roman"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
         <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -4663,10 +4662,10 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/fontStrikeout" value="false"/>
         <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="75"/>
+        <property key="labeling/fontWeight" value="50"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
         <property key="labeling/labelOffsetInMapUnits" value="true"/>
         <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/labelPerPart" value="false"/>
@@ -4679,7 +4678,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/minFeatureSize" value="0"/>
         <property key="labeling/multilineAlign" value="3"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Bold"/>
+        <property key="labeling/namedStyle" value="Normal"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
@@ -6435,27 +6434,25 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" placement="1" tolerance="5" circleColor="125,125,125,255" labelAttributeName="" labelColor="0,0,0,255" toleranceUnit="MM" circleRadiusAddition="0" type="pointDisplacement" circleWidth="0.4" maxLabelScaleDenominator="-1" toleranceUnitScale="0,0,0,0,0,0" enableorderby="0">
-        <labelFontProperties description="Times New Roman,10,-1,5,75,1,0,0,0,0" style=""/>
+      <renderer-v2 forceraster="0" placement="1" tolerance="5" circleColor="125,125,125,255" labelAttributeName="ID_Fund" labelColor="0,0,0,255" toleranceUnit="MM" circleRadiusAddition="0" type="pointDisplacement" circleWidth="0.4" maxLabelScaleDenominator="-1" toleranceUnitScale="0,0,0,0,0,0" enableorderby="0">
+        <labelFontProperties description="Times New Roman,11,-1,5,75,0,0,0,0,0" style=""/>
         <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
           <symbols>
             <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
-              <layer pass="0" class="SimpleMarker" locked="0">
+              <layer pass="0" class="SvgMarker" locked="0">
                 <prop k="angle" v="0"/>
-                <prop k="color" v="0,0,0,255"/>
+                <prop k="color" v="183,65,14,255"/>
                 <prop k="horizontal_anchor_point" v="1"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="name" v="square"/>
+                <prop k="name" v="tourist/tourist_battlefield.svg"/>
                 <prop k="offset" v="0,0"/>
                 <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
                 <prop k="offset_unit" v="MM"/>
-                <prop k="outline_color" v="255,255,0,255"/>
-                <prop k="outline_style" v="solid"/>
-                <prop k="outline_width" v="0"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_width" v="0.1"/>
                 <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
                 <prop k="outline_width_unit" v="MM"/>
-                <prop k="scale_method" v="area"/>
-                <prop k="size" v="3"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="6"/>
                 <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
                 <prop k="size_unit" v="MM"/>
                 <prop k="vertical_anchor_point" v="1"/>
@@ -6468,14 +6465,14 @@ def my_form_open(dialog, layer, feature):
         <symbol alpha="1" clip_to_extent="1" type="marker" name="centerSymbol">
           <layer pass="0" class="SvgMarker" locked="0">
             <prop k="angle" v="0"/>
-            <prop k="color" v="183,65,14,255"/>
+            <prop k="color" v="0,0,0,255"/>
             <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="name" v="tourist/tourist_battlefield.svg"/>
+            <prop k="name" v="gpsicons/city_medium.svg"/>
             <prop k="offset" v="0,0"/>
             <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_width" v="0.1"/>
+            <prop k="outline_color" v="255,255,0,255"/>
+            <prop k="outline_width" v="0.2"/>
             <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="outline_width_unit" v="MM"/>
             <prop k="scale_method" v="diameter"/>
@@ -6486,10 +6483,11 @@ def my_form_open(dialog, layer, feature):
           </layer>
         </symbol>
       </renderer-v2>
-      <labeling type="simple"/>
+      <labeling type="rule-based">
+        <rules key="{33a9886c-ca04-4400-a73c-e7969126770b}"/>
+      </labeling>
       <customproperties>
         <property key="embeddedWidgets/count" value="0"/>
-        <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
         <property key="labeling/blendMode" value="0"/>
