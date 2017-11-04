@@ -5,11 +5,6 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Dolche20171102194332791" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20like%20'Dolch%25'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Dolche">
-      <customproperties>
-        <property key="showFeatureCount" value="1"/>
-      </customproperties>
-    </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Fibeln_P2_20171102193458947" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20f.Fund_Typ%20%3D%20'P2'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Fibeln(P2)">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
@@ -21,6 +16,11 @@
       </customproperties>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Schwerter20171102194910255" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Klasse%20like%20'Schwert%25'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Schwerter">
+      <customproperties>
+        <property key="showFeatureCount" value="1"/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Dolche20171102194332791" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20like%20'Dolch%25'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Dolche">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
@@ -43,16 +43,16 @@
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="Staat20171103021418189" source="contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vg250_sta&amp;styles=&amp;url=http://sg.geodatenzentrum.de/wms_vg250?Version%3D1.1.0%26" name="Staat">
+    <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Staat20171103021418189" source="contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vg250_sta&amp;styles=&amp;url=http://sg.geodatenzentrum.de/wms_vg250?Version%3D1.1.0%26" name="Staat">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Checked" id="Bundesland20171103021412940" source="contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vg250_lan&amp;styles=&amp;url=http://sg.geodatenzentrum.de/wms_vg250?Version%3D1.1.0%26" name="Bundesland">
+    <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Checked" id="Bundesland20171103021412940" source="contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vg250_lan&amp;styles=&amp;url=http://sg.geodatenzentrum.de/wms_vg250?Version%3D1.1.0%26" name="Bundesland">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="Regierungsbezirk20171103021408581" source="contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vg250_rbz&amp;styles=&amp;url=http://sg.geodatenzentrum.de/wms_vg250?Version%3D1.1.0%26" name="Regierungsbezirk">
+    <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Regierungsbezirk20171103021408581" source="contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vg250_rbz&amp;styles=&amp;url=http://sg.geodatenzentrum.de/wms_vg250?Version%3D1.1.0%26" name="Regierungsbezirk">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="Kreis20171103021358642" source="contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vg250_krs&amp;styles=&amp;url=http://sg.geodatenzentrum.de/wms_vg250?Version%3D1.1.0%26" name="Kreis">
+    <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="Kreis20171103021358642" source="contextualWMSLegend=0&amp;crs=EPSG:4326&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=vg250_krs&amp;styles=&amp;url=http://sg.geodatenzentrum.de/wms_vg250?Version%3D1.1.0%26" name="Kreis">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="osm_s46w7n50e13_lines20171103003827076" source="C:/gis/gis-thesis/layers/vector/water/osm-s46w7n50e13_lines.shp" name="Fluesse-DACH">
@@ -72,10 +72,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>8.81085925000000181</xmin>
-      <ymin>47.96778675000000192</ymin>
-      <xmax>9.79327074999997826</xmax>
-      <ymax>49.3161232499999187</ymax>
+      <xmin>7.02642675000000061</xmin>
+      <ymin>47.02360074999999995</ymin>
+      <xmax>13.23164324999999586</xmax>
+      <ymax>49.62588925000004281</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -139,11 +139,6 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Lanzen+Dolche" showFeatureCount="1">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Dolche20171102194332791" visible="1"/>
-      </filegroup>
-    </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Fibeln(P2)" showFeatureCount="1">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Lanzen_Fibeln_P2_20171102193458947" visible="0"/>
@@ -157,6 +152,11 @@
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Schwerter" showFeatureCount="1">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Lanzen_Schwerter20171102194910255" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Dolche" showFeatureCount="1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Dolche20171102194332791" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Keramik" showFeatureCount="0">
@@ -179,23 +179,23 @@
         <legendlayerfile isInOverview="0" layerid="ODBC_thesis_2017_A_QGIS20171102173720168" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Staat" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Staat" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Staat20171103021418189" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Bundesland" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Bundesland" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Bundesland20171103021412940" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Regierungsbezirk" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Regierungsbezirk" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Regierungsbezirk20171103021408581" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Kreis" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Kreis" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Kreis20171103021358642" visible="0"/>
       </filegroup>
     </legendlayer>
@@ -5529,7 +5529,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="4"/>
+              <prop k="size" v="6"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -5846,7 +5846,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;T_Fund_Literaturangaben&quot;" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="LONGITUDE"/>
           <column width="-1" hidden="0" type="field" name="LATITUDE"/>
@@ -5948,8 +5948,8 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="Anzahl_Befunde"/>
           <column width="-1" hidden="0" type="field" name="Anzahl_Funde"/>
           <column width="-1" hidden="0" type="field" name="Erste_Fund_Abbildung_ID"/>
-          <column width="-1" hidden="0" type="field" name="Erste_Fund_Abbildung_File_Name"/>
-          <column width="-1" hidden="0" type="field" name="Erste_Fund_Abbildung_File_Type"/>
+          <column width="129" hidden="0" type="field" name="Erste_Fund_Abbildung_File_Name"/>
+          <column width="62" hidden="0" type="field" name="Erste_Fund_Abbildung_File_Type"/>
           <column width="-1" hidden="0" type="field" name="Erste_Fund_Abbildung_URL"/>
           <column width="-1" hidden="1" type="actions"/>
         </columns>
