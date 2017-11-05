@@ -5,12 +5,12 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Fibeln_P2_20171102193458947" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20f.Fund_Typ%20%3D%20'P2'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Fibeln(P2)">
+    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Fibeln_P2_20171102193458947" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20f.Fund_Typ%20%3D%20'P2'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Fibeln(P2)">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Gold20171102193728207" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Material_Abkuerzung%20%3D'Au'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)%0D%0A&amp;uid=ID_Fund" name="Lanzen+Gold">
+    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Gold20171102193728207" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Material_Abkuerzung%20%3D'Au'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)%0D%0A&amp;uid=ID_Fund" name="Lanzen+Gold">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
@@ -72,10 +72,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>7.02642675000000061</xmin>
-      <ymin>47.02360074999999995</ymin>
-      <xmax>13.23164324999999586</xmax>
-      <ymax>49.62588925000004281</ymax>
+      <xmin>8.92370855736934487</xmin>
+      <ymin>48.44030928521398494</ymin>
+      <xmax>12.12658144263065552</xmax>
+      <ymax>48.70882071478600039</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -101,6 +101,7 @@
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102205328918"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102210451305"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="osm_s46w7n50e13_lines20171103003827076"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="temp_shp20171105161231473"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Gold20171102193728207"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Regierungsbezirk20171103021408581"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="osm_s46w7n50e13_multipolygons20171103003807548"/>
@@ -139,13 +140,13 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Lanzen+Fibeln(P2)" showFeatureCount="1">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Lanzen+Fibeln(P2)" showFeatureCount="1">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Lanzen_Fibeln_P2_20171102193458947" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Gold" showFeatureCount="1">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lanzen+Gold" showFeatureCount="1">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Lanzen_Gold20171102193728207" visible="0"/>
       </filegroup>
     </legendlayer>
@@ -3481,9 +3482,131 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 forceraster="0" placement="0" tolerance="5" circleColor="125,125,125,255" labelAttributeName="ID_Fund" labelColor="0,0,0,255" toleranceUnit="MM" circleRadiusAddition="0" type="pointDisplacement" circleWidth="0.4" maxLabelScaleDenominator="-1" toleranceUnitScale="0,0,0,0,0,0" enableorderby="0">
         <labelFontProperties description="Times New Roman,11,-1,5,75,0,0,0,0,0" style=""/>
-        <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+          <rules key="{c727cf47-69ca-4fed-bca3-e75c99985777}">
+            <rule filter="&quot;Erste_Fund_Abbildung_ID&quot; is not NULL and count( &quot;ID_Fund&quot; , group_by:= &quot;ID_GeogrLage&quot; ) &lt; 2" key="{96d30351-0b7e-4f80-9d99-f0db93a4da78}" symbol="0" label="Einzelbild"/>
+            <rule filter="&quot;Erste_Fund_Abbildung_ID&quot; is NULL and count( &quot;ID_Fund&quot; , group_by:= &quot;ID_GeogrLage&quot; ) &lt; 2" key="{f9881b64-2e6a-49d5-800a-86a8205c10d1}" symbol="1" label="Einzelpunkt"/>
+            <rule filter="&quot;Erste_Fund_Abbildung_ID&quot;  is not NULL and count( &quot;ID_Fund&quot; , group_by:= &quot;ID_GeogrLage&quot; ) > 1" key="{f9881b64-2e6a-49d5-800a-86a8205c10d1}" symbol="2" label="Mehrfachbild"/>
+            <rule filter="&quot;Erste_Fund_Abbildung_ID&quot; is NULL and count( &quot;ID_Fund&quot; , group_by:= &quot;ID_GeogrLage&quot; ) > 1" key="{ab6d99ab-7337-4002-b6a8-05816f8bfee6}" symbol="3" label="Mehrfachpunkt"/>
+          </rules>
           <symbols>
             <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+              <layer pass="0" class="SvgMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="255,191,0,255"/>
+                <prop k="horizontal_anchor_point" v="0"/>
+                <prop k="horizontal_anchor_point_dd_active" v="0"/>
+                <prop k="horizontal_anchor_point_dd_expression" v=""/>
+                <prop k="horizontal_anchor_point_dd_field" v=""/>
+                <prop k="horizontal_anchor_point_dd_useexpr" v="0"/>
+                <prop k="name" v="shopping/shopping_jewelry.svg"/>
+                <prop k="name_dd_active" v="1"/>
+                <prop k="name_dd_expression" v="show_scan(  &quot;Erste_Fund_Abbildung_URL&quot;, &quot;Erste_Fund_Abbildung_File_Type&quot; )"/>
+                <prop k="name_dd_field" v=""/>
+                <prop k="name_dd_useexpr" v="1"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_width" v="0.1"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="20"/>
+                <prop k="size_dd_active" v="0"/>
+                <prop k="size_dd_expression" v=""/>
+                <prop k="size_dd_field" v=""/>
+                <prop k="size_dd_useexpr" v="0"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+                <effect enabled="1" type="effectStack">
+                  <effect type="dropShadow">
+                    <prop k="blend_mode" v="13"/>
+                    <prop k="blur_level" v="10"/>
+                    <prop k="color" v="0,0,0,255"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="1"/>
+                    <prop k="offset_angle" v="135"/>
+                    <prop k="offset_distance" v="2"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="outerGlow">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="blur_level" v="3"/>
+                    <prop k="color1" v="0,0,255,255"/>
+                    <prop k="color2" v="0,255,0,255"/>
+                    <prop k="color_type" v="0"/>
+                    <prop k="discrete" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="single_color" v="255,255,255,255"/>
+                    <prop k="spread" v="2"/>
+                    <prop k="spread_unit" v="MM"/>
+                    <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0.5"/>
+                  </effect>
+                  <effect type="drawSource">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="1"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="innerShadow">
+                    <prop k="blend_mode" v="13"/>
+                    <prop k="blur_level" v="10"/>
+                    <prop k="color" v="0,0,0,255"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="offset_angle" v="135"/>
+                    <prop k="offset_distance" v="2"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="innerGlow">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="blur_level" v="3"/>
+                    <prop k="color1" v="0,0,255,255"/>
+                    <prop k="color2" v="0,255,0,255"/>
+                    <prop k="color_type" v="0"/>
+                    <prop k="discrete" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="single_color" v="255,255,255,255"/>
+                    <prop k="spread" v="2"/>
+                    <prop k="spread_unit" v="MM"/>
+                    <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0.5"/>
+                  </effect>
+                </effect>
+              </layer>
+              <layer pass="0" class="SvgMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="gpsicons/city_medium.svg"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="255,255,255,255"/>
+                <prop k="outline_width" v="0.1"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="5"/>
+                <prop k="size_dd_active" v="0"/>
+                <prop k="size_dd_expression" v=""/>
+                <prop k="size_dd_field" v=""/>
+                <prop k="size_dd_useexpr" v="0"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
               <layer pass="0" class="SvgMarker" locked="0">
                 <prop k="angle" v="0"/>
                 <prop k="color" v="255,191,0,255"/>
@@ -3505,7 +3628,7 @@ def my_form_open(dialog, layer, feature):
                 <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
                 <prop k="outline_width_unit" v="MM"/>
                 <prop k="scale_method" v="diameter"/>
-                <prop k="size" v="20"/>
+                <prop k="size" v="6"/>
                 <prop k="size_dd_active" v="1"/>
                 <prop k="size_dd_expression" v="coalesce(scale_exp(&quot;Erste_Fund_Abbildung_ID&quot;, 286, 545, 20, 20, 0.57), 6)"/>
                 <prop k="size_dd_field" v=""/>
@@ -3577,9 +3700,195 @@ def my_form_open(dialog, layer, feature):
                 </effect>
               </layer>
             </symbol>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
+              <layer pass="0" class="SvgMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="255,191,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="horizontal_anchor_point_dd_active" v="0"/>
+                <prop k="horizontal_anchor_point_dd_expression" v=""/>
+                <prop k="horizontal_anchor_point_dd_field" v=""/>
+                <prop k="horizontal_anchor_point_dd_useexpr" v="0"/>
+                <prop k="name" v="shopping/shopping_jewelry.svg"/>
+                <prop k="name_dd_active" v="1"/>
+                <prop k="name_dd_expression" v="show_scan(  &quot;Erste_Fund_Abbildung_URL&quot;, &quot;Erste_Fund_Abbildung_File_Type&quot; )"/>
+                <prop k="name_dd_field" v=""/>
+                <prop k="name_dd_useexpr" v="1"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_width" v="0.1"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="20"/>
+                <prop k="size_dd_active" v="0"/>
+                <prop k="size_dd_expression" v=""/>
+                <prop k="size_dd_field" v=""/>
+                <prop k="size_dd_useexpr" v="0"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+                <effect enabled="1" type="effectStack">
+                  <effect type="dropShadow">
+                    <prop k="blend_mode" v="13"/>
+                    <prop k="blur_level" v="10"/>
+                    <prop k="color" v="0,0,0,255"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="1"/>
+                    <prop k="offset_angle" v="135"/>
+                    <prop k="offset_distance" v="2"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="outerGlow">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="blur_level" v="3"/>
+                    <prop k="color1" v="0,0,255,255"/>
+                    <prop k="color2" v="0,255,0,255"/>
+                    <prop k="color_type" v="0"/>
+                    <prop k="discrete" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="single_color" v="255,255,255,255"/>
+                    <prop k="spread" v="2"/>
+                    <prop k="spread_unit" v="MM"/>
+                    <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0.5"/>
+                  </effect>
+                  <effect type="drawSource">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="1"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="innerShadow">
+                    <prop k="blend_mode" v="13"/>
+                    <prop k="blur_level" v="10"/>
+                    <prop k="color" v="0,0,0,255"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="offset_angle" v="135"/>
+                    <prop k="offset_distance" v="2"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="innerGlow">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="blur_level" v="3"/>
+                    <prop k="color1" v="0,0,255,255"/>
+                    <prop k="color2" v="0,255,0,255"/>
+                    <prop k="color_type" v="0"/>
+                    <prop k="discrete" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="single_color" v="255,255,255,255"/>
+                    <prop k="spread" v="2"/>
+                    <prop k="spread_unit" v="MM"/>
+                    <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0.5"/>
+                  </effect>
+                </effect>
+              </layer>
+            </symbol>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
+              <layer pass="0" class="SvgMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="255,191,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="horizontal_anchor_point_dd_active" v="0"/>
+                <prop k="horizontal_anchor_point_dd_expression" v=""/>
+                <prop k="horizontal_anchor_point_dd_field" v=""/>
+                <prop k="horizontal_anchor_point_dd_useexpr" v="0"/>
+                <prop k="name" v="shopping/shopping_jewelry.svg"/>
+                <prop k="name_dd_active" v="1"/>
+                <prop k="name_dd_expression" v="show_scan(  &quot;Erste_Fund_Abbildung_URL&quot;, &quot;Erste_Fund_Abbildung_File_Type&quot; )"/>
+                <prop k="name_dd_field" v=""/>
+                <prop k="name_dd_useexpr" v="1"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_width" v="0.1"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="6"/>
+                <prop k="size_dd_active" v="0"/>
+                <prop k="size_dd_expression" v=""/>
+                <prop k="size_dd_field" v=""/>
+                <prop k="size_dd_useexpr" v="0"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+                <effect enabled="1" type="effectStack">
+                  <effect type="dropShadow">
+                    <prop k="blend_mode" v="13"/>
+                    <prop k="blur_level" v="10"/>
+                    <prop k="color" v="0,0,0,255"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="1"/>
+                    <prop k="offset_angle" v="135"/>
+                    <prop k="offset_distance" v="2"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="outerGlow">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="blur_level" v="3"/>
+                    <prop k="color1" v="0,0,255,255"/>
+                    <prop k="color2" v="0,255,0,255"/>
+                    <prop k="color_type" v="0"/>
+                    <prop k="discrete" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="single_color" v="255,255,255,255"/>
+                    <prop k="spread" v="2"/>
+                    <prop k="spread_unit" v="MM"/>
+                    <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0.5"/>
+                  </effect>
+                  <effect type="drawSource">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="1"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="innerShadow">
+                    <prop k="blend_mode" v="13"/>
+                    <prop k="blur_level" v="10"/>
+                    <prop k="color" v="0,0,0,255"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="offset_angle" v="135"/>
+                    <prop k="offset_distance" v="2"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="innerGlow">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="blur_level" v="3"/>
+                    <prop k="color1" v="0,0,255,255"/>
+                    <prop k="color2" v="0,255,0,255"/>
+                    <prop k="color_type" v="0"/>
+                    <prop k="discrete" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="single_color" v="255,255,255,255"/>
+                    <prop k="spread" v="2"/>
+                    <prop k="spread_unit" v="MM"/>
+                    <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0.5"/>
+                  </effect>
+                </effect>
+              </layer>
+            </symbol>
           </symbols>
-          <rotation/>
-          <sizescale scalemethod="diameter"/>
         </renderer-v2>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="centerSymbol">
           <layer pass="0" class="SvgMarker" locked="0">
@@ -3595,7 +3904,7 @@ def my_form_open(dialog, layer, feature):
             <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="outline_width_unit" v="MM"/>
             <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="5"/>
+            <prop k="size" v="6"/>
             <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="size_unit" v="MM"/>
             <prop k="vertical_anchor_point" v="1"/>
@@ -4499,9 +4808,131 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 forceraster="0" placement="0" tolerance="5" circleColor="125,125,125,255" labelAttributeName="ID_Fund" labelColor="0,0,0,255" toleranceUnit="MM" circleRadiusAddition="0" type="pointDisplacement" circleWidth="0.4" maxLabelScaleDenominator="-1" toleranceUnitScale="0,0,0,0,0,0" enableorderby="0">
         <labelFontProperties description="Times New Roman,11,-1,5,75,0,0,0,0,0" style=""/>
-        <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+          <rules key="{c727cf47-69ca-4fed-bca3-e75c99985777}">
+            <rule filter="&quot;Erste_Fund_Abbildung_ID&quot; is not NULL and count( &quot;ID_Fund&quot; , group_by:= &quot;ID_GeogrLage&quot; ) &lt; 2" key="{96d30351-0b7e-4f80-9d99-f0db93a4da78}" symbol="0" label="Einzelbild"/>
+            <rule filter="&quot;Erste_Fund_Abbildung_ID&quot; is NULL and count( &quot;ID_Fund&quot; , group_by:= &quot;ID_GeogrLage&quot; ) &lt; 2" key="{f9881b64-2e6a-49d5-800a-86a8205c10d1}" symbol="1" label="Einzelpunkt"/>
+            <rule filter="&quot;Erste_Fund_Abbildung_ID&quot;  is not NULL and count( &quot;ID_Fund&quot; , group_by:= &quot;ID_GeogrLage&quot; ) > 1" key="{f9881b64-2e6a-49d5-800a-86a8205c10d1}" symbol="2" label="Mehrfachbild"/>
+            <rule filter="&quot;Erste_Fund_Abbildung_ID&quot; is NULL and count( &quot;ID_Fund&quot; , group_by:= &quot;ID_GeogrLage&quot; ) > 1" key="{ab6d99ab-7337-4002-b6a8-05816f8bfee6}" symbol="3" label="Mehrfachpunkt"/>
+          </rules>
           <symbols>
             <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+              <layer pass="0" class="SvgMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="255,191,0,255"/>
+                <prop k="horizontal_anchor_point" v="0"/>
+                <prop k="horizontal_anchor_point_dd_active" v="0"/>
+                <prop k="horizontal_anchor_point_dd_expression" v=""/>
+                <prop k="horizontal_anchor_point_dd_field" v=""/>
+                <prop k="horizontal_anchor_point_dd_useexpr" v="0"/>
+                <prop k="name" v="shopping/shopping_jewelry.svg"/>
+                <prop k="name_dd_active" v="1"/>
+                <prop k="name_dd_expression" v="show_scan(  &quot;Erste_Fund_Abbildung_URL&quot;, &quot;Erste_Fund_Abbildung_File_Type&quot; )"/>
+                <prop k="name_dd_field" v=""/>
+                <prop k="name_dd_useexpr" v="1"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_width" v="0.1"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="20"/>
+                <prop k="size_dd_active" v="0"/>
+                <prop k="size_dd_expression" v=""/>
+                <prop k="size_dd_field" v=""/>
+                <prop k="size_dd_useexpr" v="0"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+                <effect enabled="1" type="effectStack">
+                  <effect type="dropShadow">
+                    <prop k="blend_mode" v="13"/>
+                    <prop k="blur_level" v="10"/>
+                    <prop k="color" v="0,0,0,255"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="1"/>
+                    <prop k="offset_angle" v="135"/>
+                    <prop k="offset_distance" v="2"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="outerGlow">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="blur_level" v="3"/>
+                    <prop k="color1" v="0,0,255,255"/>
+                    <prop k="color2" v="0,255,0,255"/>
+                    <prop k="color_type" v="0"/>
+                    <prop k="discrete" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="single_color" v="255,255,255,255"/>
+                    <prop k="spread" v="2"/>
+                    <prop k="spread_unit" v="MM"/>
+                    <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0.5"/>
+                  </effect>
+                  <effect type="drawSource">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="1"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="innerShadow">
+                    <prop k="blend_mode" v="13"/>
+                    <prop k="blur_level" v="10"/>
+                    <prop k="color" v="0,0,0,255"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="offset_angle" v="135"/>
+                    <prop k="offset_distance" v="2"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="innerGlow">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="blur_level" v="3"/>
+                    <prop k="color1" v="0,0,255,255"/>
+                    <prop k="color2" v="0,255,0,255"/>
+                    <prop k="color_type" v="0"/>
+                    <prop k="discrete" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="single_color" v="255,255,255,255"/>
+                    <prop k="spread" v="2"/>
+                    <prop k="spread_unit" v="MM"/>
+                    <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0.5"/>
+                  </effect>
+                </effect>
+              </layer>
+              <layer pass="0" class="SvgMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="gpsicons/city_medium.svg"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="255,255,0,255"/>
+                <prop k="outline_width" v="0.1"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="5"/>
+                <prop k="size_dd_active" v="0"/>
+                <prop k="size_dd_expression" v=""/>
+                <prop k="size_dd_field" v=""/>
+                <prop k="size_dd_useexpr" v="0"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
               <layer pass="0" class="SvgMarker" locked="0">
                 <prop k="angle" v="0"/>
                 <prop k="color" v="255,191,0,255"/>
@@ -4523,7 +4954,7 @@ def my_form_open(dialog, layer, feature):
                 <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
                 <prop k="outline_width_unit" v="MM"/>
                 <prop k="scale_method" v="diameter"/>
-                <prop k="size" v="20"/>
+                <prop k="size" v="6"/>
                 <prop k="size_dd_active" v="1"/>
                 <prop k="size_dd_expression" v="coalesce(scale_exp(&quot;Erste_Fund_Abbildung_ID&quot;, 286, 545, 20, 20, 0.57), 6)"/>
                 <prop k="size_dd_field" v=""/>
@@ -4595,9 +5026,195 @@ def my_form_open(dialog, layer, feature):
                 </effect>
               </layer>
             </symbol>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
+              <layer pass="0" class="SvgMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="255,191,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="horizontal_anchor_point_dd_active" v="0"/>
+                <prop k="horizontal_anchor_point_dd_expression" v=""/>
+                <prop k="horizontal_anchor_point_dd_field" v=""/>
+                <prop k="horizontal_anchor_point_dd_useexpr" v="0"/>
+                <prop k="name" v="shopping/shopping_jewelry.svg"/>
+                <prop k="name_dd_active" v="1"/>
+                <prop k="name_dd_expression" v="show_scan(  &quot;Erste_Fund_Abbildung_URL&quot;, &quot;Erste_Fund_Abbildung_File_Type&quot; )"/>
+                <prop k="name_dd_field" v=""/>
+                <prop k="name_dd_useexpr" v="1"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_width" v="0.1"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="20"/>
+                <prop k="size_dd_active" v="0"/>
+                <prop k="size_dd_expression" v=""/>
+                <prop k="size_dd_field" v=""/>
+                <prop k="size_dd_useexpr" v="0"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+                <effect enabled="1" type="effectStack">
+                  <effect type="dropShadow">
+                    <prop k="blend_mode" v="13"/>
+                    <prop k="blur_level" v="10"/>
+                    <prop k="color" v="0,0,0,255"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="1"/>
+                    <prop k="offset_angle" v="135"/>
+                    <prop k="offset_distance" v="2"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="outerGlow">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="blur_level" v="3"/>
+                    <prop k="color1" v="0,0,255,255"/>
+                    <prop k="color2" v="0,255,0,255"/>
+                    <prop k="color_type" v="0"/>
+                    <prop k="discrete" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="single_color" v="255,255,255,255"/>
+                    <prop k="spread" v="2"/>
+                    <prop k="spread_unit" v="MM"/>
+                    <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0.5"/>
+                  </effect>
+                  <effect type="drawSource">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="1"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="innerShadow">
+                    <prop k="blend_mode" v="13"/>
+                    <prop k="blur_level" v="10"/>
+                    <prop k="color" v="0,0,0,255"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="offset_angle" v="135"/>
+                    <prop k="offset_distance" v="2"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="innerGlow">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="blur_level" v="3"/>
+                    <prop k="color1" v="0,0,255,255"/>
+                    <prop k="color2" v="0,255,0,255"/>
+                    <prop k="color_type" v="0"/>
+                    <prop k="discrete" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="single_color" v="255,255,255,255"/>
+                    <prop k="spread" v="2"/>
+                    <prop k="spread_unit" v="MM"/>
+                    <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0.5"/>
+                  </effect>
+                </effect>
+              </layer>
+            </symbol>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
+              <layer pass="0" class="SvgMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="255,191,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="horizontal_anchor_point_dd_active" v="0"/>
+                <prop k="horizontal_anchor_point_dd_expression" v=""/>
+                <prop k="horizontal_anchor_point_dd_field" v=""/>
+                <prop k="horizontal_anchor_point_dd_useexpr" v="0"/>
+                <prop k="name" v="shopping/shopping_jewelry.svg"/>
+                <prop k="name_dd_active" v="1"/>
+                <prop k="name_dd_expression" v="show_scan(  &quot;Erste_Fund_Abbildung_URL&quot;, &quot;Erste_Fund_Abbildung_File_Type&quot; )"/>
+                <prop k="name_dd_field" v=""/>
+                <prop k="name_dd_useexpr" v="1"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_width" v="0.1"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="6"/>
+                <prop k="size_dd_active" v="0"/>
+                <prop k="size_dd_expression" v=""/>
+                <prop k="size_dd_field" v=""/>
+                <prop k="size_dd_useexpr" v="0"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+                <effect enabled="1" type="effectStack">
+                  <effect type="dropShadow">
+                    <prop k="blend_mode" v="13"/>
+                    <prop k="blur_level" v="10"/>
+                    <prop k="color" v="0,0,0,255"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="1"/>
+                    <prop k="offset_angle" v="135"/>
+                    <prop k="offset_distance" v="2"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="outerGlow">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="blur_level" v="3"/>
+                    <prop k="color1" v="0,0,255,255"/>
+                    <prop k="color2" v="0,255,0,255"/>
+                    <prop k="color_type" v="0"/>
+                    <prop k="discrete" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="single_color" v="255,255,255,255"/>
+                    <prop k="spread" v="2"/>
+                    <prop k="spread_unit" v="MM"/>
+                    <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0.5"/>
+                  </effect>
+                  <effect type="drawSource">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="1"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="innerShadow">
+                    <prop k="blend_mode" v="13"/>
+                    <prop k="blur_level" v="10"/>
+                    <prop k="color" v="0,0,0,255"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="offset_angle" v="135"/>
+                    <prop k="offset_distance" v="2"/>
+                    <prop k="offset_unit" v="MM"/>
+                    <prop k="offset_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0"/>
+                  </effect>
+                  <effect type="innerGlow">
+                    <prop k="blend_mode" v="0"/>
+                    <prop k="blur_level" v="3"/>
+                    <prop k="color1" v="0,0,255,255"/>
+                    <prop k="color2" v="0,255,0,255"/>
+                    <prop k="color_type" v="0"/>
+                    <prop k="discrete" v="0"/>
+                    <prop k="draw_mode" v="2"/>
+                    <prop k="enabled" v="0"/>
+                    <prop k="single_color" v="255,255,255,255"/>
+                    <prop k="spread" v="2"/>
+                    <prop k="spread_unit" v="MM"/>
+                    <prop k="spread_unit_scale" v="0,0,0,0,0,0"/>
+                    <prop k="transparency" v="0.5"/>
+                  </effect>
+                </effect>
+              </layer>
+            </symbol>
           </symbols>
-          <rotation/>
-          <sizescale scalemethod="diameter"/>
         </renderer-v2>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="centerSymbol">
           <layer pass="0" class="SvgMarker" locked="0">
@@ -4613,7 +5230,7 @@ def my_form_open(dialog, layer, feature):
             <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="outline_width_unit" v="MM"/>
             <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="5"/>
+            <prop k="size" v="6"/>
             <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="size_unit" v="MM"/>
             <prop k="vertical_anchor_point" v="1"/>
@@ -11046,7 +11663,7 @@ def my_form_open(dialog, layer, feature):
       <Enabled type="bool">true</Enabled>
       <Placement type="int">3</Placement>
       <MarginUnit type="QString">MM</MarginUnit>
-      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&amp;copy; OpenStreetMap contributors&lt;br/>&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>&#xd;&#xd;&#xd;
+      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&amp;copy; OpenStreetMap contributors&lt;br/>&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>&#xd;&#xd;&#xd;&#xd;
 </Label>
       <Color type="QString">#000000</Color>
     </CopyrightLabel>
