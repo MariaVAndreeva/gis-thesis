@@ -5,7 +5,7 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Fibeln_P2_20171102193458947" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20f.Fund_Typ%20%3D%20'P2'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Fibeln(P2)">
+    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Fibeln_P2_20171102193458947" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20f.Fund_Typ%20%3D%20'P2'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Fibeln(P2)">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
@@ -33,7 +33,7 @@
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Unchecked" id="Alle20171102175159289" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'&amp;uid=ID_GeogrLage" name="Alle">
+    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Checked" id="Alle20171102175159289" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'&amp;uid=ID_GeogrLage" name="Alle">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
@@ -72,10 +72,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>8.92370855736934487</xmin>
-      <ymin>48.44030928521398494</ymin>
-      <xmax>12.12658144263065552</xmax>
-      <ymax>48.70882071478600039</ymax>
+      <xmin>7.03844459990316373</xmin>
+      <ymin>47.46826119641704622</ymin>
+      <xmax>13.24366109990315898</xmax>
+      <ymax>50.07054969641708908</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -140,9 +140,9 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Lanzen+Fibeln(P2)" showFeatureCount="1">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lanzen+Fibeln(P2)" showFeatureCount="1">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Fibeln_P2_20171102193458947" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Fibeln_P2_20171102193458947" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lanzen+Gold" showFeatureCount="1">
@@ -170,9 +170,9 @@
         <legendlayerfile isInOverview="0" layerid="Lanzen20171102182908207" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Alle" showFeatureCount="1">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Alle" showFeatureCount="1">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Alle20171102175159289" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Alle20171102175159289" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ODBC:thesis-2017-A_QGIS-ETRS89" showFeatureCount="1">
@@ -11663,7 +11663,7 @@ def my_form_open(dialog, layer, feature):
       <Enabled type="bool">true</Enabled>
       <Placement type="int">3</Placement>
       <MarginUnit type="QString">MM</MarginUnit>
-      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&amp;copy; OpenStreetMap contributors&lt;br/>&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>&#xd;&#xd;&#xd;&#xd;
+      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&amp;copy; OpenStreetMap contributors&lt;br/>&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>&#xd;&#xd;&#xd;&#xd;&#xd;
 </Label>
       <Color type="QString">#000000</Color>
     </CopyrightLabel>
