@@ -5,43 +5,49 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Fibeln_P2_20171102193458947" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20f.Fund_Typ%20%3D%20'P2'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Fibeln(P2)">
+    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Fibeln_P2_20171221224709892" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20Fund_Typ%20%3D%20'P2'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund" name="Lanzen+Fibeln(P2)">
       <customproperties>
-        <property key="showFeatureCount" value="0"/>
+        <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Schlangenfibeln20171217155954543" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20f.Fund_Klasse%20%3D%20'Schlangenfibel'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Schlangenfibeln">
+    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Schlangenfibeln20171221224621994" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20Fund_Klasse%20%3D%20'Schlangenfibel'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund" name="Lanzen+Schlangenfibeln">
       <customproperties>
-        <property key="showFeatureCount" value="0"/>
+        <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Kessel20171221025754195" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Klasse%20like%20'Kessel%25'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Kessel">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Gold20171221031120927" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Material_Abkuerzung%20%3D'Au'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)%0D%0A&amp;uid=ID_Fund" name="Lanzen+Gold">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Schwerter20171102194910255" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Klasse%20like%20'Schwert%25'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Schwerter">
+    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Kessel20171221224248033" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Klasse%20like%20'Kessel%25'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund" name="Lanzen+Kessel">
       <customproperties>
-        <property key="showFeatureCount" value="0"/>
+        <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Dolche20171102194332791" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20like%20'Dolch%25'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund" name="Lanzen+Dolche">
+    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Gold20171221224532777" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Material_Abkuerzung%20%3D'Au'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200%0D%0A&amp;uid=ID_Fund" name="Lanzen+Gold">
       <customproperties>
-        <property key="showFeatureCount" value="0"/>
+        <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Keramik20171102210451305" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20join%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20s%20on%20s.ID_Befund%20%3D%20f.ID_Befund%20where%20f.Fund_Ueberueberklasse%20%3D'Keramik'%20and%20s.Fund_Klasse%20like%20'Lanzenspitze%25'&amp;uid=ID_Fund" name="Lanzen+Keramik">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen20171102182908207" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Klasse%20like%20'Lanzenspitze%25'&amp;uid=ID_Fund" name="Lanzen">
+    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Schwerter20171221224456581" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Klasse%20like%20'Schwert%25'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund" name="Lanzen+Schwerter">
       <customproperties>
-        <property key="showFeatureCount" value="0"/>
+        <property key="showFeatureCount" value="1"/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Dolche20171221224418482" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Ueberklasse%20like%20'Dolch%25'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund" name="Lanzen+Dolche">
+      <customproperties>
+        <property key="showFeatureCount" value="1"/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Keramik20171221224144632" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Ueberueberklasse%20%3D%20'Keramik'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund" name="Lanzen+Keramik">
+      <customproperties>
+        <property key="showFeatureCount" value="1"/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen20171221225305168" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Klasse%20like%20'%25Lanzen%25'&amp;uid=ID_Fund" name="Lanzen">
+      <customproperties>
+        <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
     <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Unchecked" id="Alle20171102175159289" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'&amp;uid=ID_GeogrLage" name="Alle">
       <customproperties>
-        <property key="showFeatureCount" value="0"/>
+        <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="ODBC_thesis_2017_A_QGIS20171102173720168" source="ODBC:thesis-2017|layername=A_QGIS" name="ODBC:thesis-2017-A_QGIS-ETRS89">
@@ -78,10 +84,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>7.26630736898253637</xmin>
-      <ymin>47.88345616028948371</ymin>
-      <xmax>11.63560263101750003</xmax>
-      <ymax>48.60380383971047991</ymax>
+      <xmin>6.96233155051646158</xmin>
+      <ymin>47.47226714638475897</ymin>
+      <xmax>13.16754805051645683</xmax>
+      <ymax>50.07455564638480183</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -99,49 +105,56 @@
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Schlangenfibeln_copy20171221001406694"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="marker_test20171103214126045"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221005253316"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grenzlinien20171103020427324"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bundesland20171103021412940"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Alle20171102175159289"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sueddeutschland20171102233107820"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102205328918"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102210451305"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Gold20171221031120927"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="osm_s46w7n50e13_lines20171103003827076"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Gold20171221011300294"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221005107773"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="temp_shp20171105161231473"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Gold20171102193728207"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Schlangenfibeln20171217155954543"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Regierungsbezirk20171103021408581"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="osm_s46w7n50e13_multipolygons20171103003807548"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Dolche20171102194332791"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Regierungsbezirk20171103020426622"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="osm_s46w7n50e13_lines20171103003827076"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102182948833"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221005107773"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bundesland20171103020426949"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221025754195"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grenzlinien20171103020427324"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Staat20171103021418189"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Schlangenfibeln20171221224621994"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221222004598"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Dolche20171102194332791"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Gold20171221224532777"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Kreis20171103020425987"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen20171102182908207"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Schwerter20171102194910255"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Fibeln_P2_20171102193458947"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102182734832"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102182948833"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221005253316"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Kreis20171103021358642"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Staat20171103021418189"/>
-      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sueddeutschland_hs20171102234603804"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171221224144632"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bundesland20171103021412940"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Gold20171221031120927"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171221222533632"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221224248033"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Alle20171102175159289"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Schwerter20171102194910255"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102205328918"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Schwerter20171221224456581"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sueddeutschland20171102233107820"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221221840101"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Fibeln_P2_20171221224709892"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="temp_shp20171105161231473"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Gold20171221011300294"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221004943815"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Dolche20171221224418482"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sueddeutschland_hs20171102234603804"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen20171221225305168"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Schlangenfibeln20171217155954543"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="osm_s46w7n50e13_multipolygons20171103003807548"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Regierungsbezirk20171103020426622"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102182734832"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221025754195"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Regierungsbezirk20171103021408581"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Schlangenfibeln_copy20171221001406694"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171221221454317"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Fibeln_P2_20171102193458947"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102210451305"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
     <custom-order enabled="0">
       <item>ODBC_thesis_2017_A_QGIS20171102173720168</item>
       <item>Alle20171102175159289</item>
-      <item>Lanzen20171102182908207</item>
-      <item>Lanzen_Fibeln_P2_20171102193458947</item>
-      <item>Lanzen_Dolche20171102194332791</item>
-      <item>Lanzen_Schwerter20171102194910255</item>
-      <item>Lanzen_Keramik20171102210451305</item>
       <item>Sueddeutschland20171102233107820</item>
       <item>Sueddeutschland_hs20171102234603804</item>
       <item>osm_s46w7n50e13_multipolygons20171103003807548</item>
@@ -150,53 +163,58 @@
       <item>Regierungsbezirk20171103021408581</item>
       <item>Bundesland20171103021412940</item>
       <item>Staat20171103021418189</item>
-      <item>Lanzen_Schlangenfibeln20171217155954543</item>
-      <item>Lanzen_Kessel20171221025754195</item>
-      <item>Lanzen_Gold20171221031120927</item>
+      <item>Lanzen_Keramik20171221224144632</item>
+      <item>Lanzen_Kessel20171221224248033</item>
+      <item>Lanzen_Dolche20171221224418482</item>
+      <item>Lanzen_Schwerter20171221224456581</item>
+      <item>Lanzen_Gold20171221224532777</item>
+      <item>Lanzen_Schlangenfibeln20171221224621994</item>
+      <item>Lanzen_Fibeln_P2_20171221224709892</item>
+      <item>Lanzen20171221225305168</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lanzen+Fibeln(P2)" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lanzen+Fibeln(P2)" showFeatureCount="1">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Fibeln_P2_20171102193458947" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Fibeln_P2_20171221224709892" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lanzen+Schlangenfibeln" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lanzen+Schlangenfibeln" showFeatureCount="1">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Schlangenfibeln20171217155954543" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Schlangenfibeln20171221224621994" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Lanzen+Kessel" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Lanzen+Kessel" showFeatureCount="1">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Kessel20171221025754195" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Kessel20171221224248033" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lanzen+Gold" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lanzen+Gold" showFeatureCount="1">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Gold20171221031120927" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Gold20171221224532777" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Schwerter" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Schwerter" showFeatureCount="1">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Schwerter20171102194910255" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Schwerter20171221224456581" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Dolche" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Dolche" showFeatureCount="1">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Dolche20171102194332791" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Dolche20171221224418482" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Keramik" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Keramik" showFeatureCount="1">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Keramik20171102210451305" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Keramik20171221224144632" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen" showFeatureCount="1">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen20171102182908207" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen20171221225305168" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Alle" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Alle" showFeatureCount="1">
       <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Alle20171102175159289" visible="0"/>
       </filegroup>
@@ -578,6 +596,9 @@
         <edittype widgetv2type="TextEdit" name="Anzahl_Funde">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Lanzen_Im_Befund">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_ID">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -952,10 +973,11 @@
         <alias field="Beschreibung" index="96" name=""/>
         <alias field="Anzahl_Befunde" index="97" name=""/>
         <alias field="Anzahl_Funde" index="98" name=""/>
-        <alias field="Erste_Fund_Abbildung_ID" index="99" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Name" index="100" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Type" index="101" name=""/>
-        <alias field="Erste_Fund_Abbildung_URL" index="102" name=""/>
+        <alias field="Anzahl_Lanzen_Im_Befund" index="99" name=""/>
+        <alias field="Erste_Fund_Abbildung_ID" index="100" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Name" index="101" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Type" index="102" name=""/>
+        <alias field="Erste_Fund_Abbildung_URL" index="103" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -1196,6 +1218,7 @@ def my_form_open(dialog, layer, feature):
         <default field="Beschreibung" expression=""/>
         <default field="Anzahl_Befunde" expression=""/>
         <default field="Anzahl_Funde" expression=""/>
+        <default field="Anzahl_Lanzen_Im_Befund" expression=""/>
         <default field="Erste_Fund_Abbildung_ID" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Name" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Type" expression=""/>
@@ -1296,14 +1319,8 @@ def my_form_open(dialog, layer, feature):
       <blendMode>0</blendMode>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>7.17417000000000016</xmin>
-        <ymin>47.08556000000000097</ymin>
-        <xmax>13.08389999999999986</xmax>
-        <ymax>49.56392999999999915</ymax>
-      </extent>
-      <id>Lanzen20171102182908207</id>
-      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Klasse%20like%20'Lanzenspitze%25'&amp;uid=ID_Fund</datasource>
+      <id>Lanzen20171221225305168</id>
+      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Klasse%20like%20'%25Lanzen%25'&amp;uid=ID_Fund</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1625,6 +1642,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="Anzahl_Funde">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Lanzen_Im_Befund">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_ID">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -1668,7 +1688,6 @@ def my_form_open(dialog, layer, feature):
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
-        <property key="embeddedWidgets/count" value="0"/>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
@@ -1965,10 +1984,11 @@ def my_form_open(dialog, layer, feature):
         <alias field="Beschreibung" index="96" name=""/>
         <alias field="Anzahl_Befunde" index="97" name=""/>
         <alias field="Anzahl_Funde" index="98" name=""/>
-        <alias field="Erste_Fund_Abbildung_ID" index="99" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Name" index="100" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Type" index="101" name=""/>
-        <alias field="Erste_Fund_Abbildung_URL" index="102" name=""/>
+        <alias field="Anzahl_Lanzen_Im_Befund" index="99" name=""/>
+        <alias field="Erste_Fund_Abbildung_ID" index="100" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Name" index="101" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Type" index="102" name=""/>
+        <alias field="Erste_Fund_Abbildung_URL" index="103" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -2209,6 +2229,7 @@ def my_form_open(dialog, layer, feature):
         <default field="Beschreibung" expression=""/>
         <default field="Anzahl_Befunde" expression=""/>
         <default field="Anzahl_Funde" expression=""/>
+        <default field="Anzahl_Lanzen_Im_Befund" expression=""/>
         <default field="Erste_Fund_Abbildung_ID" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Name" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Type" expression=""/>
@@ -2217,14 +2238,8 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "Landkreis_Name", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>9.06893999999999956</xmin>
-        <ymin>47.8202399999999983</ymin>
-        <xmax>11.37622999999999962</xmax>
-        <ymax>48.81837999999999766</ymax>
-      </extent>
-      <id>Lanzen_Dolche20171102194332791</id>
-      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20like%20'Dolch%25'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund</datasource>
+      <id>Lanzen_Dolche20171221224418482</id>
+      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Ueberklasse%20like%20'Dolch%25'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -2243,9 +2258,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <provider encoding="System">virtual</provider>
       <vectorjoins/>
-      <layerDependencies>
-        <layer id="Lanzen20171102182908207"/>
-      </layerDependencies>
+      <layerDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
@@ -2548,6 +2561,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="Anzahl_Funde">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Lanzen_Im_Befund">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_ID">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -2614,7 +2630,6 @@ def my_form_open(dialog, layer, feature):
         <rules key="{33a9886c-ca04-4400-a73c-e7969126770b}"/>
       </labeling>
       <customproperties>
-        <property key="embeddedWidgets/count" value="0"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
         <property key="labeling/blendMode" value="0"/>
@@ -2910,10 +2925,11 @@ def my_form_open(dialog, layer, feature):
         <alias field="Beschreibung" index="96" name=""/>
         <alias field="Anzahl_Befunde" index="97" name=""/>
         <alias field="Anzahl_Funde" index="98" name=""/>
-        <alias field="Erste_Fund_Abbildung_ID" index="99" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Name" index="100" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Type" index="101" name=""/>
-        <alias field="Erste_Fund_Abbildung_URL" index="102" name=""/>
+        <alias field="Anzahl_Lanzen_Im_Befund" index="99" name=""/>
+        <alias field="Erste_Fund_Abbildung_ID" index="100" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Name" index="101" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Type" index="102" name=""/>
+        <alias field="Erste_Fund_Abbildung_URL" index="103" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -3154,6 +3170,7 @@ def my_form_open(dialog, layer, feature):
         <default field="Beschreibung" expression=""/>
         <default field="Anzahl_Befunde" expression=""/>
         <default field="Anzahl_Funde" expression=""/>
+        <default field="Anzahl_Lanzen_Im_Befund" expression=""/>
         <default field="Erste_Fund_Abbildung_ID" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Name" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Type" expression=""/>
@@ -3162,14 +3179,8 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "Landkreis_Name", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>9.11050999999999966</xmin>
-        <ymin>47.94539999999999935</ymin>
-        <xmax>11.25988000000000078</xmax>
-        <ymax>48.81837999999999766</ymax>
-      </extent>
-      <id>Lanzen_Fibeln_P2_20171102193458947</id>
-      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20f.Fund_Typ%20%3D%20'P2'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund</datasource>
+      <id>Lanzen_Fibeln_P2_20171221224709892</id>
+      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20Fund_Typ%20%3D%20'P2'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -3188,9 +3199,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <provider encoding="System">virtual</provider>
       <vectorjoins/>
-      <layerDependencies>
-        <layer id="Lanzen20171102182908207"/>
-      </layerDependencies>
+      <layerDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
@@ -3491,6 +3500,9 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Anzahl_Funde">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Lanzen_Im_Befund">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_ID">
@@ -3939,7 +3951,6 @@ def my_form_open(dialog, layer, feature):
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
-        <property key="embeddedWidgets/count" value="0"/>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
@@ -4236,10 +4247,11 @@ def my_form_open(dialog, layer, feature):
         <alias field="Beschreibung" index="96" name=""/>
         <alias field="Anzahl_Befunde" index="97" name=""/>
         <alias field="Anzahl_Funde" index="98" name=""/>
-        <alias field="Erste_Fund_Abbildung_ID" index="99" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Name" index="100" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Type" index="101" name=""/>
-        <alias field="Erste_Fund_Abbildung_URL" index="102" name=""/>
+        <alias field="Anzahl_Lanzen_Im_Befund" index="99" name=""/>
+        <alias field="Erste_Fund_Abbildung_ID" index="100" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Name" index="101" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Type" index="102" name=""/>
+        <alias field="Erste_Fund_Abbildung_URL" index="103" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -4480,6 +4492,7 @@ def my_form_open(dialog, layer, feature):
         <default field="Beschreibung" expression=""/>
         <default field="Anzahl_Befunde" expression=""/>
         <default field="Anzahl_Funde" expression=""/>
+        <default field="Anzahl_Lanzen_Im_Befund" expression=""/>
         <default field="Erste_Fund_Abbildung_ID" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Name" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Type" expression=""/>
@@ -4488,8 +4501,8 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "Landkreis_Name", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>Lanzen_Gold20171221031120927</id>
-      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Material_Abkuerzung%20%3D'Au'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)%0D%0A&amp;uid=ID_Fund</datasource>
+      <id>Lanzen_Gold20171221224532777</id>
+      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Material_Abkuerzung%20%3D'Au'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200%0D%0A&amp;uid=ID_Fund</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -4508,9 +4521,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <provider encoding="System">virtual</provider>
       <vectorjoins/>
-      <layerDependencies>
-        <layer id="Lanzen20171102182908207"/>
-      </layerDependencies>
+      <layerDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
@@ -4811,6 +4822,9 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Anzahl_Funde">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Lanzen_Im_Befund">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_ID">
@@ -5555,10 +5569,11 @@ def my_form_open(dialog, layer, feature):
         <alias field="Beschreibung" index="96" name=""/>
         <alias field="Anzahl_Befunde" index="97" name=""/>
         <alias field="Anzahl_Funde" index="98" name=""/>
-        <alias field="Erste_Fund_Abbildung_ID" index="99" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Name" index="100" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Type" index="101" name=""/>
-        <alias field="Erste_Fund_Abbildung_URL" index="102" name=""/>
+        <alias field="Anzahl_Lanzen_Im_Befund" index="99" name=""/>
+        <alias field="Erste_Fund_Abbildung_ID" index="100" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Name" index="101" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Type" index="102" name=""/>
+        <alias field="Erste_Fund_Abbildung_URL" index="103" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -5799,6 +5814,7 @@ def my_form_open(dialog, layer, feature):
         <default field="Beschreibung" expression=""/>
         <default field="Anzahl_Befunde" expression=""/>
         <default field="Anzahl_Funde" expression=""/>
+        <default field="Anzahl_Lanzen_Im_Befund" expression=""/>
         <default field="Erste_Fund_Abbildung_ID" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Name" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Type" expression=""/>
@@ -5807,14 +5823,8 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "Landkreis_Name", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>8.81334000000000017</xmin>
-        <ymin>47.73284000000000304</ymin>
-        <xmax>12.93960000000000043</xmax>
-        <ymax>49.49643999999999977</ymax>
-      </extent>
-      <id>Lanzen_Keramik20171102210451305</id>
-      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20join%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20s%20on%20s.ID_Befund%20%3D%20f.ID_Befund%20where%20f.Fund_Ueberueberklasse%20%3D'Keramik'%20and%20s.Fund_Klasse%20like%20'Lanzenspitze%25'&amp;uid=ID_Fund</datasource>
+      <id>Lanzen_Keramik20171221224144632</id>
+      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Ueberueberklasse%20%3D%20'Keramik'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -6136,6 +6146,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="Anzahl_Funde">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Lanzen_Im_Befund">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_ID">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -6177,7 +6190,6 @@ def my_form_open(dialog, layer, feature):
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
-        <property key="embeddedWidgets/count" value="0"/>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
@@ -6474,10 +6486,11 @@ def my_form_open(dialog, layer, feature):
         <alias field="Beschreibung" index="96" name=""/>
         <alias field="Anzahl_Befunde" index="97" name=""/>
         <alias field="Anzahl_Funde" index="98" name=""/>
-        <alias field="Erste_Fund_Abbildung_ID" index="99" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Name" index="100" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Type" index="101" name=""/>
-        <alias field="Erste_Fund_Abbildung_URL" index="102" name=""/>
+        <alias field="Anzahl_Lanzen_Im_Befund" index="99" name=""/>
+        <alias field="Erste_Fund_Abbildung_ID" index="100" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Name" index="101" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Type" index="102" name=""/>
+        <alias field="Erste_Fund_Abbildung_URL" index="103" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -6718,6 +6731,7 @@ def my_form_open(dialog, layer, feature):
         <default field="Beschreibung" expression=""/>
         <default field="Anzahl_Befunde" expression=""/>
         <default field="Anzahl_Funde" expression=""/>
+        <default field="Anzahl_Lanzen_Im_Befund" expression=""/>
         <default field="Erste_Fund_Abbildung_ID" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Name" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Type" expression=""/>
@@ -6726,8 +6740,8 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "Landkreis_Name", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>Lanzen_Kessel20171221025754195</id>
-      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Klasse%20like%20'Kessel%25'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund</datasource>
+      <id>Lanzen_Kessel20171221224248033</id>
+      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Klasse%20like%20'Kessel%25'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -6746,9 +6760,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <provider encoding="System">virtual</provider>
       <vectorjoins/>
-      <layerDependencies>
-        <layer id="Lanzen20171102182908207"/>
-      </layerDependencies>
+      <layerDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
@@ -7049,6 +7061,9 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Anzahl_Funde">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Lanzen_Im_Befund">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_ID">
@@ -7793,10 +7808,11 @@ def my_form_open(dialog, layer, feature):
         <alias field="Beschreibung" index="96" name=""/>
         <alias field="Anzahl_Befunde" index="97" name=""/>
         <alias field="Anzahl_Funde" index="98" name=""/>
-        <alias field="Erste_Fund_Abbildung_ID" index="99" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Name" index="100" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Type" index="101" name=""/>
-        <alias field="Erste_Fund_Abbildung_URL" index="102" name=""/>
+        <alias field="Anzahl_Lanzen_Im_Befund" index="99" name=""/>
+        <alias field="Erste_Fund_Abbildung_ID" index="100" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Name" index="101" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Type" index="102" name=""/>
+        <alias field="Erste_Fund_Abbildung_URL" index="103" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -8037,6 +8053,7 @@ def my_form_open(dialog, layer, feature):
         <default field="Beschreibung" expression=""/>
         <default field="Anzahl_Befunde" expression=""/>
         <default field="Anzahl_Funde" expression=""/>
+        <default field="Anzahl_Lanzen_Im_Befund" expression=""/>
         <default field="Erste_Fund_Abbildung_ID" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Name" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Type" expression=""/>
@@ -8045,14 +8062,8 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "Landkreis_Name", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>8.81334000000000017</xmin>
-        <ymin>47.8202399999999983</ymin>
-        <xmax>11.17650000000000077</xmax>
-        <ymax>48.80010000000000048</ymax>
-      </extent>
-      <id>Lanzen_Schlangenfibeln20171217155954543</id>
-      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20f.Fund_Klasse%20%3D%20'Schlangenfibel'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund</datasource>
+      <id>Lanzen_Schlangenfibeln20171221224621994</id>
+      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20Fund_Klasse%20%3D%20'Schlangenfibel'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -8071,9 +8082,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <provider encoding="System">virtual</provider>
       <vectorjoins/>
-      <layerDependencies>
-        <layer id="Lanzen20171102182908207"/>
-      </layerDependencies>
+      <layerDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
@@ -8374,6 +8383,9 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Anzahl_Funde">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Lanzen_Im_Befund">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_ID">
@@ -9118,10 +9130,11 @@ def my_form_open(dialog, layer, feature):
         <alias field="Beschreibung" index="96" name=""/>
         <alias field="Anzahl_Befunde" index="97" name=""/>
         <alias field="Anzahl_Funde" index="98" name=""/>
-        <alias field="Erste_Fund_Abbildung_ID" index="99" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Name" index="100" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Type" index="101" name=""/>
-        <alias field="Erste_Fund_Abbildung_URL" index="102" name=""/>
+        <alias field="Anzahl_Lanzen_Im_Befund" index="99" name=""/>
+        <alias field="Erste_Fund_Abbildung_ID" index="100" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Name" index="101" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Type" index="102" name=""/>
+        <alias field="Erste_Fund_Abbildung_URL" index="103" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -9362,6 +9375,7 @@ def my_form_open(dialog, layer, feature):
         <default field="Beschreibung" expression=""/>
         <default field="Anzahl_Befunde" expression=""/>
         <default field="Anzahl_Funde" expression=""/>
+        <default field="Anzahl_Lanzen_Im_Befund" expression=""/>
         <default field="Erste_Fund_Abbildung_ID" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Name" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Type" expression=""/>
@@ -9370,14 +9384,8 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "Landkreis_Name", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>8.83425000000000082</xmin>
-        <ymin>47.99989000000000061</ymin>
-        <xmax>9.76988000000000056</xmax>
-        <ymax>49.28401999999999816</ymax>
-      </extent>
-      <id>Lanzen_Schwerter20171102194910255</id>
-      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(f.LONGITUDE,%20f.LATITUDE)%20geometry%20/*:point:4258*/,%20f.*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20f%20where%20f.Fund_Klasse%20like%20'Schwert%25'%20and%20exists%20(select%20ID_Fund%20from%20Lanzen%20where%20ID_Befund%20%3D%20f.ID_Befund)&amp;uid=ID_Fund</datasource>
+      <id>Lanzen_Schwerter20171221224456581</id>
+      <datasource>?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Klasse%20like%20'Schwert%25'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -9396,9 +9404,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <provider encoding="System">virtual</provider>
       <vectorjoins/>
-      <layerDependencies>
-        <layer id="Lanzen20171102182908207"/>
-      </layerDependencies>
+      <layerDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
@@ -9699,6 +9705,9 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Anzahl_Funde">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Lanzen_Im_Befund">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_ID">
@@ -9767,7 +9776,6 @@ def my_form_open(dialog, layer, feature):
         <rules key="{33a9886c-ca04-4400-a73c-e7969126770b}"/>
       </labeling>
       <customproperties>
-        <property key="embeddedWidgets/count" value="0"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
         <property key="labeling/blendMode" value="0"/>
@@ -10063,10 +10071,11 @@ def my_form_open(dialog, layer, feature):
         <alias field="Beschreibung" index="96" name=""/>
         <alias field="Anzahl_Befunde" index="97" name=""/>
         <alias field="Anzahl_Funde" index="98" name=""/>
-        <alias field="Erste_Fund_Abbildung_ID" index="99" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Name" index="100" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Type" index="101" name=""/>
-        <alias field="Erste_Fund_Abbildung_URL" index="102" name=""/>
+        <alias field="Anzahl_Lanzen_Im_Befund" index="99" name=""/>
+        <alias field="Erste_Fund_Abbildung_ID" index="100" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Name" index="101" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Type" index="102" name=""/>
+        <alias field="Erste_Fund_Abbildung_URL" index="103" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -10307,6 +10316,7 @@ def my_form_open(dialog, layer, feature):
         <default field="Beschreibung" expression=""/>
         <default field="Anzahl_Befunde" expression=""/>
         <default field="Anzahl_Funde" expression=""/>
+        <default field="Anzahl_Lanzen_Im_Befund" expression=""/>
         <default field="Erste_Fund_Abbildung_ID" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Name" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Type" expression=""/>
@@ -10643,6 +10653,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="Anzahl_Funde">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="Anzahl_Lanzen_Im_Befund">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="Erste_Fund_Abbildung_ID">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -10757,10 +10770,11 @@ def my_form_open(dialog, layer, feature):
         <alias field="Beschreibung" index="96" name=""/>
         <alias field="Anzahl_Befunde" index="97" name=""/>
         <alias field="Anzahl_Funde" index="98" name=""/>
-        <alias field="Erste_Fund_Abbildung_ID" index="99" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Name" index="100" name=""/>
-        <alias field="Erste_Fund_Abbildung_File_Type" index="101" name=""/>
-        <alias field="Erste_Fund_Abbildung_URL" index="102" name=""/>
+        <alias field="Anzahl_Lanzen_Im_Befund" index="99" name=""/>
+        <alias field="Erste_Fund_Abbildung_ID" index="100" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Name" index="101" name=""/>
+        <alias field="Erste_Fund_Abbildung_File_Type" index="102" name=""/>
+        <alias field="Erste_Fund_Abbildung_URL" index="103" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -11001,6 +11015,7 @@ def my_form_open(dialog, layer, feature):
         <default field="Beschreibung" expression=""/>
         <default field="Anzahl_Befunde" expression=""/>
         <default field="Anzahl_Funde" expression=""/>
+        <default field="Anzahl_Lanzen_Im_Befund" expression=""/>
         <default field="Erste_Fund_Abbildung_ID" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Name" expression=""/>
         <default field="Erste_Fund_Abbildung_File_Type" expression=""/>
@@ -14253,16 +14268,16 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
         <value>Alle20171102175159289</value>
-        <value>Lanzen20171102182908207</value>
-        <value>Lanzen_Dolche20171102194332791</value>
-        <value>Lanzen_Fibeln_P2_20171102193458947</value>
-        <value>Lanzen_Keramik20171102210451305</value>
-        <value>Lanzen_Kessel20171221025754195</value>
-        <value>Lanzen_Schlangenfibeln20171217155954543</value>
-        <value>Lanzen_Schwerter20171102194910255</value>
         <value>osm_s46w7n50e13_lines20171103003827076</value>
         <value>osm_s46w7n50e13_multipolygons20171103003807548</value>
-        <value>Lanzen_Gold20171221031120927</value>
+        <value>Lanzen_Keramik20171221224144632</value>
+        <value>Lanzen_Kessel20171221224248033</value>
+        <value>Lanzen_Dolche20171221224418482</value>
+        <value>Lanzen_Schwerter20171221224456581</value>
+        <value>Lanzen_Gold20171221224532777</value>
+        <value>Lanzen_Schlangenfibeln20171221224621994</value>
+        <value>Lanzen_Fibeln_P2_20171221224709892</value>
+        <value>Lanzen20171221225305168</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>disabled</value>
@@ -14336,7 +14351,7 @@ def my_form_open(dialog, layer, feature):
       <Enabled type="bool">true</Enabled>
       <Placement type="int">3</Placement>
       <MarginUnit type="QString">MM</MarginUnit>
-      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&amp;copy; OpenStreetMap contributors&lt;br/>&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;
+      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&amp;copy; OpenStreetMap contributors&lt;br/>&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;
 </Label>
       <Color type="QString">#000000</Color>
     </CopyrightLabel>
