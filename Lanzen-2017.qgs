@@ -20,7 +20,7 @@
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Gold20171221224532777" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Material_Abkuerzung%20%3D'Au'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200%0D%0A&amp;uid=ID_Fund" name="Lanzen+Gold">
+    <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Gold20171221224532777" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Material_Abkuerzung%20%3D'Au'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200%0D%0A&amp;uid=ID_Fund" name="Lanzen+Gold">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
@@ -30,12 +30,12 @@
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Dolche20171221224418482" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Ueberklasse%20like%20'Dolch%25'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund" name="Lanzen+Dolche">
+    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Dolche20171221224418482" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Ueberklasse%20like%20'Dolch%25'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund" name="Lanzen+Dolche">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Keramik20171221224144632" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Ueberueberklasse%20%3D%20'Keramik'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund" name="Lanzen+Keramik">
+    <layer-tree-layer expanded="1" providerKey="virtual" checked="Qt::Checked" id="Lanzen_Keramik20171221224144632" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Ueberueberklasse%20%3D%20'Keramik'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund" name="Lanzen+Keramik">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
@@ -84,10 +84,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>8.15860835962718056</xmin>
-      <ymin>47.76030079930598049</ymin>
-      <xmax>11.26121660962718352</xmax>
-      <ymax>49.06144504930603034</ymax>
+      <xmin>9.04704555478500438</xmin>
+      <ymin>48.04136880415958188</ymin>
+      <xmax>9.53015531411058348</xmax>
+      <ymax>48.24397107773551596</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -191,9 +191,9 @@
         <legendlayerfile isInOverview="0" layerid="Lanzen_Kessel20171221224248033" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lanzen+Gold" showFeatureCount="1">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Lanzen+Gold" showFeatureCount="1">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Gold20171221224532777" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Gold20171221224532777" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Schwerter" showFeatureCount="1">
@@ -201,14 +201,14 @@
         <legendlayerfile isInOverview="0" layerid="Lanzen_Schwerter20171221224456581" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Dolche" showFeatureCount="1">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Lanzen+Dolche" showFeatureCount="1">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Dolche20171221224418482" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Dolche20171221224418482" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Lanzen+Keramik" showFeatureCount="1">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Lanzen+Keramik" showFeatureCount="1">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Lanzen_Keramik20171221224144632" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Lanzen_Keramik20171221224144632" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Lanzen" showFeatureCount="1">
@@ -1712,14 +1712,14 @@ def my_form_open(dialog, layer, feature):
             <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="offset_unit" v="MM"/>
             <prop k="outline_color" v="255,255,0,255"/>
-            <prop k="outline_width" v="0"/>
+            <prop k="outline_width" v="0.2"/>
             <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="outline_width_unit" v="MM"/>
             <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="6"/>
+            <prop k="size" v="5"/>
             <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
             <prop k="size_unit" v="MM"/>
-            <prop k="vertical_anchor_point" v="0"/>
+            <prop k="vertical_anchor_point" v="1"/>
           </layer>
         </symbol>
       </renderer-v2>
@@ -2587,18 +2587,18 @@ def my_form_open(dialog, layer, feature):
             <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
               <layer pass="0" class="SvgMarker" locked="0">
                 <prop k="angle" v="0"/>
-                <prop k="color" v="183,65,14,255"/>
+                <prop k="color" v="26,61,29,255"/>
                 <prop k="horizontal_anchor_point" v="1"/>
-                <prop k="name" v="tourist/tourist_battlefield.svg"/>
+                <prop k="name" v="./styles/svg/dagger.svg"/>
                 <prop k="offset" v="0,0"/>
                 <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
                 <prop k="offset_unit" v="MM"/>
-                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_color" v="255,255,0,255"/>
                 <prop k="outline_width" v="0.1"/>
                 <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
                 <prop k="outline_width_unit" v="MM"/>
                 <prop k="scale_method" v="diameter"/>
-                <prop k="size" v="6"/>
+                <prop k="size" v="12"/>
                 <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
                 <prop k="size_unit" v="MM"/>
                 <prop k="vertical_anchor_point" v="1"/>
@@ -2630,7 +2630,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </renderer-v2>
       <labeling type="rule-based">
-        <rules key="{2d6057cc-4f4f-40c7-85db-e11358f8515b}"/>
+        <rules key="{d381b9ba-e00a-49f5-a70d-ce6c75b5ef14}"/>
       </labeling>
       <customproperties>
         <property key="embeddedWidgets/count" value="0"/>
@@ -14182,7 +14182,7 @@ def my_form_open(dialog, layer, feature):
       <Enabled type="bool">true</Enabled>
       <Placement type="int">3</Placement>
       <MarginUnit type="QString">MM</MarginUnit>
-      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&amp;copy; OpenStreetMap contributors&lt;br/>&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;
+      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&amp;copy; OpenStreetMap contributors&lt;br/>&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;
 </Label>
       <Color type="QString">#000000</Color>
     </CopyrightLabel>
