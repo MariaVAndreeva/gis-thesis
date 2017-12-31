@@ -5,6 +5,9 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Magdalenenberg20171231191254012" source="C:/gis/gis-thesis/layers/vector/archeological/Magdalenenberg.shp" name="Magdalenenberg">
+      <customproperties/>
+    </layer-tree-layer>
     <layer-tree-layer expanded="0" providerKey="virtual" checked="Qt::Unchecked" id="Lanzen_Fibeln_P2_20171221224709892" source="?layer=ogr:ODBC%3Athesis-2017%7Clayername%3DA_QGIS:ODBC%3Athesis-2017-A_QGIS-ETRS89:System&amp;query=select%20make_point(LONGITUDE,%20LATITUDE)%20geometry%20/*:point:4258*/,%20*%20from%20'ODBC:thesis-2017-A_QGIS-ETRS89'%20where%20Fund_Ueberklasse%20%3D%20'Fibeln'%20and%20Fund_Typ%20%3D%20'P2'%20and%20Anzahl_Lanzen_Im_Befund%20%3E%200&amp;uid=ID_Fund" name="Lanzen+Fibeln(P2)">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
@@ -89,10 +92,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>7.96181606746287951</xmin>
-      <ymin>47.41178315211428185</ymin>
-      <xmax>11.06442431746287625</xmax>
-      <ymax>48.71292740211430328</ymax>
+      <xmin>7.89502901037345239</xmin>
+      <ymin>47.47909854023181708</ymin>
+      <xmax>9.88668062710936013</xmax>
+      <ymax>48.31433967939882734</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -116,6 +119,7 @@
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="osm_s46w7n50e13_lines20171103003827076"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Befunde20171230224040253"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102182948833"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Magdalenenberg20171231191107295"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221005107773"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_copy20171230222855668"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bundesland20171103020426949"/>
@@ -135,16 +139,22 @@
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Gold20171221031120927"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171221222533632"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221224248033"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="New_scratch_layer20171231190747438"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Alle20171102175159289"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Magdalenenberg20171231190240807"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Schwerter20171102194910255"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102205328918"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Magdalenenberg20171231191254012"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Schwerter20171221224456581"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sueddeutschland20171102233107820"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221221840101"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Magdalenenberg20171231191031766"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Fibeln_P2_20171221224709892"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="temp_shp20171105161231473"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Gold20171221011300294"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221004943815"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Magdalenenberg20171231185116800"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="New_scratch_layer20171231190727588"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Dolche20171221224418482"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sueddeutschland_hs20171102234603804"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen20171221225305168"/>
@@ -155,9 +165,11 @@
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102182734832"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Kessel20171221025754195"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Regierungsbezirk20171103021408581"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="New_scratch_layer20171231190711398"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Schlangenfibeln_copy20171221001406694"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171221221454317"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Fibeln_P2_20171102193458947"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Magdalenenberg20171231190023185"/>
       <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4258" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lanzen_Keramik20171102210451305"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
@@ -182,9 +194,15 @@
       <item>Sueddeutschland_schum20171229230421297</item>
       <item>Sueddeutschland20171230011627332</item>
       <item>Lanzen_Befunde20171230224040253</item>
+      <item>Magdalenenberg20171231191254012</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Magdalenenberg" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Magdalenenberg20171231191254012" visible="1"/>
+      </filegroup>
+    </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lanzen+Fibeln(P2)" showFeatureCount="1">
       <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Lanzen_Fibeln_P2_20171221224709892" visible="0"/>
@@ -11107,6 +11125,317 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression>COALESCE( "Landkreis_Name", '&lt;NULL>' )</previewExpression>
     </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>8.44242984794889573</xmin>
+        <ymin>48.04192839026215722</ymin>
+        <xmax>8.44427887784558173</xmax>
+        <ymax>48.04377742015884678</ymax>
+      </extent>
+      <id>Magdalenenberg20171231191254012</id>
+      <datasource>./layers/vector/archeological/Magdalenenberg.shp</datasource>
+      <shortname>Magdalenenberg</shortname>
+      <title>Magdalenenberg (keltischer Grabhügel)</title>
+      <keywordList>
+        <value>magdalenenberg</value>
+      </keywordList>
+      <dataUrl format="text/html">https://www.google.de/maps/place/48%C2%B002'39.5%22N+8%C2%B026'37.1%22E/@48.0443036,8.4414461,715m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d48.0443!4d8.44364</dataUrl>
+      <layername>Magdalenenberg</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="FID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="255,255,0,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="true"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0.1"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="true"/>
+        <property key="labeling/enabled" value="true"/>
+        <property key="labeling/fieldName" value="name"/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="Times New Roman"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="10.25"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="75"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="1"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Bold"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="2"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>FID</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="FID" index="0" name=""/>
+        <alias field="name" index="1" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="FID"/>
+          <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="name"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="FID" expression=""/>
+        <default field="name" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "FID", '&lt;NULL>' )</previewExpression>
+    </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>ODBC_thesis_2017_A_QGIS20171102173720168</id>
       <datasource>ODBC:thesis-2017|layername=A_QGIS</datasource>
@@ -15022,6 +15351,7 @@ def my_form_open(dialog, layer, feature):
       <LayerSnappingList type="QStringList">
         <value>Alle20171102175159289</value>
         <value>Lanzen20171221225305168</value>
+        <value>Lanzen_Befunde20171230224040253</value>
         <value>Lanzen_Dolche20171221224418482</value>
         <value>Lanzen_Fibeln_P2_20171221224709892</value>
         <value>Lanzen_Gold20171221224532777</value>
@@ -15031,9 +15361,10 @@ def my_form_open(dialog, layer, feature):
         <value>Lanzen_Schwerter20171221224456581</value>
         <value>osm_s46w7n50e13_lines20171103003827076</value>
         <value>osm_s46w7n50e13_multipolygons20171103003807548</value>
-        <value>Lanzen_Befunde20171230224040253</value>
+        <value>Magdalenenberg20171231191254012</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
@@ -15062,8 +15393,10 @@ def my_form_open(dialog, layer, feature):
         <value>2</value>
         <value>2</value>
         <value>2</value>
+        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -15080,6 +15413,7 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapType type="QString">off</DefaultSnapType>
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
@@ -15109,7 +15443,7 @@ def my_form_open(dialog, layer, feature):
       <Enabled type="bool">true</Enabled>
       <Placement type="int">3</Placement>
       <MarginUnit type="QString">MM</MarginUnit>
-      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&amp;copy; OpenStreetMap contributors&lt;br/>&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;
+      <Label type="QString">&amp;copy; QGIS 2017&lt;br/>&amp;copy; OpenStreetMap contributors&lt;br/>&amp;copy; GeoBasis-DE / &lt;a href="http://www.bkg.bund.de">BKG&lt;/a> 2017&lt;br/>Raster images courtesy of the &lt;a href="https://usgs.gov">U.S. Geological Survey&lt;/a>&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;&#xd;
 </Label>
       <Color type="QString">#000000</Color>
     </CopyrightLabel>
