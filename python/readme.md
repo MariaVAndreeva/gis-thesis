@@ -1,1 +1,1 @@
-copy the content of the 'expressions' folder to <user-home>\.qgis2\python\expressions
+copy the content of the 'expressions' folder to <user-home>\AppData\Roaming\QGIS\QGIS3\profiles\default\python\expressions
