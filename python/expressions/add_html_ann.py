@@ -28,12 +28,14 @@ The @qgsfunction decorator accepts the following arguments:
 						   [QgsFeatureRequest.ALL_ATTRIBUTES].
 """
 
-import os
+import os, random, math
 from qgis.core import *
 from qgis.gui import *
 from qgis.utils import *
-from qgis.PyQt.QtCore import QSizeF
-from qgis.PyQt.QtGui import (QFont, QTextDocument)
+from qgis.PyQt.QtCore import (QPointF,
+											QSizeF)
+from qgis.PyQt.QtGui import (QFont,
+											QTextDocument)
 from PIL import Image
 
 @qgsfunction(args='auto', group='Lanzen')
@@ -47,15 +49,24 @@ def add_html_ann(feature, parent, context):
 	</ul>
 	"""
 	layer = QgsProject.instance().mapLayer(context.variable('layer_id'))
+	points = [feat for feat in layer.getFeatures()]
+	spatialIndex = QgsSpatialIndex() # this spatial index contains all the features of the point layer
+	for point in points:
+		spatialIndex.insertFeature(point)
+	
 	if layer.selectedFeatureCount():
 		features = layer.selectedFeatures()
 	else:
 		features = layer.getFeatures()
 	for f in features:
+		geometry = f.geometry() #Input geometry
+		idsList = spatialIndex.intersects(geometry.boundingBox())
+		duplicatesIndex = idsList.index(f.id())
+		duplicates = len(idsList) - 1
 		context.setFeature(f)
 		createScanExpression = QgsExpression('convert_scan("Erste_Fund_Abbildung_URL")')
 		imageUrl = createScanExpression.evaluate(context)
-		_add(imageUrl, layer, f)
+		_add(imageUrl, layer, f, duplicates, duplicatesIndex)
 	# If caching is enabled, a simple canvas refresh might not be sufficient
 	# to trigger a redraw and you must clear the cached image for the layer
 	if iface.mapCanvas().isCachingEnabled():
@@ -63,16 +74,14 @@ def add_html_ann(feature, parent, context):
 	else:
 		iface.mapCanvas().refresh()
 
-def _add(imageUrl, layer, feature):
-	QgsMessageLog.logMessage('_add: ' + imageUrl, 'Lanzen', level=Qgis.Info)
+def _add(imageUrl, layer, feature, duplicates, duplicatesIndex):
+	#QgsMessageLog.logMessage('_add: {0}, {1}, duplicatesIndex: {2}'.format(imageUrl, duplicates, duplicatesIndex), 'Lanzen', level=Qgis.Info)
 	if not imageUrl: #nothing to do if there is no image to display
 		return
 	imagePath = imageUrl[8:]
 	if not os.path.exists(imagePath):
 		return
-	for a in QgsProject.instance().annotationManager().annotations():
-		QgsMessageLog.logMessage('ann: layer: {0}, feature: {1}'.format(a.mapLayer(), a.associatedFeature()) , 'Lanzen', level=Qgis.Info)
-	annotation = QgsTextAnnotation()
+	annotation = QgsTextAnnotation(iface.mapCanvas())
 	annotation.setMapLayer(layer)
 	annotation.setAssociatedFeature(feature)
 	#generate the HTML content
@@ -80,7 +89,7 @@ def _add(imageUrl, layer, feature):
 	font = QFont()
 	font.setFamily('Times New Roman')
 	doc.setDefaultFont(font)
-	doc.setHtml('<img src="{}" />'.format(imageUrl))
+	doc.setHtml('{0}<img src="{2}" />'.format(feature.id(), duplicatesIndex, imageUrl))
 	annotation.setDocument(doc)
 	annotation.markerSymbol().setSize(0)
 	annotation.setHasFixedMapPosition(True)
@@ -88,5 +97,16 @@ def _add(imageUrl, layer, feature):
 	# we only need dimensions here to resize the annotation
 	with Image.open(imagePath) as image:
 		width, height=image.size
-		annotation.setFrameSize(QSizeF(width, (height + 5)))
+		annotation.setFrameSize(QSizeF((width * 1.1 + 3), (height + 18))) #leave room for text
+		#now avoid overlapping for a single point
+		if duplicates:
+			radius = 12 * (duplicates + 1)
+			theta = 2 * math.pi * duplicatesIndex / (duplicates + 1)
+			x = radius * math.cos(theta)
+			y = radius * math.sin(theta)
+			if x < 0:
+				x -= width
+			if y < 0:
+				y -= height
+			annotation.setFrameOffsetFromReferencePoint(QPointF(x, y))
 	QgsProject.instance().annotationManager().addAnnotation(annotation)
