@@ -24,4 +24,3 @@ def add_svg_ann(layerId, path, feature, parent):
 	else:
 		iface.mapCanvas().refresh()
 	return
-	
