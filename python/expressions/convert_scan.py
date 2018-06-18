@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os, sys
 from qgis.core import *
 from qgis.gui import *
@@ -13,7 +14,7 @@ def convert_scan(url, feature, parent):
 		<li>convert_scan("fieldURL") -> -> 'file:///c:/tmp/a.tiff.png'</li>
 	</ul>
 	"""
-	QgsMessageLog.logMessage('convert_scan: ' + url, 'Lanzen', level=Qgis.Info)
+	#QgsMessageLog.logMessage('convert_scan: ' + url, 'Lanzen', level=Qgis.Info)
 	defaultSize = 64, 64
 	targetExtension = '.png'
 	targetUrl = url + targetExtension
