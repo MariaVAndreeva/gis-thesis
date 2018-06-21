@@ -35,10 +35,12 @@ def convert_scan(url, feature, parent):
 def evalScale(feature):
 	# Some safety checks
 	scaleExpression = feature['Erste_Fund_Abbildung_Skalierung']
+	if not scaleExpression:
+		return 1
 	#QgsMessageLog.logMessage('scaleExpression: ' + scaleExpression, 'Lanzen', level=Qgis.Info)
 	assert len(scaleExpression) < 1024
 	try:
 		return 1 / eval(scaleExpression.replace(':', '/'))
 	except Exception as e:
-		QgsMessageLog.logMessage('scale evaluation failed: {}'.format(e), 'Lanzen', level=Qgis.Error)
+		QgsMessageLog.logMessage('scale evaluation failed: {}'.format(e), 'Lanzen', level=Qgis.Info)
 	return 1
