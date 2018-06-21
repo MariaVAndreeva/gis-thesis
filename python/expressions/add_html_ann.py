@@ -89,7 +89,7 @@ def _add(imageUrl, layer, feature, duplicates, duplicatesIndex):
 	font = QFont()
 	font.setFamily('Times New Roman')
 	doc.setDefaultFont(font)
-	doc.setHtml('{0}<img src="{2}" />'.format(feature.id(), duplicatesIndex, imageUrl))
+	doc.setHtml('<img src="{0}" />{1}'.format(imageUrl, feature.id()))
 	annotation.setDocument(doc)
 	annotation.markerSymbol().setSize(0)
 	annotation.setHasFixedMapPosition(True)
