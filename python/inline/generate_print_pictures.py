@@ -19,6 +19,7 @@ def evalScale(scaleExpression):
 		QgsMessageLog.logMessage('scale evaluation failed: {}'.format(e), 'Lanzen', level=Qgis.Info)
 	return 1
 
+#the pictures will be scaled down by this factor, i.e. the result will be 1/9
 downsizeFactor = 9
 project = QgsProject.instance()
 layer = project.mapLayer('[% @layer_id %]')

@@ -1,3 +1,4 @@
 *.qgs~
 *.qgd
 *.laccdb
+/tmp
